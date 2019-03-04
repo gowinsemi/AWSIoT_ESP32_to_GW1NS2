@@ -3,18 +3,20 @@
 
 AWS_IOT hornbill;
 
-char WIFI_SSID[]="";
-char WIFI_PASSWORD[]="";
-char HOST_ADDRESS[]="a2pb2f9st3ros6-ats.iot.us-east-2.amazonaws.com";
-char CLIENT_ID[]= "ESP32";
-char TOPIC_NAME[]= "$aws/things/ESP32/shadow/update";
-
+//char WIFI_SSID[] = "ssid";
+//char WIFI_PASSWORD[]="password";
+//char HOST_ADDRESS[]="a2pb2f9st3ros6-ats.iot.us-east-2.amazonaws.com";
+//char CLIENT_ID[]= "ESP32";
+//char TOPIC_NAME[100];// = "$aws/things/ESP32/shadow/update";
+char user_array[10000];
 
 int status = WL_IDLE_STATUS;
 int tick=0,msgCount=0,msgReceived = 0;
 char payload[512];
 char rcvdPayload[512];
-
+int DONE;
+int i;
+    
 void mySubCallBackHandler (char *topicName, int payloadLen, char *payLoad)
 {
     strncpy(rcvdPayload,payLoad,payloadLen);
@@ -24,10 +26,135 @@ void mySubCallBackHandler (char *topicName, int payloadLen, char *payLoad)
 
 
 
-void setup() {
+void setup() { 
+
     Serial.begin(115200);
     delay(2000);
+    
+//////////////////////////////////////////////////////////////////////////////     
+//Obtain SSID from user
+    Serial.print("Enter SSID:");
+    DONE=0;
+    i=0;
+    while((!DONE)) 
+    {
+      if(Serial.available()) {
+        user_array[i] = Serial.read();
+        Serial.print(user_array[i]);
+        if((user_array[i]=='\n') || (user_array[i]=='\r') || (user_array[i]==']'))
+          DONE=1;
+        if(user_array[i] != -1)
+          i=i+1;
+      }
+    }
+    while(Serial.available())
+        Serial.read();
+        
+    char WIFI_SSID[i-1];
+    
+    for(int j=0;j<i-1;j++)
+      WIFI_SSID[j] = user_array[j];
+//////////////////////////////////////////////////////////////////////////////      
+//Obtain SSID Password from user
+    Serial.print("\nEnter Password:");
 
+    DONE=0;
+    i=0;
+    while((!DONE)) 
+    {
+      if(Serial.available()) {
+        user_array[i] = Serial.read();
+        Serial.print(user_array[i]);
+        if((user_array[i]=='\n') || (user_array[i]=='\r') || (user_array[i]==']'))
+          DONE=1;
+        if(user_array[i] != -1)
+          i=i+1;
+      }
+    }
+    while(Serial.available())
+        Serial.read();
+
+    char WIFI_PASSWORD[i-1];
+    
+    for(int j=0;j<i-1;j++)
+      WIFI_PASSWORD[j] = user_array[j];
+////////////////////////////////////////////////////////////////////////////// 
+//Obtain HOST_ADDRESS from user
+    Serial.print("\nEnter HOST_ADDRESS:");
+
+    DONE=0;
+    i=0;
+    while((!DONE)) 
+    {
+      if(Serial.available()) {
+        user_array[i] = Serial.read();
+        Serial.print(user_array[i]);
+        if((user_array[i]=='\n') || (user_array[i]=='\r') || (user_array[i]==']'))
+          DONE=1;
+        if(user_array[i] != -1)
+          i=i+1;
+      }
+    }
+    while(Serial.available())
+        Serial.read();
+
+    char HOST_ADDRESS[i-1];
+    
+    for(int j=0;j<i-1;j++)
+      HOST_ADDRESS[j] = user_array[j];
+////////////////////////////////////////////////////////////////////////////// 
+//Obtain CLIENT_ID from user
+    Serial.print("\nEnter CLIENT_ID:");
+
+    DONE=0;
+    i=0;
+    while((!DONE)) 
+    {
+      if(Serial.available()) {
+        user_array[i] = Serial.read();
+        Serial.print(user_array[i]);
+        if((user_array[i]=='\n') || (user_array[i]=='\r') || (user_array[i]==']'))
+          DONE=1;
+        if(user_array[i] != -1)
+          i=i+1;
+      }
+    }
+    while(Serial.available())
+        Serial.read();
+    
+    char CLIENT_ID[i-1];
+    
+    for(int j=0;j<i-1;j++)
+      CLIENT_ID[j] = user_array[j];
+////////////////////////////////////////////////////////////////////////////// 
+//Obtain TOPIC_NAME from user
+    Serial.print("\nEnter TOPIC_NAME:");
+
+    DONE=0;
+    i=0;
+    while((!DONE)) 
+    {
+      if(Serial.available()) {
+        user_array[i] = Serial.read();
+        Serial.print(user_array[i]);
+        if((user_array[i]=='\n') || (user_array[i]=='\r') || (user_array[i]==']'))
+          DONE=1;
+        if(user_array[i] != -1)
+          i=i+1;
+      }
+    }
+    while(Serial.available())
+        Serial.read();
+        
+    Serial.print("\n");
+
+    char TOPIC_NAME[i-1];
+    
+    for(int j=0;j<i-1;j++)
+      TOPIC_NAME[j] = user_array[j];
+////////////////////////////////////////////////////////////////////////////// 
+
+  
     while (status != WL_CONNECTED)
     {
         Serial.print("Attempting to connect to SSID: ");
@@ -64,10 +191,8 @@ void setup() {
 
     delay(2000);
 
-}
-
-void loop() {
-
+while(1)
+{
     if(msgReceived == 1)
     {
         msgReceived = 0;
@@ -90,4 +215,8 @@ void loop() {
     }  
     vTaskDelay(1000 / portTICK_RATE_MS); 
     tick++;
+}
+}
+
+void loop() {
 }
