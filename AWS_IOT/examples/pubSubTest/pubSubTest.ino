@@ -1,13 +1,15 @@
 #include "./src/AWS_IOT.h"
 #include <WiFi.h>
 
+#define USERPARAMS
+
 AWS_IOT hornbill;
 
-//char WIFI_SSID[] = "ssid";
-//char WIFI_PASSWORD[]="password";
-//char HOST_ADDRESS[]="a2pb2f9st3ros6-ats.iot.us-east-2.amazonaws.com";
-//char CLIENT_ID[]= "ESP32";
-//char TOPIC_NAME[100];// = "$aws/things/ESP32/shadow/update";
+char WIFI_SSID[] = "ssid";
+char WIFI_PASSWORD[]="password";
+char HOST_ADDRESS[]="a2pb2f9st3ros6-ats.iot.us-east-2.amazonaws.com";
+char CLIENT_ID[]= "ESP32";
+char TOPIC_NAME[] = "$aws/things/ESP32/shadow/update";
 char user_array[10000];
 
 int status = WL_IDLE_STATUS;
@@ -30,7 +32,7 @@ void setup() {
 
     Serial.begin(115200);
     delay(2000);
-    
+#ifdef USERPARAMS    
 //////////////////////////////////////////////////////////////////////////////     
 //Obtain SSID from user
     Serial.print("Enter SSID:");
@@ -153,8 +155,7 @@ void setup() {
     for(int j=0;j<i-1;j++)
       TOPIC_NAME[j] = user_array[j];
 ////////////////////////////////////////////////////////////////////////////// 
-
-  
+#endif  
     while (status != WL_CONNECTED)
     {
         Serial.print("Attempting to connect to SSID: ");
