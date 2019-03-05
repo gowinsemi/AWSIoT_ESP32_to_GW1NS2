@@ -49,8 +49,13 @@ and that both those copyright notices and this permission notice appear in suppo
 #include "esp_log.h"
 #include "esp_vfs_fat.h"
 #include "driver/sdmmc_host.h"
+#include <HardwareSerial.h>
 
+#define USERCERTS
 
+///////////////////
+char user_array2[10000];
+//////////////////
  
 static const char *TAG = "AWS_IOT";
 char AWS_IOT_HOST_ADDRESS[128];
@@ -74,7 +79,7 @@ extern const char private_pem_key[];
 
 
 void aws_iot_task(void *param);
-
+void get_certs ();
 
 
 void iot_subscribe_callback_handler(AWS_IoT_Client *pClient, char *topicName, uint16_t topicNameLen,
@@ -131,7 +136,9 @@ int AWS_IOT::connect(char *hostAddress, char *clientID)
     mqttInitParams.pHostURL = AWS_IOT_HOST_ADDRESS;
     mqttInitParams.port = CONFIG_AWS_IOT_MQTT_PORT;
 
-
+	#ifdef USERCERTS
+	get_certs ();
+	#endif
     mqttInitParams.pRootCALocation = (const char *)aws_root_ca_pem;
     mqttInitParams.pDeviceCertLocation = (const char *)certificate_pem_crt;
     mqttInitParams.pDevicePrivateKeyLocation = (const char *)private_pem_key;
@@ -244,4 +251,162 @@ IoT_Error_t rc = SUCCESS;
         
         vTaskDelay(1000 / portTICK_RATE_MS);
     }
+}
+
+void get_certs ()
+{
+	//Serial.print("testing123");
+	//////////////////////////////////////////////////////////////////////////////     
+	//Obtain Root CA from user
+    Serial.print("Enter RootCA:");
+    int DONE=0;
+    int i=0;
+	int returnflag=0;
+    while((!DONE)) 
+    {
+      if(Serial.available()) {
+        user_array2[i] = Serial.read();
+        Serial.print(user_array2[i]);
+        if((user_array2[i]=='\n') || (user_array2[i]=='\r') || (user_array2[i]==']'))
+          DONE=1;
+		//handle '\'+'n', '\', and '\'+' '
+		if((returnflag == 1) && (user_array2[i] == 'n'))
+		{
+			returnflag = 0;
+			user_array2[i] = '\n';
+			i=i+1;
+		}
+		else if((returnflag == 1) && (user_array2[i] == ' '))
+		{
+			returnflag = 0;
+		}
+		else if((user_array2[i] == 92))
+		{
+			returnflag = 1;
+		}
+		else if((user_array2[i] != -1))
+		{
+			returnflag = 0;
+			i=i+1;
+		}
+      }
+    }
+    while(Serial.available())
+        Serial.read();
+        
+    char RootCA[i-1];
+	
+	Serial.print("\n\n");	
+	//for(int j=0;j<i-1;j++)
+    //  Serial.print(aws_root_ca_pem[j]);
+
+    for(int j=0;j<i-1;j++)
+      RootCA[j] = user_array2[j];
+	const char *aws_root_ca_pem = &RootCA[0];
+
+	for(int j=0;j<i-1;j++)
+      Serial.print(aws_root_ca_pem[j]);
+	Serial.print("\n\n");	
+	//////////////////////////////////////////////////////////////////////////////     
+	//Obtain Device Certificate from user
+    Serial.print("Enter Device Certificate:");
+    DONE=0;
+    i=0;
+	returnflag=0;
+    while((!DONE)) 
+    {
+      if(Serial.available()) {
+        user_array2[i] = Serial.read();
+        Serial.print(user_array2[i]);
+        if((user_array2[i]=='\n') || (user_array2[i]=='\r') || (user_array2[i]==']'))
+          DONE=1;
+		//handle '\'+'n', '\', and '\'+' '
+		if((returnflag == 1) && (user_array2[i] == 'n'))
+		{
+			returnflag = 0;
+			user_array2[i] = '\n';
+			i=i+1;
+		}
+		else if((returnflag == 1) && (user_array2[i] == ' '))
+		{
+			returnflag = 0;
+		}
+		else if((user_array2[i] == 92))
+		{
+			returnflag = 1;
+		}
+		else if((user_array2[i] != -1))
+		{
+			returnflag = 0;
+			i=i+1;
+		}
+      }
+    }
+    while(Serial.available())
+        Serial.read();
+        
+    char UserCert[i-1];
+	
+	Serial.print("\n\n");	
+	//for(int j=0;j<i-1;j++)
+    //  Serial.print(aws_root_ca_pem[j]);
+
+    for(int j=0;j<i-1;j++)
+      UserCert[j] = user_array2[j];
+	const char *certificate_pem_crt = &UserCert[0];
+
+	for(int j=0;j<i-1;j++)
+      Serial.print(certificate_pem_crt[j]);
+	Serial.print("\n\n");
+	//////////////////////////////////////////////////////////////////////////////     
+	//Obtain Private Key from user
+    Serial.print("Enter Device Private Key:");
+    DONE=0;
+    i=0;
+	returnflag=0;
+    while((!DONE)) 
+    {
+      if(Serial.available()) {
+        user_array2[i] = Serial.read();
+        Serial.print(user_array2[i]);
+        if((user_array2[i]=='\n') || (user_array2[i]=='\r') || (user_array2[i]==']'))
+          DONE=1;
+		//handle '\'+'n', '\', and '\'+' '
+		if((returnflag == 1) && (user_array2[i] == 'n'))
+		{
+			returnflag = 0;
+			user_array2[i] = '\n';
+			i=i+1;
+		}
+		else if((returnflag == 1) && (user_array2[i] == ' '))
+		{
+			returnflag = 0;
+		}
+		else if((user_array2[i] == 92))
+		{
+			returnflag = 1;
+		}
+		else if((user_array2[i] != -1))
+		{
+			returnflag = 0;
+			i=i+1;
+		}
+      }
+    }
+    while(Serial.available())
+        Serial.read();
+        
+    char UserPrivateKey[i-1];
+	
+	Serial.print("\n\n");	
+	//for(int j=0;j<i-1;j++)
+    //  Serial.print(aws_root_ca_pem[j]);
+
+    for(int j=0;j<i-1;j++)
+      UserPrivateKey[j] = user_array2[j];
+	const char *private_pem_key = &UserPrivateKey[0];
+
+	for(int j=0;j<i-1;j++)
+      Serial.print(private_pem_key[j]);
+	Serial.print("\n\n");	
 }
