@@ -1,4 +1,10 @@
 # Arduino-esp32-aws-iot
+
+
+### **Note - See "./trunk/README.md" for updates made to this code!
+
+
+
 Arduini ESP32 library for AWS IoT
 
 Please make sure you have read the [getting started guide](https://aws.amazon.com/iot/getting-started/) before trying to do anyting with this template.
@@ -22,7 +28,7 @@ TOPIC_NAME
   private.pem.key
 ```
 Above certificates needs to be stored in the file aws_iot_certificates.c as arrays. Check the file for more information.
- 
+
 ![](https://exploreembedded.com/wiki/images/b/b9/ESP32_AWS_IOT_Certificates.png)
 
 
