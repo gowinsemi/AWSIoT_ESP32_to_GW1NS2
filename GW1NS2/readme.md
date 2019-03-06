@@ -1,4 +1,4 @@
-# GW1NS2
+# GW1NS2 - User and AWS Credentials and Certs exchange via UART
 
 
 
@@ -18,9 +18,5 @@
 ### Open Eclipse and set up LED project for Cortex M3
 
 1. Go to properties for the  `eclipse_tools_*` folder and uncheck `Read-only`
-
 2. Open `*\eclipse_tools_*\eclipse_tools_*\eclipse_tools\eclipse\eclipse.exe`
-
 3. Follow RN519 - MCU IDE Reference Manual for the rest of the instructions
-
-   
