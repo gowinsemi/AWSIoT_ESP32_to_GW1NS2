@@ -1,0 +1,12 @@
+<?xml version="1" encoding="UTF-8"?>
+<!DOCTYPE gowin-fpga-project>
+<Project>
+    <Template>FPGA</Template>
+    <Version>4</Version>
+    <Device>gw1ns2c-019</Device>
+    <FileList>
+        <File type="file.verilog" enable="1" path="src/gowin_empu/gowin_empu.v"/>
+        <File type="file.verilog" enable="1" path="src/ledtest_top.v"/>
+        <File type="file.cst" enable="1" path="src/DK-START-GW1NS2-ledtest.cst"/>
+    </FileList>
+</Project>

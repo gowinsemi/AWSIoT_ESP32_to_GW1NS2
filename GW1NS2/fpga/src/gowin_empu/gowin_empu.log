@@ -1,0 +1,7 @@
+Info    (PA0001) : "E:\Demo_program\DK-START-GW1NS2\DK-START-GW1NS2-ledtest\DK-START-GW1NS2-ledtest\src\gowin_empu\temp\gw_empu\rev_1\gowin_empu.vm" | Reading netlist file.
+Info    (PA0004) : Parsing netlist file 'E:\Demo_program\DK-START-GW1NS2\DK-START-GW1NS2-ledtest\DK-START-GW1NS2-ledtest\src\gowin_empu\temp\gw_empu\rev_1\gowin_empu.vm' completed.
+Error   (PA2025) : No CLKDIV resource in current device. Please change device.
+Info    (PA0005) : Processing netlist completed with errors.
+Info    (CM0008) : Generate 'E:\Demo_program\DK-START-GW1NS2\DK-START-GW1NS2-ledtest\DK-START-GW1NS2-ledtest\src\gowin_empu\gowin_empu.vo' file completed.
+Info    (CM0001) : Wed Dec 12 18:10:08 2018
+

@@ -1,0 +1,2 @@
+@W: CG1337 :"C:\Gowin\Gowin_YunYuan_V1.9.0Beta\IDE\ipcore\GOWIN_EMPU\data\gowin_empu.v":1348:9:1348:20|Net master_pse11 is not declared.
+

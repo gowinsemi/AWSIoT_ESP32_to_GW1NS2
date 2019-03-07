@@ -1,0 +1,2 @@
+CKID0001:@|S:Gowin_EMPU_inst.sysclk.clkdiv_inst@|E:Gowin_EMPU_inst.u_flash_wrap.rom_haddr_test[6]@|F:@syn_sample_clock_path==CKID0001@|M:ClockId0001 
+CKID0002:@|S:Gowin_EMPU_inst.u_mcu_top@|E:Gowin_EMPU_inst.u_gw_peripherals_interconnect.u_gw_apb2_uart_tx.read_reg_byte[27]@|F:@syn_sample_clock_path==CKID0002@|M:ClockId0002 

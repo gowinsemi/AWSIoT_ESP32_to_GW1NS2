@@ -1,0 +1,98 @@
+# Thu Mar  7 13:32:24 2019
+
+
+Copyright (C) 1994-2019 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: O-2018.09G-SP1
+Install: C:\Gowin\Gowin_YunYuan_V1.9.0Beta\SynplifyPro
+OS: Windows 6.2
+
+Hostname: LAPTOP-7P3FEATO
+
+Implementation : rev_1
+Synopsys Generic Technology Pre-mapping, Version mapgw, Build 1290R, Built Feb 12 2019 10:21:02
+
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 100MB)
+
+@A: MF827 |No constraint file specified.
+@N: MF284 |Setting synthesis effort to medium for the design
+@L: C:\Users\Grant\Documents\Gowin\DK-START-GW1NS2-LED-test-demo\fpga\src\gowin_empu\temp\gw_empu\rev_1\gowin_empu_scck.rpt 
+Printing clock  summary report in "C:\Users\Grant\Documents\Gowin\DK-START-GW1NS2-LED-test-demo\fpga\src\gowin_empu\temp\gw_empu\rev_1\gowin_empu_scck.rpt" file 
+@N: MF916 |Option synthesis_strategy=base is enabled. 
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 104MB peak: 106MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 104MB peak: 106MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 106MB peak: 106MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 117MB peak: 120MB)
+
+@N: MF284 |Setting synthesis effort to medium for the design
+@N: MH105 |UMR3 is only supported for HAPS-80.
+@N: MH105 |UMR3 is only supported for HAPS-80.
+ICG Latch Removal Summary:
+Number of ICG latches removed:	0
+Number of ICG latches not removed:	0
+
+Finished netlist restructuring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 195MB peak: 196MB)
+
+
+
+Clock Summary
+******************
+
+          Start                               Requested     Requested     Clock        Clock                     Clock
+Level     Clock                               Frequency     Period        Type         Group                     Load 
+----------------------------------------------------------------------------------------------------------------------
+0 -       System                              222.4 MHz     4.496         system       system_clkgroup           64   
+                                                                                                                      
+0 -       GW_CLKDIV|clkout_inferred_clock     100.0 MHz     10.000        inferred     Autoconstr_clkgroup_0     401  
+======================================================================================================================
+
+
+
+Clock Load Summary
+***********************
+
+                                    Clock     Source                                                Clock Pin                                                                                 Non-clock Pin     Non-clock Pin                                                                              
+Clock                               Load      Pin                                                   Seq Example                                                                               Seq Example       Comb Example                                                                               
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+System                              64        -                                                     Gowin_EMPU_inst.u_gw_peripherals_interconnect.u_gw_apb2_uart_tx.read_reg_byte[31:0].C     -                 -                                                                                          
+                                                                                                                                                                                                                                                                                                           
+GW_CLKDIV|clkout_inferred_clock     401       Gowin_EMPU_inst.sysclk.clkdiv_inst.CLKOUT(CLKDIV)     Gowin_EMPU_inst.u_gw_peripherals_interconnect.u_gw_apb2_uart_tx.reg_1[31:0].C             -                 Gowin_EMPU_inst.u_gw_peripherals_interconnect.u_gw_cmsdk_apb2_spi.u_spi.un1_CLK_I.I[0](inv)
+===========================================================================================================================================================================================================================================================================================================
+
+
+@N: FX1143 |Skipping assigning INTERNAL_VREF to iobanks, because the table of mapping from pin to iobank is not initialized.
+Finished Pre Mapping Phase.
+@N: BN225 |Writing default property annotation file C:\Users\Grant\Documents\Gowin\DK-START-GW1NS2-LED-test-demo\fpga\src\gowin_empu\temp\gw_empu\rev_1\gowin_empu.sap.
+
+Starting constraint checker (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 194MB peak: 196MB)
+
+
+Finished constraint checker preprocessing (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 194MB peak: 196MB)
+
+None
+None
+
+Finished constraint checker (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 194MB peak: 196MB)
+
+Pre-mapping successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 109MB peak: 196MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Thu Mar  7 13:32:26 2019
+
+###########################################################]
