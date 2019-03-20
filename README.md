@@ -83,7 +83,7 @@ This project provides a basic example of how to connect the Gowin DK-START-GW1NS
 
 ## Connecting GW1NS2C DK-START and ESP32 Boards Together
 
-![GW1NS2C_ESP32_Connectivity](.\doc_info\GW1NS2C_ESP32_Connectivity.jpg)
+![GW1NS2C_ESP32_Connectivity](./doc_info/GW1NS2C_ESP32_Connectivity.jpg)
 
 ## Running the Demo
 
