@@ -5,11 +5,11 @@
 
 AWS_IOT hornbill;
 
-char WIFI_SSID[] = "ssid";
-char WIFI_PASSWORD[]="password";
-char HOST_ADDRESS[]="a2pb2f9st3ros6-ats.iot.us-east-2.amazonaws.com";
-char CLIENT_ID[]= "ESP32";
-char TOPIC_NAME[] = "$aws/things/ESP32/shadow/update";
+char WIFI_SSID[] = "SSID";
+char WIFI_PASSWORD[]="PASSWORD";
+char HOST_ADDRESS[]="host address";
+char CLIENT_ID[]= "thing name";
+char TOPIC_NAME[] = "topic";
 char user_array[10000];
 
 int status = WL_IDLE_STATUS;
@@ -35,7 +35,8 @@ void setup() {
 #ifdef USERPARAMS    
 //////////////////////////////////////////////////////////////////////////////     
 //Obtain SSID from user
-    Serial.print("Enter SSID:");
+    //Serial.print("\nEnter SSID:");
+    
     DONE=0;
     i=0;
     while((!DONE)) 
@@ -47,6 +48,11 @@ void setup() {
           DONE=1;
         if(user_array[i] != -1)
           i=i+1;
+      }
+      else
+      {
+        Serial.print("1\n"); 
+        delay(1000);
       }
     }
     while(Serial.available())
@@ -58,7 +64,7 @@ void setup() {
       WIFI_SSID[j] = user_array[j];
 //////////////////////////////////////////////////////////////////////////////      
 //Obtain SSID Password from user
-    Serial.print("\nEnter Password:");
+    //Serial.print("\nEnter Password:");
 
     DONE=0;
     i=0;
@@ -71,6 +77,11 @@ void setup() {
           DONE=1;
         if(user_array[i] != -1)
           i=i+1;
+      }
+      else
+      {
+        Serial.print("2\n");
+        delay(1000); 
       }
     }
     while(Serial.available())
@@ -82,7 +93,7 @@ void setup() {
       WIFI_PASSWORD[j] = user_array[j];
 ////////////////////////////////////////////////////////////////////////////// 
 //Obtain HOST_ADDRESS from user
-    Serial.print("\nEnter HOST_ADDRESS:");
+    //Serial.print("\nEnter HOST_ADDRESS:");
 
     DONE=0;
     i=0;
@@ -95,6 +106,11 @@ void setup() {
           DONE=1;
         if(user_array[i] != -1)
           i=i+1;
+      }
+      else
+      {
+        Serial.print("3\n");
+        delay(1000); 
       }
     }
     while(Serial.available())
@@ -106,7 +122,7 @@ void setup() {
       HOST_ADDRESS[j] = user_array[j];
 ////////////////////////////////////////////////////////////////////////////// 
 //Obtain CLIENT_ID from user
-    Serial.print("\nEnter CLIENT_ID:");
+    //Serial.print("\nEnter CLIENT_ID:");
 
     DONE=0;
     i=0;
@@ -119,6 +135,11 @@ void setup() {
           DONE=1;
         if(user_array[i] != -1)
           i=i+1;
+      }
+      else
+      {
+        Serial.print("4\n");
+        delay(1000); 
       }
     }
     while(Serial.available())
@@ -130,7 +151,7 @@ void setup() {
       CLIENT_ID[j] = user_array[j];
 ////////////////////////////////////////////////////////////////////////////// 
 //Obtain TOPIC_NAME from user
-    Serial.print("\nEnter TOPIC_NAME:");
+    //Serial.print("\nEnter TOPIC_NAME:");
 
     DONE=0;
     i=0;
@@ -144,11 +165,16 @@ void setup() {
         if(user_array[i] != -1)
           i=i+1;
       }
+      else
+      {
+        Serial.print("5\n"); //SSID
+        delay(1000);
+      }
     }
     while(Serial.available())
         Serial.read();
         
-    Serial.print("\n");
+    //Serial.print("\n");
 
     char TOPIC_NAME[i-1];
     
@@ -191,31 +217,34 @@ void setup() {
     }
 
     delay(2000);
-
+    
+char LEDNUM='0';
+Serial.print("9\n");
 while(1)
 {
-    if(msgReceived == 1)
-    {
-        msgReceived = 0;
-        Serial.print("Received Message:");
+    //if(msgReceived == 1)
+    //{
+    //    msgReceived = 0;
+        //Serial.print("Received Message:");
         Serial.println(rcvdPayload);
-    }
-    if(tick >= 5)   // publish to topic every 5seconds
+   //}
+    if(Serial.available())//tick >= 5)   // publish to topic every 5seconds
     {
-        tick=0;
-        sprintf(payload,"Hello from hornbill ESP32 : %d",msgCount++);
-        if(hornbill.publish(TOPIC_NAME,payload) == 0)
-        {        
-            Serial.print("Publish Message:");
-            Serial.println(payload);
-        }
-        else
-        {
-            Serial.println("Publish failed");
-        }
-    }  
-    vTaskDelay(1000 / portTICK_RATE_MS); 
-    tick++;
+        
+        LEDNUM = Serial.read();
+        
+        sprintf(payload,"%c",LEDNUM);
+        if (LEDNUM != '0')
+          while(hornbill.publish(TOPIC_NAME,payload) != 0)
+          {   
+            //Serial.print("Publish Failed");     
+          }
+
+        //Serial.print("Publish Message:");
+        Serial.println(LEDNUM);//payload);
+        LEDNUM = '0';
+    }   
+    //delay(1000);
 }
 }
 

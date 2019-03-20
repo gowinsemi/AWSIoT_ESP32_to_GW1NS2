@@ -17,11 +17,18 @@
 #include <string.h>
 #include <stdio.h>
 #include <stdlib.h>
+#include "gw1ns2c_gpio.h"
 
+uint8_t Key_Scan(GPIO_TypeDef* GPIOx,uint16_t GPIO_Pin);
+uint8_t GPIO_ReadInputDataBit(GPIO_TypeDef* GPIOx, uint16_t GPIO_Pin);
 void UartInit(void);
 void TimerInit(TIMER_TypeDef* TIMERx);
 void Delay_ms(__IO uint32_t delay_ms);
 char* int2str(int num,char*str,int radix);
+void Delay(__IO uint32_t nCount)//25M 1s = 8333000
+{
+	for(; nCount != 0; nCount--);
+}
 
 char buff[20];
 volatile uint32_t counter;
@@ -38,23 +45,46 @@ int main()
   //Init Uart
   UartInit();
   UART_SendString(UART0,"\nUart Initial finished\n");
-  UART_SendString(UART0,"\nTimer Initial:\n");
-	
-	//Init Timer
-  TimerInit(TIMER0);
+  //UART_SendString(UART0,"\nTimer Initial:\n");
+
+  /* Initial all register to zero */
+  GPIO0->DATA = 0;
+  GPIO0->DATAOUT = 0;
+  GPIO0->OUTENSET = 0;
+  GPIO0->OUTENCLR = 0;
+  GPIO0->ALTFUNCSET = 0;
+  GPIO0->ALTFUNCCLR = 0;
+  GPIO0->INTENSET = 0;
+  GPIO0->INTENCLR = 0;
+  GPIO0->INTTYPESET = 0;
+  GPIO0->INTTYPECLR = 0;
+  GPIO0->INTPOLSET = 0;
+  GPIO0->INTPOLCLR = 0;
+  GPIO0->INTCLEAR = 0;
+  for(int pos = 0;pos < 256;pos++)
+  {
+	  GPIO0->MASKLOWBYTE[pos] = 0;
+	  GPIO0->MASKHIGHBYTE[pos] = 0;
+  }
+
+	GPIO0->OUTENSET = 0xFFFFFFEF;
+	GPIO0->OUTENCLR = 0x00000080;
+
 	
    //Dispaly the message
    counter=0;
-   NVIC_EnableIRQ(TIMER0_IRQn);
-   UART_SendString(UART0,"\nNVIC ENABLE IRQ TIMER0\n");
-   TIMER_EnableIRQ(TIMER0);
-   UART_SendString(UART0,"\nTIMER0 IRQ ENABLE\n");
-   TIMER_StartTimer(TIMER0);
-   UART_SendString(UART0,"\nSTART TIMER0\n");
 	
    //WiFi Credentials Begin
-			 
-   while(1)
+   //1 Enter SSID:
+   //2 Enter Password:
+   //3 Enter HOST_ADDRESS:
+   //4 Enter CLIENT_ID:
+   //5 Enter TOPIC_NAME:
+   //6 Enter RootCA:
+   //7 Enter Device Certificate:
+   //8 Enter Device Private Key:
+   //int DONE = 0;
+   while(num<9)
    {
        int i=0;
        while(c != '\n')
@@ -68,35 +98,33 @@ int main()
        c=-1; //clear '\n' return
        user_input[i]='\0'; //end string
 
-       //Enter SSID:
-       //Enter Password:
-       //Enter HOST_ADDRESS:
-       //Enter CLIENT_ID:
-       //Enter TOPIC_NAME:
-       //Enter RootCA:
-       //Enter Device Certificate:
-       //Enter Device Private Key:
-       if     (strcmp("Enter SSID:\n",user_input)==0)
+
+       if     ((strcmp("1\n",user_input)==0))// && (num<1))
        {
-    	   UART_SendString(UART0, "REPLACE_WITH_SSID!!!\n"); //Replace this with the SSID name for your network
+    	   UART_SendString(UART0, "iPhone\n");
+    	   num=2;
        }
-       else if(strcmp("Enter Password:\n",user_input)==0)
+       else if((strcmp("2\n",user_input)==0) && (num==2))
        {
-    	   UART_SendString(UART0, "REPLACE_WITH_PW!!!\n"); //Replace with SSID password for your network
+    	   UART_SendString(UART0, "iphone123\n");
+    	   num=3;
        }
-       else if(strcmp("Enter HOST_ADDRESS:\n",user_input)==0)
+       else if((strcmp("3\n",user_input)==0) && (num==3))
        {
     	   UART_SendString(UART0, "a2pb2f9st3ros6-ats.iot.us-east-2.amazonaws.com\n");
+    	   num=4;
        }
-       else if(strcmp("Enter CLIENT_ID:\n",user_input)==0)
+       else if((strcmp("4\n",user_input)==0) && (num==4))
        {
     	   UART_SendString(UART0, "ESP32\n");
+    	   num=5;
        }
-       else if(strcmp("Enter TOPIC_NAME:\n",user_input)==0)
+       else if((strcmp("5\n",user_input)==0) && (num==5))
        {
     	   UART_SendString(UART0, "$aws/things/ESP32/shadow/update\n");
+    	   num=6;
        }
-       else if(strcmp("Enter RootCA:\n",user_input)==0)
+       else if((strcmp("6\n",user_input)==0) && (num==6))
        {
     	   UART_SendString(UART0,
     			   "-----BEGIN CERTIFICATE-----\n\
@@ -120,7 +148,7 @@ int main()
 ----------------------------\n\
 -----END CERTIFICATE-----\n");
        }
-       else if(strcmp("Enter Device Certificate:\n",user_input)==0)
+       else if((strcmp("7\n",user_input)==0) && (num==7))
        {
     	   UART_SendString(UART0, "-----BEGIN CERTIFICATE-----\n\
 -------------------REPLACE WITH CERT!!!-------------------------\n\
@@ -142,8 +170,9 @@ int main()
 -------------------REPLACE WITH CERT!!!-------------------------\n\
 -------------------REPLACE WITH CERT!!!-------------------------\n\
 -----END CERTIFICATE-----\n");
+    	   num=8;
        }
-       else if(strcmp("Enter Device Private Key:\n",user_input)==0)
+       else if((strcmp("8\n",user_input)==0) && (num==8))
        {
     	   UART_SendString(UART0, "-----BEGIN RSA PRIVATE KEY-----\n\
 -------------------REPLACE WITH CERT!!!-------------------------\n\
@@ -172,14 +201,89 @@ int main()
 -------------------REPLACE WITH CERT!!!-------------------------\n\
 -------------------REPLACE WITH CERT!!!-------------\n\
 -----END RSA PRIVATE KEY-----\n");
+    	   num=9;
+    	   //DONE=1;
        }
-       /*else
-       {
-    	   UART_SendString(UART0, user_input);
-       }*/
    }
 
+//UART_SendString(UART0, "Sending Buttons... Receiving LEDs\n");
+//char* BUTTON[4];
+char buffer[4];
+int i=0;
+int debounce=0;
+//UART_SendString(UART0, "test");
+while(1)
+{
+
+	if(Key_Scan(GPIO0,GPIO_Pin_4))
+	{
+		if(debounce>10000)
+		{
+			if(i<4)
+				i++;
+			else
+				i=1;
+			sprintf (buffer, "%d", i);
+			UART_SendString(UART0, buffer);
+			debounce=0;
+		}
+	}
+	if(debounce<100000)
+		debounce++;
+
+	c = UART_ReceiveChar(UART0);
+	if(c=='1')
+	{
+		GPIO_SetBit(GPIO0, GPIO_Pin_0 | GPIO_Pin_1 | GPIO_Pin_2 | GPIO_Pin_3);
+		GPIO_ResetBit(GPIO0, GPIO_Pin_0);
+	}
+	else if (c=='2')
+	{
+		GPIO_SetBit(GPIO0, GPIO_Pin_0 | GPIO_Pin_1 | GPIO_Pin_2 | GPIO_Pin_3);
+		GPIO_ResetBit(GPIO0, GPIO_Pin_1);
+	}
+	else if (c=='3')
+	{
+		GPIO_SetBit(GPIO0, GPIO_Pin_0 | GPIO_Pin_1 | GPIO_Pin_2 | GPIO_Pin_3);
+		GPIO_ResetBit(GPIO0, GPIO_Pin_2);
+	}
+	else if (c=='4')
+	{
+		GPIO_SetBit(GPIO0, GPIO_Pin_0 | GPIO_Pin_1 | GPIO_Pin_2 | GPIO_Pin_3);
+		GPIO_ResetBit(GPIO0, GPIO_Pin_3);
+	}
+
 }
+
+}
+
+uint8_t Key_Scan(GPIO_TypeDef* GPIOx,uint16_t GPIO_Pin)
+{
+	/*检测是否有按键按下 */
+	if(GPIO_ReadInputDataBit(GPIOx,GPIO_Pin) == 1 )
+	{
+		/*等待按键释放 */
+		while(GPIO_ReadInputDataBit(GPIOx,GPIO_Pin) == 1);
+		return 	1;
+	}
+	else
+		return 0;
+}
+uint8_t GPIO_ReadInputDataBit(GPIO_TypeDef* GPIOx, uint16_t GPIO_Pin)
+{
+  uint8_t bitstatus = 0x00;
+
+  if ((GPIOx->DATA & GPIO_Pin) != 0)
+  {
+    bitstatus = (uint8_t)1;
+  }
+  else
+  {
+    bitstatus = (uint8_t)0;
+  }
+  return bitstatus;
+}
+
 
 void UartInit(void)
 {

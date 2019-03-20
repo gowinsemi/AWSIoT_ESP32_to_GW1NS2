@@ -72,9 +72,9 @@ pSubCallBackHandler_t subApplCallBackHandler = 0;
 
    "Embedded Certs" are stored in the file aws_iot_certificates.c as arrays
 */
-extern const char aws_root_ca_pem[];
-extern const char certificate_pem_crt[];
-extern const char private_pem_key[];
+char aws_root_ca_pem[10000];
+char certificate_pem_crt[10000];
+char private_pem_key[10000];
 
 
 
@@ -139,10 +139,11 @@ int AWS_IOT::connect(char *hostAddress, char *clientID)
 	#ifdef USERCERTS
 	get_certs ();
 	#endif
-    mqttInitParams.pRootCALocation = (const char *)aws_root_ca_pem;
-    mqttInitParams.pDeviceCertLocation = (const char *)certificate_pem_crt;
-    mqttInitParams.pDevicePrivateKeyLocation = (const char *)private_pem_key;
+	
 
+    mqttInitParams.pRootCALocation = aws_root_ca_pem;
+    mqttInitParams.pDeviceCertLocation = certificate_pem_crt;
+    mqttInitParams.pDevicePrivateKeyLocation = private_pem_key;
 
     mqttInitParams.mqttCommandTimeout_ms = 20000;
     mqttInitParams.tlsHandshakeTimeout_ms = 5000;
@@ -258,7 +259,6 @@ void get_certs ()
 	//Serial.print("testing123");
 	//////////////////////////////////////////////////////////////////////////////     
 	//Obtain Root CA from user
-    Serial.print("Enter RootCA:");
     int DONE=0;
     int i=0;
 	int returnflag=0;
@@ -266,8 +266,7 @@ void get_certs ()
     {
       if(Serial.available()) {
         user_array2[i] = Serial.read();
-        Serial.print(user_array2[i]);
-        if((user_array2[i]=='\n') || (user_array2[i]=='\r') || (user_array2[i]==']'))
+        if(/*(user_array2[i]=='\n') || */(user_array2[i]=='\r') || (user_array2[i]==']'))
           DONE=1;
 		//handle '\'+'n', '\', and '\'+' '
 		if((returnflag == 1) && (user_array2[i] == 'n'))
@@ -290,26 +289,18 @@ void get_certs ()
 			i=i+1;
 		}
       }
+	  else
+		Serial.print("6\n");
     }
-    while(Serial.available())
-        Serial.read();
         
     char RootCA[i-1];
 	
-	Serial.print("\n\n");	
-	//for(int j=0;j<i-1;j++)
-    //  Serial.print(aws_root_ca_pem[j]);
-
     for(int j=0;j<i-1;j++)
-      RootCA[j] = user_array2[j];
-	const char *aws_root_ca_pem = &RootCA[0];
+      aws_root_ca_pem[j] = user_array2[j];
 
-	for(int j=0;j<i-1;j++)
-      Serial.print(aws_root_ca_pem[j]);
-	Serial.print("\n\n");	
 	//////////////////////////////////////////////////////////////////////////////     
 	//Obtain Device Certificate from user
-    Serial.print("Enter Device Certificate:");
+
     DONE=0;
     i=0;
 	returnflag=0;
@@ -317,8 +308,8 @@ void get_certs ()
     {
       if(Serial.available()) {
         user_array2[i] = Serial.read();
-        Serial.print(user_array2[i]);
-        if((user_array2[i]=='\n') || (user_array2[i]=='\r') || (user_array2[i]==']'))
+
+        if(/*(user_array2[i]=='\n') || */(user_array2[i]=='\r') || (user_array2[i]==']'))
           DONE=1;
 		//handle '\'+'n', '\', and '\'+' '
 		if((returnflag == 1) && (user_array2[i] == 'n'))
@@ -341,26 +332,17 @@ void get_certs ()
 			i=i+1;
 		}
       }
+	  else
+			Serial.print("7\n");
     }
-    while(Serial.available())
-        Serial.read();
         
     char UserCert[i-1];
 	
-	Serial.print("\n\n");	
-	//for(int j=0;j<i-1;j++)
-    //  Serial.print(aws_root_ca_pem[j]);
-
     for(int j=0;j<i-1;j++)
-      UserCert[j] = user_array2[j];
-	const char *certificate_pem_crt = &UserCert[0];
-
-	for(int j=0;j<i-1;j++)
-      Serial.print(certificate_pem_crt[j]);
-	Serial.print("\n\n");
+      certificate_pem_crt[j] = user_array2[j];
+	
 	//////////////////////////////////////////////////////////////////////////////     
 	//Obtain Private Key from user
-    Serial.print("Enter Device Private Key:");
     DONE=0;
     i=0;
 	returnflag=0;
@@ -368,8 +350,7 @@ void get_certs ()
     {
       if(Serial.available()) {
         user_array2[i] = Serial.read();
-        Serial.print(user_array2[i]);
-        if((user_array2[i]=='\n') || (user_array2[i]=='\r') || (user_array2[i]==']'))
+        if(/*(user_array2[i]=='\n') || */(user_array2[i]=='\r') || (user_array2[i]==']'))
           DONE=1;
 		//handle '\'+'n', '\', and '\'+' '
 		if((returnflag == 1) && (user_array2[i] == 'n'))
@@ -392,21 +373,13 @@ void get_certs ()
 			i=i+1;
 		}
       }
+	  else 
+			Serial.print("8\n");
     }
-    while(Serial.available())
-        Serial.read();
         
     char UserPrivateKey[i-1];
-	
-	Serial.print("\n\n");	
-	//for(int j=0;j<i-1;j++)
-    //  Serial.print(aws_root_ca_pem[j]);
+
 
     for(int j=0;j<i-1;j++)
-      UserPrivateKey[j] = user_array2[j];
-	const char *private_pem_key = &UserPrivateKey[0];
-
-	for(int j=0;j<i-1;j++)
-      Serial.print(private_pem_key[j]);
-	Serial.print("\n\n");	
+      private_pem_key[j] = user_array2[j];
 }
