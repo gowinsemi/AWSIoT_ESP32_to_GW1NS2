@@ -269,8 +269,8 @@ Discarded input sections
  .debug_macro   0x00000000       0x76 ./PERIPHER/Sources/gw1ns2c_adc.o
  .debug_macro   0x00000000       0x22 ./PERIPHER/Sources/gw1ns2c_adc.o
  .debug_macro   0x00000000       0x58 ./PERIPHER/Sources/gw1ns2c_adc.o
- .debug_line    0x00000000      0x564 ./PERIPHER/Sources/gw1ns2c_adc.o
- .debug_str     0x00000000     0x7cee ./PERIPHER/Sources/gw1ns2c_adc.o
+ .debug_line    0x00000000      0x574 ./PERIPHER/Sources/gw1ns2c_adc.o
+ .debug_str     0x00000000     0x7cf2 ./PERIPHER/Sources/gw1ns2c_adc.o
  .comment       0x00000000       0x6f ./PERIPHER/Sources/gw1ns2c_adc.o
  .debug_frame   0x00000000      0x170 ./PERIPHER/Sources/gw1ns2c_adc.o
  .ARM.attributes
@@ -508,8 +508,8 @@ Discarded input sections
  .debug_macro   0x00000000       0x76 ./PERIPHER/Sources/gw1ns2c_imonitor.o
  .debug_macro   0x00000000       0x22 ./PERIPHER/Sources/gw1ns2c_imonitor.o
  .debug_macro   0x00000000       0x82 ./PERIPHER/Sources/gw1ns2c_imonitor.o
- .debug_line    0x00000000      0x92f ./PERIPHER/Sources/gw1ns2c_imonitor.o
- .debug_str     0x00000000     0x848e ./PERIPHER/Sources/gw1ns2c_imonitor.o
+ .debug_line    0x00000000      0x93f ./PERIPHER/Sources/gw1ns2c_imonitor.o
+ .debug_str     0x00000000     0x8492 ./PERIPHER/Sources/gw1ns2c_imonitor.o
  .comment       0x00000000       0x6f ./PERIPHER/Sources/gw1ns2c_imonitor.o
  .debug_frame   0x00000000      0x830 ./PERIPHER/Sources/gw1ns2c_imonitor.o
  .ARM.attributes
@@ -573,8 +573,8 @@ Discarded input sections
  .debug_macro   0x00000000       0x22 ./PERIPHER/Sources/gw1ns2c_lcd1602.o
  .debug_macro   0x00000000       0x16 ./PERIPHER/Sources/gw1ns2c_lcd1602.o
  .debug_macro   0x00000000       0x70 ./PERIPHER/Sources/gw1ns2c_lcd1602.o
- .debug_line    0x00000000      0x5b2 ./PERIPHER/Sources/gw1ns2c_lcd1602.o
- .debug_str     0x00000000     0x7ee0 ./PERIPHER/Sources/gw1ns2c_lcd1602.o
+ .debug_line    0x00000000      0x5c2 ./PERIPHER/Sources/gw1ns2c_lcd1602.o
+ .debug_str     0x00000000     0x7ee4 ./PERIPHER/Sources/gw1ns2c_lcd1602.o
  .comment       0x00000000       0x6f ./PERIPHER/Sources/gw1ns2c_lcd1602.o
  .debug_frame   0x00000000      0x180 ./PERIPHER/Sources/gw1ns2c_lcd1602.o
  .ARM.attributes
@@ -624,8 +624,8 @@ Discarded input sections
  .debug_macro   0x00000000       0x76 ./PERIPHER/Sources/gw1ns2c_misc.o
  .debug_macro   0x00000000       0x22 ./PERIPHER/Sources/gw1ns2c_misc.o
  .debug_macro   0x00000000       0x34 ./PERIPHER/Sources/gw1ns2c_misc.o
- .debug_line    0x00000000      0x4ee ./PERIPHER/Sources/gw1ns2c_misc.o
- .debug_str     0x00000000     0x7d7a ./PERIPHER/Sources/gw1ns2c_misc.o
+ .debug_line    0x00000000      0x4fe ./PERIPHER/Sources/gw1ns2c_misc.o
+ .debug_str     0x00000000     0x7d7e ./PERIPHER/Sources/gw1ns2c_misc.o
  .comment       0x00000000       0x6f ./PERIPHER/Sources/gw1ns2c_misc.o
  .debug_frame   0x00000000       0xb0 ./PERIPHER/Sources/gw1ns2c_misc.o
  .ARM.attributes
@@ -713,8 +713,8 @@ Discarded input sections
  .debug_macro   0x00000000       0x76 ./PERIPHER/Sources/gw1ns2c_spi.o
  .debug_macro   0x00000000       0x22 ./PERIPHER/Sources/gw1ns2c_spi.o
  .debug_macro   0x00000000       0x5e ./PERIPHER/Sources/gw1ns2c_spi.o
- .debug_line    0x00000000      0x63c ./PERIPHER/Sources/gw1ns2c_spi.o
- .debug_str     0x00000000     0x7de1 ./PERIPHER/Sources/gw1ns2c_spi.o
+ .debug_line    0x00000000      0x64c ./PERIPHER/Sources/gw1ns2c_spi.o
+ .debug_str     0x00000000     0x7de5 ./PERIPHER/Sources/gw1ns2c_spi.o
  .comment       0x00000000       0x6f ./PERIPHER/Sources/gw1ns2c_spi.o
  .debug_frame   0x00000000      0x308 ./PERIPHER/Sources/gw1ns2c_spi.o
  .ARM.attributes
@@ -770,8 +770,8 @@ Discarded input sections
  .debug_macro   0x00000000       0x76 ./PERIPHER/Sources/gw1ns2c_syscon.o
  .debug_macro   0x00000000       0x22 ./PERIPHER/Sources/gw1ns2c_syscon.o
  .debug_macro   0x00000000       0x16 ./PERIPHER/Sources/gw1ns2c_syscon.o
- .debug_line    0x00000000      0x51a ./PERIPHER/Sources/gw1ns2c_syscon.o
- .debug_str     0x00000000     0x7b59 ./PERIPHER/Sources/gw1ns2c_syscon.o
+ .debug_line    0x00000000      0x52a ./PERIPHER/Sources/gw1ns2c_syscon.o
+ .debug_str     0x00000000     0x7b5d ./PERIPHER/Sources/gw1ns2c_syscon.o
  .comment       0x00000000       0x6f ./PERIPHER/Sources/gw1ns2c_syscon.o
  .debug_frame   0x00000000       0xf0 ./PERIPHER/Sources/gw1ns2c_syscon.o
  .ARM.attributes
@@ -964,8 +964,8 @@ Discarded input sections
  .debug_macro   0x00000000       0x76 ./PERIPHER/Sources/gw1ns2c_wdog.o
  .debug_macro   0x00000000       0x22 ./PERIPHER/Sources/gw1ns2c_wdog.o
  .debug_macro   0x00000000       0x34 ./PERIPHER/Sources/gw1ns2c_wdog.o
- .debug_line    0x00000000      0x601 ./PERIPHER/Sources/gw1ns2c_wdog.o
- .debug_str     0x00000000     0x7d5b ./PERIPHER/Sources/gw1ns2c_wdog.o
+ .debug_line    0x00000000      0x611 ./PERIPHER/Sources/gw1ns2c_wdog.o
+ .debug_str     0x00000000     0x7d5f ./PERIPHER/Sources/gw1ns2c_wdog.o
  .comment       0x00000000       0x6f ./PERIPHER/Sources/gw1ns2c_wdog.o
  .debug_frame   0x00000000      0x290 ./PERIPHER/Sources/gw1ns2c_wdog.o
  .ARM.attributes
@@ -1034,7 +1034,7 @@ Discarded input sections
  .debug_macro   0x00000000       0x5e ./CORE/core_cm3.o
  .debug_macro   0x00000000      0x1df ./CORE/core_cm3.o
  .debug_line    0x00000000      0x464 ./CORE/core_cm3.o
- .debug_str     0x00000000     0x351b ./CORE/core_cm3.o
+ .debug_str     0x00000000     0x351f ./CORE/core_cm3.o
  .comment       0x00000000       0x6f ./CORE/core_cm3.o
  .debug_frame   0x00000000      0x320 ./CORE/core_cm3.o
  .ARM.attributes
@@ -1538,7 +1538,28 @@ END GROUP
  *(SORT(.dtors.*))
  *(.dtors)
  *(.rodata*)
- .rodata        0x000054f8     0x1125 ./USER/main.o
+ .rodata.SSID   0x000054f8        0x8 ./USER/main.o
+                0x000054f8                SSID
+ .rodata.PW     0x00005500        0xb ./USER/main.o
+                0x00005500                PW
+ *fill*         0x0000550b        0x1 
+ .rodata.URL    0x0000550c       0x30 ./USER/main.o
+                0x0000550c                URL
+ .rodata.THING  0x0000553c        0x7 ./USER/main.o
+                0x0000553c                THING
+ *fill*         0x00005543        0x1 
+ .rodata.ROOTCA
+                0x00005544      0x4a5 ./USER/main.o
+                0x00005544                ROOTCA
+ *fill*         0x000059e9        0x3 
+ .rodata.DEVICECERT
+                0x000059ec      0x4c9 ./USER/main.o
+                0x000059ec                DEVICECERT
+ *fill*         0x00005eb5        0x3 
+ .rodata.DEVICEKEY
+                0x00005eb8      0x68c ./USER/main.o
+                0x00005eb8                DEVICEKEY
+ .rodata        0x00006544       0xd9 ./USER/main.o
  *fill*         0x0000661d        0x3 
  .rodata.str1.4
                 0x00006620        0x2 c:/gowin/eclipse_tools_181108a/eclipse_tools_181108a/eclipse_tools/tools/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg.a(lib_a-impure.o)
@@ -1781,23 +1802,23 @@ OUTPUT(uart.elf elf32-littlearm)
  .comment       0x0000006e       0x6f ./PERIPHER/Sources/gw1ns2c_timer.o
  .comment       0x0000006e       0x6f ./PERIPHER/Sources/gw1ns2c_uart.o
 
-.debug_info     0x00000000     0x1a4d
+.debug_info     0x00000000     0x1b62
  .debug_info    0x00000000      0x176 ./USER/gw1ns2c_it.o
- .debug_info    0x00000176      0x6c7 ./USER/main.o
- .debug_info    0x0000083d      0x104 ./SYSTEM/system_gw1ns2c.o
- .debug_info    0x00000941       0x97 ./STARTUP/startup_gw1ns2c.o
- .debug_info    0x000009d8      0x6ab ./PERIPHER/Sources/gw1ns2c_gpio.o
- .debug_info    0x00001083      0x3d0 ./PERIPHER/Sources/gw1ns2c_timer.o
- .debug_info    0x00001453      0x5fa ./PERIPHER/Sources/gw1ns2c_uart.o
+ .debug_info    0x00000176      0x7d8 ./USER/main.o
+ .debug_info    0x0000094e      0x104 ./SYSTEM/system_gw1ns2c.o
+ .debug_info    0x00000a52       0x9b ./STARTUP/startup_gw1ns2c.o
+ .debug_info    0x00000aed      0x6ab ./PERIPHER/Sources/gw1ns2c_gpio.o
+ .debug_info    0x00001198      0x3d0 ./PERIPHER/Sources/gw1ns2c_timer.o
+ .debug_info    0x00001568      0x5fa ./PERIPHER/Sources/gw1ns2c_uart.o
 
-.debug_abbrev   0x00000000      0x75c
+.debug_abbrev   0x00000000      0x776
  .debug_abbrev  0x00000000       0x5d ./USER/gw1ns2c_it.o
- .debug_abbrev  0x0000005d      0x236 ./USER/main.o
- .debug_abbrev  0x00000293       0x7b ./SYSTEM/system_gw1ns2c.o
- .debug_abbrev  0x0000030e       0x14 ./STARTUP/startup_gw1ns2c.o
- .debug_abbrev  0x00000322      0x18f ./PERIPHER/Sources/gw1ns2c_gpio.o
- .debug_abbrev  0x000004b1      0x107 ./PERIPHER/Sources/gw1ns2c_timer.o
- .debug_abbrev  0x000005b8      0x1a4 ./PERIPHER/Sources/gw1ns2c_uart.o
+ .debug_abbrev  0x0000005d      0x250 ./USER/main.o
+ .debug_abbrev  0x000002ad       0x7b ./SYSTEM/system_gw1ns2c.o
+ .debug_abbrev  0x00000328       0x14 ./STARTUP/startup_gw1ns2c.o
+ .debug_abbrev  0x0000033c      0x18f ./PERIPHER/Sources/gw1ns2c_gpio.o
+ .debug_abbrev  0x000004cb      0x107 ./PERIPHER/Sources/gw1ns2c_timer.o
+ .debug_abbrev  0x000005d2      0x1a4 ./PERIPHER/Sources/gw1ns2c_uart.o
 
 .debug_aranges  0x00000000      0x328
  .debug_aranges
@@ -1873,28 +1894,28 @@ OUTPUT(uart.elf elf32-littlearm)
  .debug_macro   0x00002b36       0x1c ./PERIPHER/Sources/gw1ns2c_timer.o
  .debug_macro   0x00002b52       0xc2 ./PERIPHER/Sources/gw1ns2c_uart.o
 
-.debug_line     0x00000000     0x244d
- .debug_line    0x00000000      0x581 ./USER/gw1ns2c_it.o
- .debug_line    0x00000581      0x77d ./USER/main.o
- .debug_line    0x00000cfe      0x4b2 ./SYSTEM/system_gw1ns2c.o
- .debug_line    0x000011b0       0x97 ./STARTUP/startup_gw1ns2c.o
- .debug_line    0x00001247      0x652 ./PERIPHER/Sources/gw1ns2c_gpio.o
- .debug_line    0x00001899      0x57f ./PERIPHER/Sources/gw1ns2c_timer.o
- .debug_line    0x00001e18      0x635 ./PERIPHER/Sources/gw1ns2c_uart.o
+.debug_line     0x00000000     0x24a6
+ .debug_line    0x00000000      0x591 ./USER/gw1ns2c_it.o
+ .debug_line    0x00000591      0x786 ./USER/main.o
+ .debug_line    0x00000d17      0x4c2 ./SYSTEM/system_gw1ns2c.o
+ .debug_line    0x000011d9       0x97 ./STARTUP/startup_gw1ns2c.o
+ .debug_line    0x00001270      0x662 ./PERIPHER/Sources/gw1ns2c_gpio.o
+ .debug_line    0x000018d2      0x58f ./PERIPHER/Sources/gw1ns2c_timer.o
+ .debug_line    0x00001e61      0x645 ./PERIPHER/Sources/gw1ns2c_uart.o
 
-.debug_str      0x00000000     0xc0b9
- .debug_str     0x00000000     0x795f ./USER/gw1ns2c_it.o
-                               0x7abf (size before relaxing)
- .debug_str     0x0000795f     0x40ca ./USER/main.o
-                               0xbb39 (size before relaxing)
- .debug_str     0x0000ba29       0x8d ./SYSTEM/system_gw1ns2c.o
-                               0x7a5c (size before relaxing)
- .debug_str     0x0000bab6      0x260 ./PERIPHER/Sources/gw1ns2c_gpio.o
-                               0x7f58 (size before relaxing)
- .debug_str     0x0000bd16      0x18b ./PERIPHER/Sources/gw1ns2c_timer.o
-                               0x7bc6 (size before relaxing)
- .debug_str     0x0000bea1      0x218 ./PERIPHER/Sources/gw1ns2c_uart.o
-                               0x7d23 (size before relaxing)
+.debug_str      0x00000000     0xc0e4
+ .debug_str     0x00000000     0x7963 ./USER/gw1ns2c_it.o
+                               0x7ac3 (size before relaxing)
+ .debug_str     0x00007963     0x40f1 ./USER/main.o
+                               0xbb64 (size before relaxing)
+ .debug_str     0x0000ba54       0x8d ./SYSTEM/system_gw1ns2c.o
+                               0x7a60 (size before relaxing)
+ .debug_str     0x0000bae1      0x260 ./PERIPHER/Sources/gw1ns2c_gpio.o
+                               0x7f5c (size before relaxing)
+ .debug_str     0x0000bd41      0x18b ./PERIPHER/Sources/gw1ns2c_timer.o
+                               0x7bca (size before relaxing)
+ .debug_str     0x0000becc      0x218 ./PERIPHER/Sources/gw1ns2c_uart.o
+                               0x7d27 (size before relaxing)
 
 .debug_frame    0x00000000     0x14c0
  .debug_frame   0x00000000      0x1b0 ./USER/gw1ns2c_it.o

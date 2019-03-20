@@ -5,7 +5,7 @@
 
 AWS_IOT hornbill;
 
-char WIFI_SSID[] = "SSID";
+char WIFI_SSID[] = "SSID";  //hard coded parameters to be used if USERPARAMS is undefined.
 char WIFI_PASSWORD[]="PASSWORD";
 char HOST_ADDRESS[]="host address";
 char CLIENT_ID[]= "thing name";

@@ -45,7 +45,7 @@ all: uart.elf secondary-outputs
 uart.elf: $(OBJS) $(USER_OBJS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: Cross ARM C Linker'
-	arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -T "C:\Users\Grant\Documents\Gowin\AWSIoT_ESP32_to_GW1NS2.git\GW1NS2\uart2esp32\gw1ns2c_flash.ld" -Xlinker --gc-sections -Wl,-Map,"uart.map" -o "uart.elf" $(OBJS) $(USER_OBJS) $(LIBS)
+	arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -T "C:\Users\Grant\Documents\Gowin\AWSIoT_ESP32_to_GW1NS2_2\trunk\GW1NS2\uart2esp32\gw1ns2c_flash.ld" -Xlinker --gc-sections -Wl,-Map,"uart.map" -o "uart.elf" $(OBJS) $(USER_OBJS) $(LIBS)
 	@echo 'Finished building target: $@'
 	@echo ' '
 

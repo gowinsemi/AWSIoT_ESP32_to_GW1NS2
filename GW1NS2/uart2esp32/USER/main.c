@@ -30,6 +30,28 @@ void Delay(__IO uint32_t nCount)//25M 1s = 8333000
 	for(; nCount != 0; nCount--);
 }
 
+const char SSID[]	=	"iPhone\n";
+const char PW[]		=	"iphone123\n";
+const char URL[]	=	"a2pb2f9st3ros6-ats.iot.us-east-2.amazonaws.com\n";
+const char THING[]	=	"ESP32\n";
+const char ROOTCA[]	=	"-----BEGIN CERTIFICATE-----\n\
+-------------------REPLACE WITH CERT!!!-------------------------\n\
+...
+-------------------REPLACE WITH CERT!!!-------------------------\n\
+-----END CERTIFICATE-----\r";
+
+const char DEVICECERT[]	=	"-----BEGIN CERTIFICATE-----\n\
+-------------------REPLACE WITH CERT!!!-------------------------\n\
+...
+-------------------REPLACE WITH CERT!!!-------------------------\n\
+-----END CERTIFICATE-----\r";
+
+const char DEVICEKEY []	=	"-----BEGIN RSA PRIVATE KEY-----\n\
+-------------------REPLACE WITH CERT!!!-------------------------\n\
+...
+-------------------REPLACE WITH CERT!!!-------------------------\n\
+-----END RSA PRIVATE KEY-----\r";
+
 char buff[20];
 volatile uint32_t counter;
 
@@ -73,6 +95,7 @@ int main()
 	
    //Dispaly the message
    counter=0;
+
 	
    //WiFi Credentials Begin
    //1 Enter SSID:
@@ -101,22 +124,22 @@ int main()
 
        if     ((strcmp("1\n",user_input)==0))// && (num<1))
        {
-    	   UART_SendString(UART0, "iPhone\n");
+    	   UART_SendString(UART0, SSID);
     	   num=2;
        }
        else if((strcmp("2\n",user_input)==0) && (num==2))
        {
-    	   UART_SendString(UART0, "iphone123\n");
+    	   UART_SendString(UART0, PW);
     	   num=3;
        }
        else if((strcmp("3\n",user_input)==0) && (num==3))
        {
-    	   UART_SendString(UART0, "a2pb2f9st3ros6-ats.iot.us-east-2.amazonaws.com\n");
+    	   UART_SendString(UART0, URL);
     	   num=4;
        }
        else if((strcmp("4\n",user_input)==0) && (num==4))
        {
-    	   UART_SendString(UART0, "ESP32\n");
+    	   UART_SendString(UART0, THING);
     	   num=5;
        }
        else if((strcmp("5\n",user_input)==0) && (num==5))
@@ -126,81 +149,17 @@ int main()
        }
        else if((strcmp("6\n",user_input)==0) && (num==6))
        {
-    	   UART_SendString(UART0,
-    			   "-----BEGIN CERTIFICATE-----\n\
--------------------REPLACE WITH CERT!!!-------------------------\n\
--------------------REPLACE WITH CERT!!!-------------------------\n\
--------------------REPLACE WITH CERT!!!-------------------------\n\
--------------------REPLACE WITH CERT!!!-------------------------\n\
--------------------REPLACE WITH CERT!!!-------------------------\n\
--------------------REPLACE WITH CERT!!!-------------------------\n\
--------------------REPLACE WITH CERT!!!-------------------------\n\
--------------------REPLACE WITH CERT!!!-------------------------\n\
--------------------REPLACE WITH CERT!!!-------------------------\n\
--------------------REPLACE WITH CERT!!!-------------------------\n\
--------------------REPLACE WITH CERT!!!-------------------------\n\
--------------------REPLACE WITH CERT!!!-------------------------\n\
--------------------REPLACE WITH CERT!!!-------------------------\n\
--------------------REPLACE WITH CERT!!!-------------------------\n\
--------------------REPLACE WITH CERT!!!-------------------------\n\
--------------------REPLACE WITH CERT!!!-------------------------\n\
--------------------REPLACE WITH CERT!!!-------------------------\n\
-----------------------------\n\
------END CERTIFICATE-----\n");
+    	   UART_SendString(UART0, ROOTCA);
+    	   num=7;
        }
        else if((strcmp("7\n",user_input)==0) && (num==7))
        {
-    	   UART_SendString(UART0, "-----BEGIN CERTIFICATE-----\n\
--------------------REPLACE WITH CERT!!!-------------------------\n\
--------------------REPLACE WITH CERT!!!-------------------------\n\
--------------------REPLACE WITH CERT!!!-------------------------\n\
--------------------REPLACE WITH CERT!!!-------------------------\n\
--------------------REPLACE WITH CERT!!!-------------------------\n\
--------------------REPLACE WITH CERT!!!-------------------------\n\
--------------------REPLACE WITH CERT!!!-------------------------\n\
--------------------REPLACE WITH CERT!!!-------------------------\n\
--------------------REPLACE WITH CERT!!!-------------------------\n\
--------------------REPLACE WITH CERT!!!-------------------------\n\
--------------------REPLACE WITH CERT!!!-------------------------\n\
--------------------REPLACE WITH CERT!!!-------------------------\n\
--------------------REPLACE WITH CERT!!!-------------------------\n\
--------------------REPLACE WITH CERT!!!-------------------------\n\
--------------------REPLACE WITH CERT!!!-------------------------\n\
--------------------REPLACE WITH CERT!!!-------------------------\n\
--------------------REPLACE WITH CERT!!!-------------------------\n\
--------------------REPLACE WITH CERT!!!-------------------------\n\
------END CERTIFICATE-----\n");
+    	   UART_SendString(UART0, DEVICECERT);
     	   num=8;
        }
        else if((strcmp("8\n",user_input)==0) && (num==8))
        {
-    	   UART_SendString(UART0, "-----BEGIN RSA PRIVATE KEY-----\n\
--------------------REPLACE WITH CERT!!!-------------------------\n\
--------------------REPLACE WITH CERT!!!-------------------------\n\
--------------------REPLACE WITH CERT!!!-------------------------\n\
--------------------REPLACE WITH CERT!!!-------------------------\n\
--------------------REPLACE WITH CERT!!!-------------------------\n\
--------------------REPLACE WITH CERT!!!-------------------------\n\
--------------------REPLACE WITH CERT!!!-------------------------\n\
--------------------REPLACE WITH CERT!!!-------------------------\n\
--------------------REPLACE WITH CERT!!!-------------------------\n\
--------------------REPLACE WITH CERT!!!-------------------------\n\
--------------------REPLACE WITH CERT!!!-------------------------\n\
--------------------REPLACE WITH CERT!!!-------------------------\n\
--------------------REPLACE WITH CERT!!!-------------------------\n\
--------------------REPLACE WITH CERT!!!-------------------------\n\
--------------------REPLACE WITH CERT!!!-------------------------\n\
--------------------REPLACE WITH CERT!!!-------------------------\n\
--------------------REPLACE WITH CERT!!!-------------------------\n\
--------------------REPLACE WITH CERT!!!-------------------------\n\
--------------------REPLACE WITH CERT!!!-------------------------\n\
--------------------REPLACE WITH CERT!!!-------------------------\n\
--------------------REPLACE WITH CERT!!!-------------------------\n\
--------------------REPLACE WITH CERT!!!-------------------------\n\
--------------------REPLACE WITH CERT!!!-------------------------\n\
--------------------REPLACE WITH CERT!!!-------------------------\n\
--------------------REPLACE WITH CERT!!!-------------\n\
------END RSA PRIVATE KEY-----\n");
+    	   UART_SendString(UART0, DEVICEKEY);
     	   num=9;
     	   //DONE=1;
        }
