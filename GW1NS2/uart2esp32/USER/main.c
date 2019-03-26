@@ -171,26 +171,10 @@ char buffer[4];
 int i=0;
 int debounce=0;
 //UART_SendString(UART0, "test");
-while(1)
-{
-
-	if(Key_Scan(GPIO0,GPIO_Pin_4))
-	{
-		if(debounce>10000)
-		{
-			if(i<4)
-				i++;
-			else
-				i=1;
-			sprintf (buffer, "%d", i);
-			UART_SendString(UART0, buffer);
-			debounce=0;
-		}
-	}
-	if(debounce<100000)
-		debounce++;
-
+  while(1)
+  {
 	c = UART_ReceiveChar(UART0);
+	//UART_SendChar(UART0, c);
 	if(c=='1')
 	{
 		GPIO_SetBit(GPIO0, GPIO_Pin_0 | GPIO_Pin_1 | GPIO_Pin_2 | GPIO_Pin_3);
@@ -212,17 +196,34 @@ while(1)
 		GPIO_ResetBit(GPIO0, GPIO_Pin_3);
 	}
 
-}
+	if(Key_Scan(GPIO0,GPIO_Pin_4))
+	{
+		if(debounce>10000)
+		{
+			if(i<4)
+				i++;
+			else
+				i=1;
+			sprintf (buffer, "%d", i);
+			//UART_SendString(UART0, buffer);
+			UART_SendChar(UART0, buffer[0]);
+			debounce=0;
+		}
+	}
+	if(debounce<100000)
+		debounce++;
+
+  }
 
 }
 
 uint8_t Key_Scan(GPIO_TypeDef* GPIOx,uint16_t GPIO_Pin)
 {
 	/*检测是否有按键按下 */
-	if(GPIO_ReadInputDataBit(GPIOx,GPIO_Pin) == 1 )
+	if(GPIO_ReadInputDataBit(GPIOx,GPIO_Pin) == 0 )
 	{
 		/*等待按键释放 */
-		while(GPIO_ReadInputDataBit(GPIOx,GPIO_Pin) == 1);
+		while(GPIO_ReadInputDataBit(GPIOx,GPIO_Pin) == 0);
 		return 	1;
 	}
 	else
