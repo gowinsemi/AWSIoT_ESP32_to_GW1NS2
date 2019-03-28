@@ -1,0 +1,24 @@
+{
+    "Header": {
+        "Comment": "All values are metric (mm)",
+        "CreationDate": "2019-03-28T17:23:41Z",
+        "GenerationSoftware": {
+            "Application": "EAGLE",
+            "Vendor": "Autodesk",
+            "Version": "9.2.0"
+        },
+        "Part": "Single"
+    },
+    "Overall": {
+        "BoardThickness": 1.99,
+        "LayerNumber": 4,
+        "Name": {
+            "ProjectId": "brekout_board"
+        },
+        "Owner": "Hamza Khalid <hamzakhalidbazmi@yahoo.com>",
+        "Size": {
+            "X": 53.23,
+            "Y": 32.49
+        }
+    }
+}
