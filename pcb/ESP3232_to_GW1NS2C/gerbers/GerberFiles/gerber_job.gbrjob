@@ -1,7 +1,7 @@
 {
     "Header": {
         "Comment": "All values are metric (mm)",
-        "CreationDate": "2019-03-28T17:23:41Z",
+        "CreationDate": "2019-03-30T08:18:22Z",
         "GenerationSoftware": {
             "Application": "EAGLE",
             "Vendor": "Autodesk",
@@ -10,8 +10,8 @@
         "Part": "Single"
     },
     "Overall": {
-        "BoardThickness": 1.99,
-        "LayerNumber": 4,
+        "BoardThickness": 1.57,
+        "LayerNumber": 2,
         "Name": {
             "ProjectId": "brekout_board"
         },
