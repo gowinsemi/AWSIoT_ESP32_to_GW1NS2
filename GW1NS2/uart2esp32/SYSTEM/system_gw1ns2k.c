@@ -3,19 +3,19 @@
  *
  * 		Copyright (C) 2014-2018 Gowin Semiconductor Technology Co.,Ltd.
  * 		
- * @file			system_gw1ns2c.c
+ * @file		system_gw1ns2k.c
  * @author		Embedded Development Team
  * @version		V1.0.0
- * @date			2018-5-1 09:00:00
- * @brief			CMSIS Cortex-M3 Device Peripheral Access Layer System Source File.
- *              This file contains the system clock configuration for GW1NS-2C device.
+ * @date		2018-5-1 09:00:00
+ * @brief		CMSIS Cortex-M3 Device Peripheral Access Layer System Source File.
+ *              This file contains the system clock configuration for GW 1NS-2 device.
  *
  *              This file provides two functions and one global variable to be called from
  *              user application:
  *                - SystemInit(): Setups the system clock.
  *                                 This function is called at startup just after reset and
  *                                 before branch to main program. This call is mad inside
- *                                 the "startup_gw1ns2c.s" file.
+ *                                 the "startup_gw1ns2k.s" file.
  *                - SystemCoreClock variable: Contains the core clock, it can be used
  *                                 by the user application to setup the SysTick 
  *                                 timer or configure other parameters.
@@ -29,29 +29,21 @@
   * @{
   */
 
-/** @addtogroup gw1ns2c_system
+/** @addtogroup gw1ns2k_system
   * @{
   */  
   
-/** @addtogroup GW1NS2C_System_Private_Includes
+/** @addtogroup GW1NS2K_System_Private_Includes
   * @{
   */
 
-#include "gw1ns2c.h"
+#include "gw1ns2k.h"
 
 /**
   * @}
   */
 
-/** @addtogroup GW1NS2C_System_Private_TypesDefinitions
-  * @{
-  */
-
-/**
-  * @}
-  */
-
-/** @addtogroup GW1NS2C_System_Private_Defines
+/** @addtogroup GW1NS2K_System_Private_TypesDefinitions
   * @{
   */
 
@@ -59,7 +51,15 @@
   * @}
   */
 
-/** @addtogroup GW1NS2C_System_Private_Macros
+/** @addtogroup GW1NS2K_System_Private_Defines
+  * @{
+  */
+
+/**
+  * @}
+  */
+
+/** @addtogroup GW1NS2K_System_Private_Macros
   * @{
   */
 
@@ -68,13 +68,13 @@
  *----------------------------------------------------------------------------*/
 #define __XTAL            (50000000UL)    /* Oscillator frequency             */
 
-#define __SYSTEM_CLOCK    (__XTAL / 2)		/*	25MHz */
+#define __SYSTEM_CLOCK    (__XTAL / 2)
 
 /**
   * @}
   */
 
-/** @addtogroup GW1NS2C_System_Private_Variables
+/** @addtogroup GW1NS2K_System_Private_Variables
   * @{
   */
 
@@ -90,7 +90,7 @@ uint32_t HCLK = __SYSTEM_CLOCK;           /*!< AHB Clock Frequency */
   * @}
   */
 
-/** @addtogroup GW1NS2C_System_Private_Functions
+/** @addtogroup GW1NS2K_System_Private_Functions
   * @{
   */
 

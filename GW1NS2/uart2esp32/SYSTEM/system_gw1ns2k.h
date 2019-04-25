@@ -3,11 +3,11 @@
  *
  * 		Copyright (C) 2014-2018 Gowin Semiconductor Technology Co.,Ltd.
  * 		
- * @file			system_gw1ns2c.h
+ * @file		system_gw1ns2k.h
  * @author		Embedded Development Team
  * @version		V1.0.0
- * @date			2018-5-1 09:00:00
- * @brief			CMSIS Cortex-M3 Device Peripheral Access Layer Header File for Device GW1NS-2C
+ * @date		2018-5-1 09:00:00
+ * @brief		CMSIS Cortex-M3 Device Peripheral Access Layer Header File for Device GW 1NS-2
  *
  ******************************************************************************************
  */
@@ -16,21 +16,21 @@
   * @{
   */
 
-/** @addtogroup gw1ns2c_system
+/** @addtogroup gw1ns2k_system
   * @{
   */
 
 /**
   * @brief Define to prevent recursive inclusion
   */
-#ifndef __SYSTEM_GW1NS2C_H
-#define __SYSTEM_GW1NS2C_H
+#ifndef __SYSTEM_GW1NS2K_H
+#define __SYSTEM_GW1NS2K_H
 
 #ifdef __cplusplus
 extern "C" {
 #endif
 
-/** @addtogroup GW1NS2C_System_Includes
+/** @addtogroup GW1NS2K_System_Includes
   * @{
   */
 
@@ -40,7 +40,7 @@ extern "C" {
   * @}
   */
 
-/** @addtogroup GW1NS2C_System_Exported_types
+/** @addtogroup GW1NS2K_System_Exported_types
   * @{
   */
 
@@ -53,7 +53,7 @@ extern uint32_t HCLK;               /*!< AHB Clock Frequency */
   * @}
   */
 
-/** @addtogroup GW1NS2C_System_Exported_Constants
+/** @addtogroup GW1NS2K_System_Exported_Constants
   * @{
   */
 
@@ -61,7 +61,7 @@ extern uint32_t HCLK;               /*!< AHB Clock Frequency */
   * @}
   */
 
-/** @addtogroup GW1NS2C_System_Exported_Macros
+/** @addtogroup GW1NS2K_System_Exported_Macros
   * @{
   */
 
@@ -69,7 +69,7 @@ extern uint32_t HCLK;               /*!< AHB Clock Frequency */
   * @}
   */
 
-/** @addtogroup GW1NS2C_System_Exported_Functions
+/** @addtogroup GW1NS2K_System_Exported_Functions
   * @{
   */
 
@@ -103,7 +103,7 @@ extern void SystemCoreClockUpdate (void);
 }
 #endif
 
-#endif /* SYSTEM_GW1NS2C_H */
+#endif /* SYSTEM_GW1NS2K_H */
 
 /**
   * @}

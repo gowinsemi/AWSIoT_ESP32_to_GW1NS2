@@ -3,20 +3,20 @@
  *
  * 		Copyright (C) 2014-2018 Gowin Semiconductor Technology Co.,Ltd.
  * 		
- * @file			gw1ns2c.h
- * @author		Embedded Development Team
- * @version		V1.0.0
+ * @file          gw1ns2k.h
+ * @author        Embedded Development Team
+ * @version       V1.0.0
  * @date		  2018-5-1 09:00:00
- * @brief		  CMSIS Cortex-M3 Core Peripheral Access Layer Header File for Device GW1NS-2C.
+ * @brief		  CMSIS Cortex-M3 Core Peripheral Access Layer Header File for Device GW 1NS-2.
  *				    This file contains all the peripheral register's definitions, bits 
- *				    definitions and memory mapping for GW1NS-2C Connectivity line, 
+ *				    definitions and memory mapping for GW-1NS2K Connectivity line, 
  *				    High density, High density value line, Medium density, 
  *				    Medium density Value line, Low density, Low density Value line 
  *				    and XL-density devices.
  *
- *				    The file is the unique include file that the application programmer
- *				    is using in the C source code, usually in main.c. This file contains:
- *					   - Configuration section that allows to select:
+ *				   The file is the unique include file that the application programmer
+ *				   is using in the C source code, usually in main.c. This file contains:
+ *					  - Configuration section that allows to select:
  *						  - The device used in the target application
  *						  - To use or not the peripheral drivers in application code(i.e. 
  *						    code will be based on direct access to peripheral registers 
@@ -35,12 +35,12 @@
   * @{
   */
 
-/** @addtogroup GW1NS2C
+/** @addtogroup GW1NS2K
   * @{
   */
 
-#ifndef __GW1NS2C_H
-#define __GW1NS2C_H
+#ifndef __GW1NS2K_H
+#define __GW1NS2K_H
 
 #ifdef __cplusplus
 	extern "C" {
@@ -94,7 +94,7 @@ typedef enum IRQn
   PendSV_IRQn                   = -2,     /*!< 14 Cortex-M3 Pend SV Interrupt                      */
   SysTick_IRQn                  = -1,     /*!< 15 Cortex-M3 System Tick Interrupt                  */
 
-/******  GW1NS-2C Specific Interrupt Numbers ************************************/
+/******  GW-1NS2K Specific Interrupt Numbers ************************************/
   UART0_IRQn                    = 0,       /* UART 0 RX and TX Combined Interrupt   */
   Spare1_IRQn                   = 1,       /* Undefined                             */
   UART1_IRQn                    = 2,       /* UART 1 RX and TX Combined Interrupt   */
@@ -132,7 +132,7 @@ typedef enum IRQn
   */
 
 #include "core_cm3.h"               /* Cortex-M3 processor and core peripherals         */
-#include "system_gw1ns2c.h"         /* GW1NS-2C System include file                      */
+#include "system_gw1ns2k.h"         /* GW1NS2K System include file                      */
 
 /** @addtogroup Exported_types
   * @{
@@ -253,6 +253,30 @@ typedef struct
   __O     uint32_t  ITOP;           /* Offset: 0xF04 ( /W) Watchdog Integration Test Output Set Register  */
 }WDOG_TypeDef;
 
+/*---------------------------- USB Type-C -------------------*/
+typedef struct
+{
+  __O  uint32_t TX_DATA;        /* Offset: 0x00 ( /W) Tx Data Register     */
+  __IO uint32_t TX_CTRL;        /* Offset: 0x04 (R/W) Tx Control Register  */
+  __IO uint32_t TX_STATUS;      /* Offset: 0x08 (R/W) Tx Status Register   */
+  __I  uint32_t RX_DATA;        /* Offset: 0x0C (R/ ) Rx Data Register     */
+  __IO uint32_t RX_CTRL;        /* Offset: 0x10 (R/W) Rx Control Register  */
+  __IO uint32_t RX_STATUS;      /* Offset: 0x14 (R/W) Rx Status Register   */
+  __IO uint32_t CTRL;           /* Offset: 0x18 (R/W) Control Register     */
+  union
+  {                             /* Reserved */
+    __I    uint32_t  INTSTATUS; /* Offset: 0x1C (R/ ) Interrupt Status Register */
+    __O    uint32_t  INTCLEAR;  /* Offset: 0x1C ( /W) Interrupt Clear Register  */
+  };
+}TYPEC_TypeDef;
+
+/*----------------------------- I2C --------------------------*/
+typedef struct
+{
+  __IO    uint32_t  CONTROL;     /* Offset: 0x00 (R/W) Control Register */
+  __IO    uint32_t  CONTROLC;    /* Offset: 0x04 (R/W)                  */
+}I2C_TypeDef;
+
 /*----------------------------- INT_MONITOR --------------------------*/
 typedef struct
 {
@@ -332,8 +356,10 @@ typedef struct
 #define WDOG_BASE         (APB1PERIPH_BASE + 0x8000)    /* !< WATCHDOG  Base Address  */
 
 /* APB2 Peripheral base address */
+#define TYPEC_BASE        (APB2PERIPH_BASE + 0x0000)    /* !< TYPE_C Base Address     */
 #define ADC_BASE          (APB2PERIPH_BASE + 0x0100)    /* !< ADC Base Address        */
 #define SPI_BASE          (APB2PERIPH_BASE + 0x0200)    /* !< SPI Base Address        */
+#define I2C_BASE          (APB2PERIPH_BASE + 0x0300)    /* !< I2C Base Address        */
 #define IMONITOR_BASE     (APB2PERIPH_BASE + 0x0500)    /* !< INT_MONITOR Base Address*/
 
 /* AHB Peripheral base address */
@@ -360,8 +386,10 @@ typedef struct
 #define GPIO0             ((GPIO_TypeDef   *) GPIO0_BASE)
 #define SYSCON            ((SYSCON_TypeDef *) SYSCTRL_BASE)
 
+#define TYPEC             ((TYPEC_TypeDef  *) TYPEC_BASE) 
 #define ADC               ((ADC_TypeDef  *) ADC_BASE)
 #define IMONITOR          ((IMONITOR_TypeDef  *) IMONITOR_BASE)               
+#define I2C               ((I2C_TypeDef  *) I2C_BASE)
 #define SPI               ((SPI_TypeDef  *) SPI_BASE)
 
 /**
@@ -522,6 +550,54 @@ typedef struct
 #define WDOG_ITOP_WDOGINT      ((uint32_t) 0x00000002)  /* Integration test WDOGRES value */
 
 /******************************************************************************/
+/*                             USB Type-C (TYPEC)                             */
+/******************************************************************************/
+/* bit definitions for TX_DATA register */
+#define TYPEC_TX_DATA         ((uint32_t) 0xFFFFFFFF)  /* TYPEC TX DATA         */
+
+/* bit definitions for TX_CTRL register */
+#define TYPEC_TX_CTRL_BEGIN   ((uint32_t) 0x00000001)  /* TYPEC TX CTRL begin   */
+#define TYPEC_TX_CTRL_END     ((uint32_t) 0x00000002)  /* TYPEC TX CTRL end     */
+
+/* bit definitions for TX_STATUS register */
+#define TYPEC_TX_STATUS_TACK  ((uint32_t) 0x00000001)  /* TYPEC TX STATUS tack  */
+#define TYPEC_TX_STATUS_READY ((uint32_t) 0x00000002)  /* TYPEC TX STATUS ready */
+#define TYPEC_TX_STATUS_TOE   ((uint32_t) 0x00000004)  /* TYPEC TX STATUS toe   */
+#define TYPEC_TX_STATUS_BUSY  ((uint32_t) 0x00000008)  /* TYPEC TX STATUS busy  */
+
+/* bit definitions for RX_DATA register */
+#define TYPEC_RX_DATA         ((uint32_t) 0xFFFFFFFF)  /* TYPEC RX DATA         */
+
+/* bit definitions for RX_STATUS register */
+#define TYPEC_RX_STATUS_READY ((uint32_t) 0x00000001)  /* TYPEC RX STATUS ready */
+#define TYPEC_RX_STATUS_REND  ((uint32_t) 0x00000002)  /* TYPEC RX STATUS rend  */
+#define TYPEC_RX_STATUS_ROE   ((uint32_t) 0x00000004)  /* TYPEC RX STATUS roe   */
+#define TYPEC_RX_STATUS_BUSY  ((uint32_t) 0x00000008)  /* TYPEC RX STATUS busy  */
+
+/* bit definitions for CTRL register */
+#define TYPEC_CTRL_MODE       ((uint32_t) 0x00000001)  /* TYPEC CTRL mode selected         */
+#define TYPEC_CTRL_PWR        ((uint32_t) 0x00000002)  /* TYPEC CTRL power supply selected */
+#define TYPEC_CTRL_RD         ((uint32_t) 0x00000004)  /* TYPEC CTRL rd                    */
+#define TYPEC_CTRL_RP         ((uint32_t) 0x00000008)  /* TYPEC CTRL rp                    */
+#define TYPEC_CTRL_TX_INT     ((uint32_t) 0x00000010)  /* Reserved : TYPEC CTRL Tx Interrupt enable */
+#define TYPEC_CTRL_RX_INT     ((uint32_t) 0x00000020)  /* Reserved : TYPEC CTRL Rx Interrupt enable */
+
+/* bit definitions for INTSTATUS register */
+#define TYPEC_INTSTATUS_TX    ((uint32_t) 0x00000001)  /* Reserved : TYPEC Tx interrupt status */
+#define TYPEC_INTSTATUS_RX    ((uint32_t) 0x00000002)  /* Reserved : TYPEC Rx interrupt status */
+
+/* bit definitions for INTCLEAR register */
+#define TYPEC_INTCLEAR_TX    ((uint32_t) 0x00000001)  /* Reserved : TYPEC Tx interrupt clear */
+#define TYPEC_INTCLEAR_RX    ((uint32_t) 0x00000002)  /* Reserved : TYPEC Rx interrupt clear */
+
+/******************************************************************************/
+/*                                   I2C                                      */
+/******************************************************************************/
+/* bit definitions for CONTROL/CONTROLC register */
+#define I2C_CR_SCL           ((uint32_t) 0x00000001)       /* I2C SCL */
+#define I2C_CR_SDA           ((uint32_t) 0x00000002)       /* I2C SDA */
+
+/******************************************************************************/
 /*                         INT MONITOR (IMONITOR)                             */
 /******************************************************************************/
 /* bit definitions for INTSTATUS register */
@@ -604,14 +680,14 @@ typedef struct
   */
 
 #ifdef USE_STDPERIPH_DRIVER
-	#include "gw1ns2c_conf.h"
+	#include "gw1ns2k_conf.h"
 #endif
 
 #ifdef __cplusplus
 }
 #endif
 
-#endif /* __GW1NS2C_H */
+#endif /* __GW1NS2K_H */
 
 /**
   * @}
