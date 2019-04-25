@@ -8,6 +8,7 @@ RM := rm -rf
 
 # All of the sources participating in the build are defined here
 -include sources.mk
+-include broadkey/src/subdir.mk
 -include USER/subdir.mk
 -include SYSTEM/subdir.mk
 -include STARTUP/subdir.mk
@@ -32,38 +33,38 @@ endif
 
 # Add inputs and outputs from these tool invocations to the build variables 
 SECONDARY_FLASH += \
-uart.bin \
+awsIoT_BKP.bin \
 
 SECONDARY_SIZE += \
-uart.siz \
+awsIoT_BKP.siz \
 
 
 # All Target
-all: uart.elf secondary-outputs
+all: awsIoT_BKP.elf secondary-outputs
 
 # Tool invocations
-uart.elf: $(OBJS) $(USER_OBJS)
+awsIoT_BKP.elf: $(OBJS) $(USER_OBJS)
 	@echo 'Building target: $@'
-	@echo 'Invoking: Cross ARM C Linker'
-	arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -T "C:\Users\Grant\Documents\Gowin\AWSIoT_ESP32_to_GW1NS2_2\trunk\GW1NS2\uart2esp32\gw1ns2c_flash.ld" -Xlinker --gc-sections -Wl,-Map,"uart.map" -o "uart.elf" $(OBJS) $(USER_OBJS) $(LIBS)
+	@echo 'Invoking: Cross ARM GNU C Linker'
+	arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -T "C:\Users\Grant\Documents\Gowin\AWSIoT_ESP32_to_GW1NS2\trunk\GW1NS2\uart2esp32\gw1ns2k_flash.ld" -Xlinker --gc-sections -L"C:\Users\Grant\Documents\Gowin\AWSIoT_ESP32_to_GW1NS2\trunk\GW1NS2\uart2esp32\broadkey\lib" -Wl,-Map,"awsIoT_BKP.map" -o "awsIoT_BKP.elf" $(OBJS) $(USER_OBJS) $(LIBS)
 	@echo 'Finished building target: $@'
 	@echo ' '
 
-uart.bin: uart.elf
+awsIoT_BKP.bin: awsIoT_BKP.elf
 	@echo 'Invoking: Cross ARM GNU Create Flash Image'
-	arm-none-eabi-objcopy -O binary "uart.elf"  "uart.bin"
+	arm-none-eabi-objcopy -O binary "awsIoT_BKP.elf"  "awsIoT_BKP.bin"
 	@echo 'Finished building: $@'
 	@echo ' '
 
-uart.siz: uart.elf
+awsIoT_BKP.siz: awsIoT_BKP.elf
 	@echo 'Invoking: Cross ARM GNU Print Size'
-	arm-none-eabi-size --format=berkeley "uart.elf"
+	arm-none-eabi-size --format=berkeley "awsIoT_BKP.elf"
 	@echo 'Finished building: $@'
 	@echo ' '
 
 # Other Targets
 clean:
-	-$(RM) $(OBJS)$(SECONDARY_FLASH)$(SECONDARY_SIZE)$(ASM_DEPS)$(S_UPPER_DEPS)$(C_DEPS) uart.elf
+	-$(RM) $(OBJS)$(SECONDARY_FLASH)$(SECONDARY_SIZE)$(ASM_DEPS)$(S_UPPER_DEPS)$(C_DEPS) awsIoT_BKP.elf
 	-@echo ' '
 
 secondary-outputs: $(SECONDARY_FLASH) $(SECONDARY_SIZE)

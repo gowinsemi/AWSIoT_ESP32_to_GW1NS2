@@ -13,11 +13,15 @@
  */
 
 /* Includes ------------------------------------------------------------------*/
-#include "gw1ns2c.h"
+#include "gw1ns2k.h"
 #include <string.h>
 #include <stdio.h>
 #include <stdlib.h>
-#include "gw1ns2c_gpio.h"
+#include "gw1ns2k_gpio.h"
+#include "broadkey_demo_app.h"
+
+extern int __puf;
+extern int __ac;
 
 uint8_t Key_Scan(GPIO_TypeDef* GPIOx,uint16_t GPIO_Pin);
 uint8_t GPIO_ReadInputDataBit(GPIO_TypeDef* GPIOx, uint16_t GPIO_Pin);
@@ -30,29 +34,131 @@ void Delay(__IO uint32_t nCount)//25M 1s = 8333000
 	for(; nCount != 0; nCount--);
 }
 
-const char SSID[]	=	"iPhone\n";
-const char PW[]		=	"iphone123\n";
-const char URL[]	=	"a2pb2f9st3ros6-ats.iot.us-east-2.amazonaws.com\n";
-const char THING[]	=	"ESP32\n";
-const char ROOTCA[]	=	"-----BEGIN CERTIFICATE-----\n\
--------------------REPLACE WITH CERT!!!-------------------------\n\
-...
--------------------REPLACE WITH CERT!!!-------------------------\n\
+static const char SSID[]	=	"gnarlygrey\n";
+static const char PW[]		=	"67mercedes230\n";
+static const char URL[]	=	"a2pb2f9st3ros6-ats.iot.us-east-2.amazonaws.com\n";
+static const char THING[]	=	"ESP32_BKP_2\n";
+static const char ROOTCA[]	=	"-----BEGIN CERTIFICATE-----\n\
+MIIDQTCCAimgAwIBAgITBmyfz5m/jAo54vB4ikPmljZbyjANBgkqhkiG9w0BAQsF\n\
+ADA5MQswCQYDVQQGEwJVUzEPMA0GA1UEChMGQW1hem9uMRkwFwYDVQQDExBBbWF6\n\
+b24gUm9vdCBDQSAxMB4XDTE1MDUyNjAwMDAwMFoXDTM4MDExNzAwMDAwMFowOTEL\n\
+MAkGA1UEBhMCVVMxDzANBgNVBAoTBkFtYXpvbjEZMBcGA1UEAxMQQW1hem9uIFJv\n\
+b3QgQ0EgMTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBALJ4gHHKeNXj\n\
+ca9HgFB0fW7Y14h29Jlo91ghYPl0hAEvrAIthtOgQ3pOsqTQNroBvo3bSMgHFzZM\n\
+9O6II8c+6zf1tRn4SWiw3te5djgdYZ6k/oI2peVKVuRF4fn9tBb6dNqcmzU5L/qw\n\
+IFAGbHrQgLKm+a/sRxmPUDgH3KKHOVj4utWp+UhnMJbulHheb4mjUcAwhmahRWa6\n\
+VOujw5H5SNz/0egwLX0tdHA114gk957EWW67c4cX8jJGKLhD+rcdqsq08p8kDi1L\n\
+93FcXmn/6pUCyziKrlA4b9v7LWIbxcceVOF34GfID5yHI9Y/QCB/IIDEgEw+OyQm\n\
+jgSubJrIqg0CAwEAAaNCMEAwDwYDVR0TAQH/BAUwAwEB/zAOBgNVHQ8BAf8EBAMC\n\
+AYYwHQYDVR0OBBYEFIQYzIU07LwMlJQuCFmcx7IQTgoIMA0GCSqGSIb3DQEBCwUA\n\
+A4IBAQCY8jdaQZChGsV2USggNiMOruYou6r4lK5IpDB/G/wkjUu0yKGX9rbxenDI\n\
+U5PMCCjjmCXPI6T53iHTfIUJrU6adTrCC2qJeHZERxhlbI1Bjjt/msv0tadQ1wUs\n\
+N+gDS63pYaACbvXy8MWy7Vu33PqUXHeeE6V/Uq2V8viTO96LXFvKWlJbYK8U90vv\n\
+o/ufQJVtMVT8QtPHRh8jrdkPSHCa2XV4cdFyQzR1bldZwgJcJmApzyMZFo6IQ6XU\n\
+5MsI+yMRQ+hDKXJioaldXgjUkK642M4UwtBV8ob2xJNDd2ZhwLnoQdeXeGADbkpy\n\
+rqXRfboQnoZsG4q5WTP468SQvvG5\n\
 -----END CERTIFICATE-----\r";
 
-const char DEVICECERT[]	=	"-----BEGIN CERTIFICATE-----\n\
--------------------REPLACE WITH CERT!!!-------------------------\n\
-...
--------------------REPLACE WITH CERT!!!-------------------------\n\
+//ESP32_BKP_1 Cert
+/*static const char DEVICECERT[]	=	"-----BEGIN CERTIFICATE-----\n\
+MIIDWTCCAkGgAwIBAgIUW8csS50L0Ypc6fB3fbLGV5np9xYwDQYJKoZIhvcNAQEL\n\
+BQAwTTFLMEkGA1UECwxCQW1hem9uIFdlYiBTZXJ2aWNlcyBPPUFtYXpvbi5jb20g\n\
+SW5jLiBMPVNlYXR0bGUgU1Q9V2FzaGluZ3RvbiBDPVVTMB4XDTE5MDQxNzE4MzUy\n\
+NFoXDTQ5MTIzMTIzNTk1OVowHjEcMBoGA1UEAwwTQVdTIElvVCBDZXJ0aWZpY2F0\n\
+ZTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBANsfNkyWKZTHlj8RmiRK\n\
+eB3j33Q072y11Qbb3t44GkGLpFa03eMLqyfd6/X+0oEgFag+x0MiwgZQraUPBGgE\n\
+HnhTdZf8/0peQ7bI0d3OLBE2py77ytB+RQ9LwtPuMV+x2Wl5H9ZKtRkD7G/o6hJO\n\
+HBLbGHZTZSWkHHqIk6szBsE4ixjzlf1Uu8spnTLnp8DqYez1tAbgVgZNrMMcqjnY\n\
+PIw2QUt7CCt5rSGCUJn941rs+lfK4HDzKznCtpsAYf7tPa9ZYt4QcuadEkhSb6r2\n\
+SwEdSbTV1F0VXm99MY/R1msgE64nzAmVE2NXF6qM8xO1Y3qnMON7YheVMPpqb1mL\n\
+oyUCAwEAAaNgMF4wHwYDVR0jBBgwFoAUCVMn21+uFWPLdFDG5iGhx4BoftowHQYD\n\
+VR0OBBYEFCn3k95X4au1jlCBbBNY744aa00RMAwGA1UdEwEB/wQCMAAwDgYDVR0P\n\
+AQH/BAQDAgeAMA0GCSqGSIb3DQEBCwUAA4IBAQASevnrGd0Y4alBdPIXS9m1qnz/\n\
+O3ujf8ex/mVU2m9lD0Za4QUcAj6XJLu90v/a0kSLm9E9LsivBUrDwwEFEBZ+nBCs\n\
+VbAWQz42ejDAdYukmo5RfdRqgRUVs7Ryp71fHt0ckMETzbkzqVZeVgZw5ZeZZwoq\n\
+cJNcnKGLu0jWUHuVl5Bm+ZJGp9mMyqZbLWY+UNVYzZoXmjeEKGv2PSBlKPbiOHNa\n\
+ixrfomhA6C86KDVl2sC/jbFX4wwz1k0s2xSZgMJP0Mk7G6NKgGtDf6bC9Hd3XOpN\n\
+PPbve8C9Ol3Oa+puTulId6XyAwFS7y5YxnZdeVDPJ9buh9FfakMWWp+SW4uT\n\
 -----END CERTIFICATE-----\r";
+*/
+//ESP32_BKP_2 Cert
+static const char DEVICECERT[]	=	"-----BEGIN CERTIFICATE-----\n\
+MIIDWjCCAkKgAwIBAgIVAJxQmaRuW0bx3AL8RJQwIjG0Pe/PMA0GCSqGSIb3DQEB\n\
+CwUAME0xSzBJBgNVBAsMQkFtYXpvbiBXZWIgU2VydmljZXMgTz1BbWF6b24uY29t\n\
+IEluYy4gTD1TZWF0dGxlIFNUPVdhc2hpbmd0b24gQz1VUzAeFw0xOTA0MjQxMzA0\n\
+MjRaFw00OTEyMzEyMzU5NTlaMB4xHDAaBgNVBAMME0FXUyBJb1QgQ2VydGlmaWNh\n\
+dGUwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDvOJzzbbKPs1WlDqhk\n\
+PuUlwyQLgKT3Jirt7k+vnSpySrV87MfazOi/xrbg7YLFpxjYcJTlu/RM5o07ZXuF\n\
+dxI6iE/uLvsr7/2DaUjanZgq/jksvd7cYVMW2NEaO6GvDTyedQ3MeA22RDi9xmK9\n\
+xf+lmD5mjTOfmLDtJxj+8nXR4+6fMkmrKsH9YqlDBRCArBwi+f7yeHmzhqs4uuxk\n\
+X2IL4x/OAhC9Z/+QNsAEpDp+OqOu/56LkeoSNEQONjAvlYBtP8rO51jK3hhCZYzu\n\
+XGHo4SNEnN3VCV1k6ZWMX8PPBN5G66/8wq7cZsP+mcKOdZkMVt/Coeg5QAvWC1PJ\n\
+0bU7AgMBAAGjYDBeMB8GA1UdIwQYMBaAFMO/+ageSRliZTpTjeNkZwFcxnpbMB0G\n\
+A1UdDgQWBBSbmNmaWTDnBRBlY9CpBib105adhDAMBgNVHRMBAf8EAjAAMA4GA1Ud\n\
+DwEB/wQEAwIHgDANBgkqhkiG9w0BAQsFAAOCAQEAVWuPhkyEX96A1Uv2Dh88rtPM\n\
+X5Xt0+zeGBg3L6SfkLc9N3SvgASPEoUtkX/69puza7vBIq2DZrBH1E0g+CmKFJ8E\n\
+R9LzS3Xkwl1MGzuU9sg0G20IZRVnCeyJ7wp0/r38k29cZCD7uCkajzjsr021fno4\n\
+T1ruOIamo/m3lzWiIZMFbgAuGjaUpUaLF1K7o9Dx3NQy+8R05iVJ7LoAe+H0AlwO\n\
+pVTdas8/ZHbGZd6mIv7Y+dWszWdsPAY/bgz855+/ouQkpxMHxW2qe0q5BjwV+Flb\n\
+4ojo8zd3lOPeGMgF07s0ECSybUhduD8GiAYk4sLjJ/o3tVcg+Yv76+cIhOMz4g==\n\
+-----END CERTIFICATE-----\r";
+//ESP32_BKP_1 Private Key
+/*static const char DEVICEKEY []	=	"-----BEGIN RSA PRIVATE KEY-----\n\
+MIIEowIBAAKCAQEA2x82TJYplMeWPxGaJEp4HePfdDTvbLXVBtve3jgaQYukVrTd\n\
+4wurJ93r9f7SgSAVqD7HQyLCBlCtpQ8EaAQeeFN1l/z/Sl5DtsjR3c4sETanLvvK\n\
+0H5FD0vC0+4xX7HZaXkf1kq1GQPsb+jqEk4cEtsYdlNlJaQceoiTqzMGwTiLGPOV\n\
+/VS7yymdMuenwOph7PW0BuBWBk2swxyqOdg8jDZBS3sIK3mtIYJQmf3jWuz6V8rg\n\
+cPMrOcK2mwBh/u09r1li3hBy5p0SSFJvqvZLAR1JtNXUXRVeb30xj9HWayATrifM\n\
+CZUTY1cXqozzE7Vjeqcw43tiF5Uw+mpvWYujJQIDAQABAoIBAEnuXgO5Jo5sSOU+\n\
+qyNTfPOYzuwGcEHdl+KYjLmtdC5pTylyHOteJIFu/w4gzCWFDcmWZOTh9VTsI6pt\n\
+Rq9RtHYksqh1VC1jYLVrTGPqDDRCnGXdzrBJ6kMe7L1UwJPpDdHobDWBP1kRWdTo\n\
+YRGMCSzTf41s1dO9a15sdmZs8Pp/2Wx4Srhe49jOohGnHjj/yjOrBWixQa3iQrPa\n\
+ukohoCBqKoHrcxeebIF3Yxf7HrKec/F/lvyOt/Zo4cY2nVN/aQFDNC65gbMCUJRp\n\
+6Rq9xp0M5sexPBjMWX5v+dzKmU620TxhmDge7OIlJ7UfJ0G7Bff409Bnj4VE3xSx\n\
+ev4I1IECgYEA+IT5yoR3Xug9a3HyOgLWHmvBPThPvA2AR6FdJChN9kBlgBnmUggP\n\
+ChEK8Bd+3uRkxSLAsaz7AwBSOhSWZS3F4iULpWQK5PyuCOzYHiNrQonj10EGtI7E\n\
+flwXUmosaN+cXQzCzq5i7J1An4IurKOxW63HwMRqp7Cxs0FiCxOhV7sCgYEA4be0\n\
+/OxXqgq4YwYhs8LrGobjCgdbIfJ1ZluSiDwxPcBlj2jl+SjFWzFkzOG6xbF4kmID\n\
+C51fpz0iZ/lZpURo+PxE+IulaRd0vMacD4fVe76AKfiIUbRI4ix7E/o/qUTv5LfG\n\
+jqf8vqg9oDxLbDdOaEZnRExRMS06gMLYDEpREp8CgYBcwOSp3T7gQTWLQH/zftOD\n\
+jxwUSUwZF8Dk+yjUMebHHcnEQeZgf3l9fFbkvSAw+HVTzmC076bPu/L0knJ/WNIe\n\
+UU1DcU9Pn68kzaDrvrRtpSFQWYizIwXbU2uw6segbLTjVbvvf86UGSzhW6kn7gBo\n\
+AzgmjihwZdYs3R5GnBD/uQKBgDMVUHCtTGm/Y1uF17rHMk4emON8JrPYG5m+v7r1\n\
+ZG+FS3bZVrK8921cEGQN8icrsw3uAKJwS2WeAFtno1Iz2U4ASdu2Pwk5tcHDcS5S\n\
+n44R3w+gn7leA+CsEG7FBANbBq/Mp7NBcYH0sX3CJ4+mNKiExno+i2GFyue5MQwX\n\
+BaIhAoGBALNIo/9KmsemBhf+h/6XflzHAPtdMQ9zVaGhlRr7ARuTxpLvDZiMZ/xb\n\
+BasU4jSiVCRdLvoTUEAFn5IszpttxnMjnBUwMepvHh+fzBITcU3m9jL4//sR7O8V\n\
+IPMyE9Q3Scq8N/3nckvaWtboA+H2kIkkhgQRoHtnpUz+tPAnQTPa\n\
+-----END RSA PRIVATE KEY-----\r";*/
+//ESP32_BKP_2 Private Key
+/*static const char DEVICEKEY []	=	"-----BEGIN RSA PRIVATE KEY-----\n\
+MIIEowIBAAKCAQEA7zic822yj7NVpQ6oZD7lJcMkC4Ck9yYq7e5Pr50qckq1fOzH\n\
+2szov8a24O2CxacY2HCU5bv0TOaNO2V7hXcSOohP7i77K+/9g2lI2p2YKv45LL3e\n\
+3GFTFtjRGjuhrw08nnUNzHgNtkQ4vcZivcX/pZg+Zo0zn5iw7ScY/vJ10ePunzJJ\n\
+qyrB/WKpQwUQgKwcIvn+8nh5s4arOLrsZF9iC+MfzgIQvWf/kDbABKQ6fjqjrv+e\n\
+i5HqEjREDjYwL5WAbT/KzudYyt4YQmWM7lxh6OEjRJzd1QldZOmVjF/DzwTeRuuv\n\
+/MKu3GbD/pnCjnWZDFbfwqHoOUAL1gtTydG1OwIDAQABAoIBADSC5uEAqXul0B0F\n\
+VK18qOxbI6RqvsuJ006bS16vT0v7Xk9n4o8C/+xpAGfrexNMFMYeIHE1ivD+gu4Q\n\
+3sZzVssGdRVBttz0N2ALUnS6t1Zoq8BIhY02x/hx66SohltYun/GDhteFxR1cUcn\n\
+LzGdLvr4qmn0gOp9qAjG1lPQgVBrHacOav46o+xtj232NOnkMhnbuv506jtuRgCn\n\
+EDy61pSXKE1SZ5gb/HR0FWWJVlXLIviPKaiPlpqu0YxZYGWIoaoqd9l0JFPn3G9H\n\
+/hCqG4r3LoAkdTLpwryQkXFvSe0Vyg4wSEFT3pXPsS2J71hiYTyIGbCnOwN+qv59\n\
+MkWrqIECgYEA+DkHVvIxvqyaZonrpo4vZSNWKunUk2AHL/yFmFGq/Wikv1zzit+E\n\
+954kCJ0ttc5DhlwsDm5o+GXIXcMILHYT1haMfsdim2ul2ifHkvB+MW31ykQLDrXd\n\
+kQxuUpi9KHLHy5Ki8o7U3ZDE9UezcYTiG9HgsDOCuVXUAB+FZ1rCn6ECgYEA9rdi\n\
+HKv9I4FxdXKQ6Pd8Us+z+JTd+HiS7Hdya76DygtQXpUY0+gk7xiJV1FG+N59s/JN\n\
+tFl/qBF44sj5eF97D1RQP9LGKIh3H9T+wf8lZs6ma0WiDMZtgP7XnitSHQIzVi7+\n\
+NM5E8Z3yeQbsEQFJ3CGPc2qEzIo0BKVCLpSbl1sCgYAHFiG2gr2W0vipesCGhcKm\n\
+oYahPQG7n181KIFr4tD94RHrAK1XRqBWLWab9FjMuvHEkTcUxmQqy0UYICxIkKpq\n\
+T0R9jhWrmDwo6T/SWxlPMfN1bdHe/qQvsuonY4Lq97PqhOowAJHlLW/iDMT7ta56\n\
+2tgOT7oormGaC0xUsguiYQKBgQDFxB57iUpzibGfSeTrOmeIIkLLwtlj8ZMkxmMM\n\
+Bz2xWfxktPOf+fiRSIPfYKGZoQ/2jQbIyO1Rlh/m+t8vJKqKkTV608RQfYOwGpbU\n\
+f2hFzuUMHFdYEj95Jc9FVMiPxFHOhgDz51zQqaHSbkARKY1BTg2loP8uzqIAD1DL\n\
+8gf+/QKBgH1xONpRG2l54jJPccgNH1IFu/3pJ81uoPy1kW2VdUUou8eyb5PgO6dZ\n\
+HWz8yOpJD9ULczTLp9ifrgXvAbzu/EZ8QptFIvfbz5axGTjiuQuGep+meQ0fsyWf\n\
+8giGFge0K/4XgwdKEqJUavS6c+q04kHhSSPTeBQF70tVqwF8N6Dx\n\
+-----END RSA PRIVATE KEY-----\r";*/
 
-const char DEVICEKEY []	=	"-----BEGIN RSA PRIVATE KEY-----\n\
--------------------REPLACE WITH CERT!!!-------------------------\n\
-...
--------------------REPLACE WITH CERT!!!-------------------------\n\
------END RSA PRIVATE KEY-----\r";
-
-char buff[20];
 volatile uint32_t counter;
 
 int main()
@@ -60,16 +166,20 @@ int main()
   int num=0;
   char c;
   char user_input[100];
+  uint32_t i;
+
+    uint8_t * sram_puf = (uint8_t *)&__puf;
+
+    uint8_t * sram_ac = (uint8_t *)&__ac;
 	
 	//Init System
 	SystemInit();
-	
+
   //Init Uart
   UartInit();
   UART_SendString(UART0,"\nUart Initial finished\n");
   //UART_SendString(UART0,"\nTimer Initial:\n");
 
-  /* Initial all register to zero */
   GPIO0->DATA = 0;
   GPIO0->DATAOUT = 0;
   GPIO0->OUTENSET = 0;
@@ -92,6 +202,14 @@ int main()
 	GPIO0->OUTENSET = 0xFFFFFFEF;
 	GPIO0->OUTENCLR = 0x00000080;
 
+
+
+	//broadkey_demo_app(sram_puf, sram_ac);
+
+///////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////
+
 	
    //Dispaly the message
    counter=0;
@@ -109,12 +227,11 @@ int main()
    //int DONE = 0;
    while(num<9)
    {
-       int i=0;
+       i=0;
        while(c != '\n')
        {
     	   c = UART_ReceiveChar(UART0);
     	   user_input[i] = c;
-    	   //UART_SendString(UART0, &c);//int2str(num,buff,10));
     	   i++;
        }
 
@@ -159,16 +276,25 @@ int main()
        }
        else if((strcmp("8\n",user_input)==0) && (num==8))
        {
-    	   UART_SendString(UART0, DEVICEKEY);
+    	   //UART_SendString(UART0, DEVICEKEY);
+    	   broadkey_demo_app(sram_puf, sram_ac);
     	   num=9;
     	   //DONE=1;
        }
    }
 
+
+		GPIO_SetBit(GPIO0, GPIO_Pin_0 | GPIO_Pin_1 | GPIO_Pin_2 | GPIO_Pin_3);
+		GPIO_ResetBit(GPIO0, GPIO_Pin_1);
+		GPIO_ResetBit(GPIO0, GPIO_Pin_3);
+
+
+
+
 //UART_SendString(UART0, "Sending Buttons... Receiving LEDs\n");
 //char* BUTTON[4];
 char buffer[4];
-int i=0;
+i=0;
 int debounce=0;
 //UART_SendString(UART0, "test");
   while(1)

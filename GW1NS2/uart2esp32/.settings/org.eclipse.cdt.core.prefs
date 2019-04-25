@@ -1,4 +1,9 @@
 eclipse.preferences.version=1
+environment/project/ilg.gnuarmeclipse.managedbuild.cross.config.elf.debug.1897968767/PATH/delimiter=;
+environment/project/ilg.gnuarmeclipse.managedbuild.cross.config.elf.debug.1897968767/PATH/operation=replace
+environment/project/ilg.gnuarmeclipse.managedbuild.cross.config.elf.debug.1897968767/PATH/value=C\:\\ProgramData\\Oracle\\Java\\javapath;C\:\\Windows\\system32;C\:\\Windows;C\:\\Windows\\System32\\Wbem;C\:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C\:\\Gowin\\eclipse_tools_181108a\\eclipse_tools_181108a\\eclipse_tools\\tools\\GNU Tools ARM Embedded\\5.4 2016q2\\bin;C\:\\Gowin\\eclipse_tools_181108a\\eclipse_tools_181108a\\eclipse_tools\\tools\\GNU MCU Eclipse\\Build Tools\\2.11-20180428-1604\\bin
+environment/project/ilg.gnuarmeclipse.managedbuild.cross.config.elf.debug.1897968767/append=true
+environment/project/ilg.gnuarmeclipse.managedbuild.cross.config.elf.debug.1897968767/appendContributed=true
 environment/project/ilg.gnuarmeclipse.managedbuild.cross.config.elf.debug.350916634/PATH/delimiter=;
 environment/project/ilg.gnuarmeclipse.managedbuild.cross.config.elf.debug.350916634/PATH/operation=replace
 environment/project/ilg.gnuarmeclipse.managedbuild.cross.config.elf.debug.350916634/PATH/value=C\:\\ProgramData\\Oracle\\Java\\javapath;C\:\\Windows\\system32;C\:\\Windows;C\:\\Windows\\System32\\Wbem;C\:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C\:\\Gowin\\eclipse_tools_181108a\\eclipse_tools_181108a\\eclipse_tools\\tools\\GNU Tools ARM Embedded\\5.4 2016q2\\bin;C\:\\Gowin\\eclipse_tools_181108a\\eclipse_tools_181108a\\eclipse_tools\\tools\\GNU MCU Eclipse\\Build Tools\\2.11-20180428-1604\\bin
