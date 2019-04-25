@@ -3,26 +3,26 @@
  *
  * 		Copyright (C) 2014-2018 Gowin Semiconductor Technology Co.,Ltd.
  * 		
- * @file			gw1ns2c_adc.h
+ * @file		gw1ns2k_adc.h
  * @author		Embedded Development Team
  * @version		V1.0.0
- * @date			2018-5-1 09:00:00
- * @brief			This file contains all the functions prototypes for the ADC firmware library.
+ * @date		2018-5-1 09:00:00
+ * @brief		This file contains all the functions prototypes for the ADC firmware library.
  ******************************************************************************************
  */
 
 /* Define to prevent recursive inclusion -------------------------------------*/
-#ifndef __GW1NS2C_ADC_H
-#define __GW1NS2C_ADC_H
+#ifndef __GW1NS2K_ADC_H
+#define __GW1NS2K_ADC_H
 
 #ifdef __cplusplus
  extern "C" {
 #endif
 
 /* Includes ------------------------------------------------------------------*/
-#include "gw1ns2c.h"
+#include "gw1ns2k.h"
 
-/** @addtogroup GW1NS2C_StdPeriph_Driver
+/** @addtogroup GW1NS2K_StdPeriph_Driver
   * @{
   */
 
@@ -142,7 +142,7 @@ extern uint32_t ADC_ReadData(void);
 }
 #endif
 
-#endif /* __GW1NS2C_ADC_H */
+#endif /* __GW1NS2K_ADC_H */
 
 /**
   * @}
@@ -153,3 +153,4 @@ extern uint32_t ADC_ReadData(void);
   */ 
 
 /************************GowinSemiconductor******END OF FILE*******************/
+

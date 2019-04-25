@@ -3,26 +3,26 @@
  *
  * 		Copyright (C) 2014-2018 Gowin Semiconductor Technology Co.,Ltd.
  * 		
- * @file			gw1ns2c_uart.h
+ * @file		gw1ns2k_uart.h
  * @author		Embedded Development Team
  * @version		V1.0.0
- * @date			2018-5-1 09:00:00
- * @brief			This file contains all the functions prototypes for the UART firmware library.
+ * @date		2018-5-1 09:00:00
+ * @brief		This file contains all the functions prototypes for the UART firmware library.
  ******************************************************************************************
  */
 
 /* Define to prevent recursive inclusion -------------------------------------*/
-#ifndef __GW1NS2C_UART_H
-#define __GW1NS2C_UART_H
+#ifndef __GW1NS2K_UART_H
+#define __GW1NS2K_UART_H
 
 #ifdef __cplusplus
  extern "C" {
 #endif
 
 /* Includes ------------------------------------------------------------------*/
-#include "gw1ns2c.h"
+#include "gw1ns2k.h"
 
-/** @addtogroup GW1NS2C_StdPeriph_Driver
+/** @addtogroup GW1NS2K_StdPeriph_Driver
   * @{
   */
 
@@ -230,7 +230,7 @@ extern void UART_ClrHSTM(UART_TypeDef* UARTx);
 }
 #endif
 
-#endif /* __GW1NS2C_UART_H */
+#endif /* __GW1NS2K_UART_H */
 
 /**
   * @}

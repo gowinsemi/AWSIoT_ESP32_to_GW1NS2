@@ -3,16 +3,16 @@
  *
  * 		Copyright (C) 2014-2018 Gowin Semiconductor Technology Co.,Ltd.
  * 		
- * @file			gw1ns2c_lcd1602.c
+ * @file		gw1ns2k_lcd1602.c
  * @author		Embedded Development Team
  * @version		V1.0.0
- * @date			2018-5-1 09:00:00
- * @brief			This file contains all the functions prototypes for LCD1602 Driver.
+ * @date		2018-5-1 09:00:00
+ * @brief		This file contains all the functions prototypes for LCD1602 Driver.
  ******************************************************************************************
  */
 
-#include "gw1ns2c_lcd1602.h"
-#include "gw1ns2c_gpio.h"
+#include "gw1ns2k_lcd1602.h"
+#include "gw1ns2k_gpio.h"
 
 //Declaraction
 static void Delay_ms(__IO uint32_t delay_s);
@@ -123,3 +123,4 @@ static void Lcd_Disp_Char(uint8_t x,uint8_t y,uint8_t dat)
     Lcd_Write_Cmd(address);
     Lcd_Write_Dat(dat);
 }
+
