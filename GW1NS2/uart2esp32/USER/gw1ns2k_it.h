@@ -3,24 +3,24 @@
  *
  * 		Copyright (C) 2014-2018 Gowin Semiconductor Technology Co.,Ltd.
  * 		
- * @file			gw1ns2c_it.h
+ * @file		gw1ns2k_it.h
  * @author		Embedded Development Team
  * @version		V1.0.0
- * @date			2018-5-1 09:00:00
- * @brief			This file contains the headers of the interrupt handlers.
+ * @date		2018-5-1 09:00:00
+ * @brief		This file contains the headers of the interrupt handlers.
  ******************************************************************************************
  */
 
 /* Define to prevent recursive inclusion -------------------------------------*/
-#ifndef __GW1NS2C_IT_H
-#define __GW1NS2C_IT_H
+#ifndef __GW1NS2K_IT_H
+#define __GW1NS2K_IT_H
 
 #ifdef __cplusplus
 	extern "C" {
 #endif
 
 /* Includes ------------------------------------------------------------------*/
-#include "gw1ns2c.h"
+#include "gw1ns2k.h"
 
 /* Exported types ------------------------------------------------------------*/
 
@@ -53,7 +53,7 @@ void TIMER1_Handler(void);
 }
 #endif
 
-#endif /* __GW1NS2C_IT_H */
+#endif /* __GW1NS2K_IT_H */
 
 /*************************GowinSemiconductor*****END OF FILE*********************/
 

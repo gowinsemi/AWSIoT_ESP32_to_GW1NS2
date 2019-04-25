@@ -3,20 +3,20 @@
  *
  * 		Copyright (C) 2014-2018 Gowin Semiconductor Technology Co.,Ltd.
  * 		
- * @file			gw1ns2c_it.c
+ * @file		gw1ns2k_it.c
  * @author		Embedded Development Team
  * @version		V1.0.0
- * @date			2018-5-1 09:00:00
- * @brief			Main Interrupt Service Routines.
- * 						This file provides template for all exceptions handler and
- * 						peripherals interrupt service routine.
+ * @date		2018-5-1 09:00:00
+ * @brief		Main Interrupt Service Routines.
+ * 				This file provides template for all exceptions handler and
+ * 				peripherals interrupt service routine.
  ******************************************************************************************
  */
 
 /* Includes ------------------------------------------------------------------*/
-#include "gw1ns2c_it.h"
+#include "gw1ns2k_it.h"
 
-/** @addtogroup GW1NS2C_StdPeriph_Template
+/** @addtogroup GW1NS2K_StdPeriph_Template
   * @{
   */
 
@@ -134,10 +134,10 @@ void SysTick_Handler(void)
 }
 
 /******************************************************************************/
-/*                 GW1NS2C Peripherals Interrupt Handlers                     */
+/*                 GW1NS2K Peripherals Interrupt Handlers                     */
 /*  Add here the Interrupt Handler for the used peripheral(s) (XXX), for the  */
 /*  available peripheral interrupt handler's name please refer to the startup */
-/*  file (startup_gw1ns2c.s).                                                 */
+/*  file (startup_gw1ns2k.s).                                                 */
 /******************************************************************************/
 
 /**
