@@ -2,12 +2,12 @@
 // *
 // 		(C) COPYRIGHT 2014-2018 Gowin Semiconductor Technology Co.,Ltd.
 // *
-// * File Name	:	startup_gw1ns2c.s
+// * File Name	:	startup_gw1ns2k.s
 // * Author		:	Embedded Development Team
 // * Version		:	V1.0.0
 // * Date		:	2018-5-1 09:00:00
-// * Description	:	GW1NS-2C Devices vector table for GCC toolchain
-// *                 Should use with GNU GCC Tools for GW1NS-2C
+// * Description	:	GW1NS-2 Devices vector table for GCC toolchain
+// *                 Should use with GNU GCC Tools for GW-1NS2K
 // *					This module performs:
 // *					- Set the initial SP
 // *					- Set the initial PC == Reset_Handler
