@@ -34,8 +34,8 @@ void Delay(__IO uint32_t nCount)//25M 1s = 8333000
 	for(; nCount != 0; nCount--);
 }
 
-const char SSID[]	=	"gnarlygrey\n";
-const char PW[]		=	"67mercedes230\n";
+const char SSID[]	=	"iPhone\n";
+const char PW[]		=	"iphone123\n";
 static const char URL[]	=	"a2pb2f9st3ros6-ats.iot.us-east-2.amazonaws.com\n";
 static const char THING[]	=	"ESP32_BKP_1\n";
 static const char ROOTCA[]	=	"-----BEGIN CERTIFICATE-----\n\
