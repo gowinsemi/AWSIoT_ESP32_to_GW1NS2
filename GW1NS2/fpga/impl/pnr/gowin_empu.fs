@@ -3,7 +3,7 @@
 //File Title: Bitstream file
 //GOWIN Version: v1.9.0Beta
 //Part Number: GW1NS-UX2CLQ144C5/I4
-//Created Time: Mon Apr 29 15:30:35 2019
+//Created Time: Mon Apr 29 15:52:31 2019
 0010000000011011
 1111111111111111
 1010010111000011
