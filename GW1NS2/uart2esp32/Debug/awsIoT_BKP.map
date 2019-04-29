@@ -2156,7 +2156,9 @@ END GROUP
  .rodata        0x0000a1b4       0x37 ./broadkey/src/iid_print.o
  *fill*         0x0000a1eb        0x1 
  .rodata.SSID   0x0000a1ec        0xc ./USER/main.o
+                0x0000a1ec                SSID
  .rodata.PW     0x0000a1f8        0xf ./USER/main.o
+                0x0000a1f8                PW
  *fill*         0x0000a207        0x1 
  .rodata.URL    0x0000a208       0x30 ./USER/main.o
  .rodata.THING  0x0000a238        0xd ./USER/main.o
@@ -2165,89 +2167,90 @@ END GROUP
                 0x0000a248      0x4a5 ./USER/main.o
  *fill*         0x0000a6ed        0x3 
  .rodata.DEVICECERT
-                0x0000a6f0      0x4c9 ./USER/main.o
- *fill*         0x0000abb9        0x3 
- .rodata        0x0000abbc       0xd9 ./USER/main.o
- *fill*         0x0000ac95        0x3 
+                0x0000a6f0      0x4c5 ./USER/main.o
+ *fill*         0x0000abb5        0x3 
+ .rodata        0x0000abb8       0xd9 ./USER/main.o
+ *fill*         0x0000ac91        0x3 
  .rodata.g28887959
-                0x0000ac98       0x10 C:\Users\Grant\Documents\Gowin\AWSIoT_ESP32_to_GW1NS2\trunk\GW1NS2\uart2esp32\broadkey\lib\libiidbroadkey.a(iidbroadkey_merged.c.obj)
+                0x0000ac94       0x10 C:\Users\Grant\Documents\Gowin\AWSIoT_ESP32_to_GW1NS2\trunk\GW1NS2\uart2esp32\broadkey\lib\libiidbroadkey.a(iidbroadkey_merged.c.obj)
  .rodata.g73422977
-                0x0000aca8        0x7 C:\Users\Grant\Documents\Gowin\AWSIoT_ESP32_to_GW1NS2\trunk\GW1NS2\uart2esp32\broadkey\lib\libiidbroadkey.a(iidbroadkey_merged.c.obj)
+                0x0000aca4        0x7 C:\Users\Grant\Documents\Gowin\AWSIoT_ESP32_to_GW1NS2\trunk\GW1NS2\uart2esp32\broadkey\lib\libiidbroadkey.a(iidbroadkey_merged.c.obj)
  .rodata.g7388942
-                0x0000acaf       0xc0 C:\Users\Grant\Documents\Gowin\AWSIoT_ESP32_to_GW1NS2\trunk\GW1NS2\uart2esp32\broadkey\lib\libiidbroadkey.a(iidbroadkey_merged.c.obj)
- *fill*         0x0000ad6f        0x1 
+                0x0000acab       0xc0 C:\Users\Grant\Documents\Gowin\AWSIoT_ESP32_to_GW1NS2\trunk\GW1NS2\uart2esp32\broadkey\lib\libiidbroadkey.a(iidbroadkey_merged.c.obj)
+ *fill*         0x0000ad6b        0x1 
  .rodata.g73878249
-                0x0000ad70       0xb0 C:\Users\Grant\Documents\Gowin\AWSIoT_ESP32_to_GW1NS2\trunk\GW1NS2\uart2esp32\broadkey\lib\libiidbroadkey.a(iidbroadkey_merged.c.obj)
+                0x0000ad6c       0xb0 C:\Users\Grant\Documents\Gowin\AWSIoT_ESP32_to_GW1NS2\trunk\GW1NS2\uart2esp32\broadkey\lib\libiidbroadkey.a(iidbroadkey_merged.c.obj)
  .rodata.g14656005
-                0x0000ae20       0xb0 C:\Users\Grant\Documents\Gowin\AWSIoT_ESP32_to_GW1NS2\trunk\GW1NS2\uart2esp32\broadkey\lib\libiidbroadkey.a(iidbroadkey_merged.c.obj)
+                0x0000ae1c       0xb0 C:\Users\Grant\Documents\Gowin\AWSIoT_ESP32_to_GW1NS2\trunk\GW1NS2\uart2esp32\broadkey\lib\libiidbroadkey.a(iidbroadkey_merged.c.obj)
  .rodata.g2471931
-                0x0000aed0       0x21 C:\Users\Grant\Documents\Gowin\AWSIoT_ESP32_to_GW1NS2\trunk\GW1NS2\uart2esp32\broadkey\lib\libiidbroadkey.a(iidbroadkey_merged.c.obj)
+                0x0000aecc       0x21 C:\Users\Grant\Documents\Gowin\AWSIoT_ESP32_to_GW1NS2\trunk\GW1NS2\uart2esp32\broadkey\lib\libiidbroadkey.a(iidbroadkey_merged.c.obj)
  .rodata.g24945801
-                0x0000aef1       0x1c C:\Users\Grant\Documents\Gowin\AWSIoT_ESP32_to_GW1NS2\trunk\GW1NS2\uart2esp32\broadkey\lib\libiidbroadkey.a(iidbroadkey_merged.c.obj)
+                0x0000aeed       0x1c C:\Users\Grant\Documents\Gowin\AWSIoT_ESP32_to_GW1NS2\trunk\GW1NS2\uart2esp32\broadkey\lib\libiidbroadkey.a(iidbroadkey_merged.c.obj)
  .rodata.g63222466
-                0x0000af0d       0x19 C:\Users\Grant\Documents\Gowin\AWSIoT_ESP32_to_GW1NS2\trunk\GW1NS2\uart2esp32\broadkey\lib\libiidbroadkey.a(iidbroadkey_merged.c.obj)
- *fill*         0x0000af26        0x2 
+                0x0000af09       0x19 C:\Users\Grant\Documents\Gowin\AWSIoT_ESP32_to_GW1NS2\trunk\GW1NS2\uart2esp32\broadkey\lib\libiidbroadkey.a(iidbroadkey_merged.c.obj)
+ *fill*         0x0000af22        0x2 
  .rodata.g99268922
-                0x0000af28       0x26 C:\Users\Grant\Documents\Gowin\AWSIoT_ESP32_to_GW1NS2\trunk\GW1NS2\uart2esp32\broadkey\lib\libiidbroadkey.a(iidbroadkey_merged.c.obj)
+                0x0000af24       0x26 C:\Users\Grant\Documents\Gowin\AWSIoT_ESP32_to_GW1NS2\trunk\GW1NS2\uart2esp32\broadkey\lib\libiidbroadkey.a(iidbroadkey_merged.c.obj)
  .rodata.g11942663
-                0x0000af4e        0x4 C:\Users\Grant\Documents\Gowin\AWSIoT_ESP32_to_GW1NS2\trunk\GW1NS2\uart2esp32\broadkey\lib\libiidbroadkey.a(iidbroadkey_merged.c.obj)
+                0x0000af4a        0x4 C:\Users\Grant\Documents\Gowin\AWSIoT_ESP32_to_GW1NS2\trunk\GW1NS2\uart2esp32\broadkey\lib\libiidbroadkey.a(iidbroadkey_merged.c.obj)
  .rodata.g48837676
-                0x0000af52       0x1d C:\Users\Grant\Documents\Gowin\AWSIoT_ESP32_to_GW1NS2\trunk\GW1NS2\uart2esp32\broadkey\lib\libiidbroadkey.a(iidbroadkey_merged.c.obj)
+                0x0000af4e       0x1d C:\Users\Grant\Documents\Gowin\AWSIoT_ESP32_to_GW1NS2\trunk\GW1NS2\uart2esp32\broadkey\lib\libiidbroadkey.a(iidbroadkey_merged.c.obj)
  .rodata.g35739062
-                0x0000af6f        0x7 C:\Users\Grant\Documents\Gowin\AWSIoT_ESP32_to_GW1NS2\trunk\GW1NS2\uart2esp32\broadkey\lib\libiidbroadkey.a(iidbroadkey_merged.c.obj)
+                0x0000af6b        0x7 C:\Users\Grant\Documents\Gowin\AWSIoT_ESP32_to_GW1NS2\trunk\GW1NS2\uart2esp32\broadkey\lib\libiidbroadkey.a(iidbroadkey_merged.c.obj)
  .rodata.g9858273
-                0x0000af76        0xb C:\Users\Grant\Documents\Gowin\AWSIoT_ESP32_to_GW1NS2\trunk\GW1NS2\uart2esp32\broadkey\lib\libiidbroadkey.a(iidbroadkey_merged.c.obj)
+                0x0000af72        0xb C:\Users\Grant\Documents\Gowin\AWSIoT_ESP32_to_GW1NS2\trunk\GW1NS2\uart2esp32\broadkey\lib\libiidbroadkey.a(iidbroadkey_merged.c.obj)
  .rodata.g12512503
-                0x0000af81       0x18 C:\Users\Grant\Documents\Gowin\AWSIoT_ESP32_to_GW1NS2\trunk\GW1NS2\uart2esp32\broadkey\lib\libiidbroadkey.a(iidbroadkey_merged.c.obj)
- *fill*         0x0000af99        0x3 
+                0x0000af7d       0x18 C:\Users\Grant\Documents\Gowin\AWSIoT_ESP32_to_GW1NS2\trunk\GW1NS2\uart2esp32\broadkey\lib\libiidbroadkey.a(iidbroadkey_merged.c.obj)
+ *fill*         0x0000af95        0x3 
  .rodata.g48802284
-                0x0000af9c       0x20 C:\Users\Grant\Documents\Gowin\AWSIoT_ESP32_to_GW1NS2\trunk\GW1NS2\uart2esp32\broadkey\lib\libiidbroadkey.a(iidbroadkey_merged.c.obj)
+                0x0000af98       0x20 C:\Users\Grant\Documents\Gowin\AWSIoT_ESP32_to_GW1NS2\trunk\GW1NS2\uart2esp32\broadkey\lib\libiidbroadkey.a(iidbroadkey_merged.c.obj)
  .rodata.g69798728
-                0x0000afbc       0x20 C:\Users\Grant\Documents\Gowin\AWSIoT_ESP32_to_GW1NS2\trunk\GW1NS2\uart2esp32\broadkey\lib\libiidbroadkey.a(iidbroadkey_merged.c.obj)
+                0x0000afb8       0x20 C:\Users\Grant\Documents\Gowin\AWSIoT_ESP32_to_GW1NS2\trunk\GW1NS2\uart2esp32\broadkey\lib\libiidbroadkey.a(iidbroadkey_merged.c.obj)
  .rodata.g39611615
-                0x0000afdc       0x20 C:\Users\Grant\Documents\Gowin\AWSIoT_ESP32_to_GW1NS2\trunk\GW1NS2\uart2esp32\broadkey\lib\libiidbroadkey.a(iidbroadkey_merged.c.obj)
+                0x0000afd8       0x20 C:\Users\Grant\Documents\Gowin\AWSIoT_ESP32_to_GW1NS2\trunk\GW1NS2\uart2esp32\broadkey\lib\libiidbroadkey.a(iidbroadkey_merged.c.obj)
  .rodata.g35277562
-                0x0000affc        0x7 C:\Users\Grant\Documents\Gowin\AWSIoT_ESP32_to_GW1NS2\trunk\GW1NS2\uart2esp32\broadkey\lib\libiidbroadkey.a(iidbroadkey_merged.c.obj)
+                0x0000aff8        0x7 C:\Users\Grant\Documents\Gowin\AWSIoT_ESP32_to_GW1NS2\trunk\GW1NS2\uart2esp32\broadkey\lib\libiidbroadkey.a(iidbroadkey_merged.c.obj)
  .rodata.g29755944
-                0x0000b003      0x100 C:\Users\Grant\Documents\Gowin\AWSIoT_ESP32_to_GW1NS2\trunk\GW1NS2\uart2esp32\broadkey\lib\libiidbroadkey.a(iidbroadkey_merged.c.obj)
- *fill*         0x0000b103        0x1 
+                0x0000afff      0x100 C:\Users\Grant\Documents\Gowin\AWSIoT_ESP32_to_GW1NS2\trunk\GW1NS2\uart2esp32\broadkey\lib\libiidbroadkey.a(iidbroadkey_merged.c.obj)
+ *fill*         0x0000b0ff        0x1 
  .rodata.g71710796
-                0x0000b104       0xb0 C:\Users\Grant\Documents\Gowin\AWSIoT_ESP32_to_GW1NS2\trunk\GW1NS2\uart2esp32\broadkey\lib\libiidbroadkey.a(iidbroadkey_merged.c.obj)
+                0x0000b100       0xb0 C:\Users\Grant\Documents\Gowin\AWSIoT_ESP32_to_GW1NS2\trunk\GW1NS2\uart2esp32\broadkey\lib\libiidbroadkey.a(iidbroadkey_merged.c.obj)
  .rodata.g84076415
-                0x0000b1b4       0x40 C:\Users\Grant\Documents\Gowin\AWSIoT_ESP32_to_GW1NS2\trunk\GW1NS2\uart2esp32\broadkey\lib\libiidbroadkey.a(iidbroadkey_merged.c.obj)
+                0x0000b1b0       0x40 C:\Users\Grant\Documents\Gowin\AWSIoT_ESP32_to_GW1NS2\trunk\GW1NS2\uart2esp32\broadkey\lib\libiidbroadkey.a(iidbroadkey_merged.c.obj)
  .rodata.g91641467
-                0x0000b1f4       0x26 C:\Users\Grant\Documents\Gowin\AWSIoT_ESP32_to_GW1NS2\trunk\GW1NS2\uart2esp32\broadkey\lib\libiidbroadkey.a(iidbroadkey_merged.c.obj)
- *fill*         0x0000b21a        0x2 
+                0x0000b1f0       0x26 C:\Users\Grant\Documents\Gowin\AWSIoT_ESP32_to_GW1NS2\trunk\GW1NS2\uart2esp32\broadkey\lib\libiidbroadkey.a(iidbroadkey_merged.c.obj)
+ *fill*         0x0000b216        0x2 
  .rodata.g40929840
-                0x0000b21c      0x100 C:\Users\Grant\Documents\Gowin\AWSIoT_ESP32_to_GW1NS2\trunk\GW1NS2\uart2esp32\broadkey\lib\libiidbroadkey.a(iidbroadkey_merged.c.obj)
+                0x0000b218      0x100 C:\Users\Grant\Documents\Gowin\AWSIoT_ESP32_to_GW1NS2\trunk\GW1NS2\uart2esp32\broadkey\lib\libiidbroadkey.a(iidbroadkey_merged.c.obj)
  .rodata.g29548912
-                0x0000b31c        0x7 C:\Users\Grant\Documents\Gowin\AWSIoT_ESP32_to_GW1NS2\trunk\GW1NS2\uart2esp32\broadkey\lib\libiidbroadkey.a(iidbroadkey_merged.c.obj)
- *fill*         0x0000b323        0x1 
+                0x0000b318        0x7 C:\Users\Grant\Documents\Gowin\AWSIoT_ESP32_to_GW1NS2\trunk\GW1NS2\uart2esp32\broadkey\lib\libiidbroadkey.a(iidbroadkey_merged.c.obj)
+ *fill*         0x0000b31f        0x1 
  .rodata.g71975971
-                0x0000b324        0xc C:\Users\Grant\Documents\Gowin\AWSIoT_ESP32_to_GW1NS2\trunk\GW1NS2\uart2esp32\broadkey\lib\libiidbroadkey.a(iidbroadkey_merged.c.obj)
+                0x0000b320        0xc C:\Users\Grant\Documents\Gowin\AWSIoT_ESP32_to_GW1NS2\trunk\GW1NS2\uart2esp32\broadkey\lib\libiidbroadkey.a(iidbroadkey_merged.c.obj)
  .rodata.g51653915
-                0x0000b330        0x7 C:\Users\Grant\Documents\Gowin\AWSIoT_ESP32_to_GW1NS2\trunk\GW1NS2\uart2esp32\broadkey\lib\libiidbroadkey.a(iidbroadkey_merged.c.obj)
+                0x0000b32c        0x7 C:\Users\Grant\Documents\Gowin\AWSIoT_ESP32_to_GW1NS2\trunk\GW1NS2\uart2esp32\broadkey\lib\libiidbroadkey.a(iidbroadkey_merged.c.obj)
  .rodata.g21287191
-                0x0000b337       0x11 C:\Users\Grant\Documents\Gowin\AWSIoT_ESP32_to_GW1NS2\trunk\GW1NS2\uart2esp32\broadkey\lib\libiidbroadkey.a(iidbroadkey_merged.c.obj)
+                0x0000b333       0x11 C:\Users\Grant\Documents\Gowin\AWSIoT_ESP32_to_GW1NS2\trunk\GW1NS2\uart2esp32\broadkey\lib\libiidbroadkey.a(iidbroadkey_merged.c.obj)
  .rodata.str1.4
-                0x0000b348        0x2 c:/gowin/eclipse_tools_181108a/eclipse_tools_181108a/eclipse_tools/tools/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg.a(lib_a-impure.o)
- *fill*         0x0000b34a        0x2 
+                0x0000b344        0x2 c:/gowin/eclipse_tools_181108a/eclipse_tools_181108a/eclipse_tools/tools/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg.a(lib_a-impure.o)
+ *fill*         0x0000b346        0x2 
  .rodata._global_impure_ptr
-                0x0000b34c        0x4 c:/gowin/eclipse_tools_181108a/eclipse_tools_181108a/eclipse_tools/tools/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg.a(lib_a-impure.o)
-                0x0000b34c                _global_impure_ptr
+                0x0000b348        0x4 c:/gowin/eclipse_tools_181108a/eclipse_tools_181108a/eclipse_tools/tools/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg.a(lib_a-impure.o)
+                0x0000b348                _global_impure_ptr
  .rodata.blanks.7055
-                0x0000b350       0x10 c:/gowin/eclipse_tools_181108a/eclipse_tools_181108a/eclipse_tools/tools/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg.a(lib_a-svfprintf.o)
+                0x0000b34c       0x10 c:/gowin/eclipse_tools_181108a/eclipse_tools_181108a/eclipse_tools/tools/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg.a(lib_a-svfprintf.o)
  .rodata.str1.4
-                0x0000b360       0x42 c:/gowin/eclipse_tools_181108a/eclipse_tools_181108a/eclipse_tools/tools/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg.a(lib_a-svfprintf.o)
- *fill*         0x0000b3a2        0x2 
+                0x0000b35c       0x42 c:/gowin/eclipse_tools_181108a/eclipse_tools_181108a/eclipse_tools/tools/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg.a(lib_a-svfprintf.o)
+ *fill*         0x0000b39e        0x2 
  .rodata.zeroes.7056
-                0x0000b3a4       0x10 c:/gowin/eclipse_tools_181108a/eclipse_tools_181108a/eclipse_tools/tools/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg.a(lib_a-svfprintf.o)
+                0x0000b3a0       0x10 c:/gowin/eclipse_tools_181108a/eclipse_tools_181108a/eclipse_tools/tools/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg.a(lib_a-svfprintf.o)
  .rodata.str1.4
-                0x0000b3b4       0x10 c:/gowin/eclipse_tools_181108a/eclipse_tools_181108a/eclipse_tools/tools/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg.a(lib_a-dtoa.o)
+                0x0000b3b0       0x10 c:/gowin/eclipse_tools_181108a/eclipse_tools_181108a/eclipse_tools/tools/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg.a(lib_a-dtoa.o)
                                  0x12 (size before relaxing)
  .rodata.str1.4
-                0x0000b3c4        0xc c:/gowin/eclipse_tools_181108a/eclipse_tools_181108a/eclipse_tools/tools/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg.a(lib_a-locale.o)
+                0x0000b3c0        0xc c:/gowin/eclipse_tools_181108a/eclipse_tools_181108a/eclipse_tools/tools/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg.a(lib_a-locale.o)
                                  0x12 (size before relaxing)
+ *fill*         0x0000b3cc        0x4 
  .rodata.__mprec_tens
                 0x0000b3d0       0xc8 c:/gowin/eclipse_tools_181108a/eclipse_tools_181108a/eclipse_tools/tools/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg.a(lib_a-mprec.o)
                 0x0000b3d0                __mprec_tens
@@ -2497,17 +2500,17 @@ OUTPUT(awsIoT_BKP.elf elf32-littlearm)
  .debug_info    0x000027a0      0x3d0 ./PERIPHER/Sources/gw1ns2k_timer.o
  .debug_info    0x00002b70      0x5fa ./PERIPHER/Sources/gw1ns2k_uart.o
 
-.debug_abbrev   0x00000000      0xb50
+.debug_abbrev   0x00000000      0xb61
  .debug_abbrev  0x00000000      0x1da ./broadkey/src/broadkey_demo_app.o
  .debug_abbrev  0x000001da       0xfa ./broadkey/src/iid_print.o
  .debug_abbrev  0x000002d4      0x100 ./broadkey/src/iid_usart.o
  .debug_abbrev  0x000003d4       0x5d ./USER/gw1ns2k_it.o
- .debug_abbrev  0x00000431      0x256 ./USER/main.o
- .debug_abbrev  0x00000687       0x7b ./SYSTEM/system_gw1ns2k.o
- .debug_abbrev  0x00000702       0x14 ./STARTUP/startup_gw1ns2k.o
- .debug_abbrev  0x00000716      0x18f ./PERIPHER/Sources/gw1ns2k_gpio.o
- .debug_abbrev  0x000008a5      0x107 ./PERIPHER/Sources/gw1ns2k_timer.o
- .debug_abbrev  0x000009ac      0x1a4 ./PERIPHER/Sources/gw1ns2k_uart.o
+ .debug_abbrev  0x00000431      0x267 ./USER/main.o
+ .debug_abbrev  0x00000698       0x7b ./SYSTEM/system_gw1ns2k.o
+ .debug_abbrev  0x00000713       0x14 ./STARTUP/startup_gw1ns2k.o
+ .debug_abbrev  0x00000727      0x18f ./PERIPHER/Sources/gw1ns2k_gpio.o
+ .debug_abbrev  0x000008b6      0x107 ./PERIPHER/Sources/gw1ns2k_timer.o
+ .debug_abbrev  0x000009bd      0x1a4 ./PERIPHER/Sources/gw1ns2k_uart.o
 
 .debug_aranges  0x00000000      0x470
  .debug_aranges

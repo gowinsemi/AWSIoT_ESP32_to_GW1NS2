@@ -34,10 +34,10 @@ void Delay(__IO uint32_t nCount)//25M 1s = 8333000
 	for(; nCount != 0; nCount--);
 }
 
-const char SSID[]	=	"iPhone\n";
-const char PW[]		=	"iphone123\n";
+const char SSID[]	=	"gnarlygrey\n";
+const char PW[]		=	"67mercedes230\n";
 static const char URL[]	=	"a2pb2f9st3ros6-ats.iot.us-east-2.amazonaws.com\n";
-static const char THING[]	=	"ESP32_BKP_2\n";
+static const char THING[]	=	"ESP32_BKP_1\n";
 static const char ROOTCA[]	=	"-----BEGIN CERTIFICATE-----\n\
 MIIDQTCCAimgAwIBAgITBmyfz5m/jAo54vB4ikPmljZbyjANBgkqhkiG9w0BAQsF\n\
 ADA5MQswCQYDVQQGEwJVUzEPMA0GA1UEChMGQW1hem9uMRkwFwYDVQQDExBBbWF6\n\
@@ -60,7 +60,7 @@ rqXRfboQnoZsG4q5WTP468SQvvG5\n\
 -----END CERTIFICATE-----\r";
 
 //ESP32_BKP_1 Cert
-/*static const char DEVICECERT[]	=	"-----BEGIN CERTIFICATE-----\n\
+static const char DEVICECERT[]	=	"-----BEGIN CERTIFICATE-----\n\
 MIIDWTCCAkGgAwIBAgIUW8csS50L0Ypc6fB3fbLGV5np9xYwDQYJKoZIhvcNAQEL\n\
 BQAwTTFLMEkGA1UECwxCQW1hem9uIFdlYiBTZXJ2aWNlcyBPPUFtYXpvbi5jb20g\n\
 SW5jLiBMPVNlYXR0bGUgU1Q9V2FzaGluZ3RvbiBDPVVTMB4XDTE5MDQxNzE4MzUy\n\
@@ -80,9 +80,9 @@ cJNcnKGLu0jWUHuVl5Bm+ZJGp9mMyqZbLWY+UNVYzZoXmjeEKGv2PSBlKPbiOHNa\n\
 ixrfomhA6C86KDVl2sC/jbFX4wwz1k0s2xSZgMJP0Mk7G6NKgGtDf6bC9Hd3XOpN\n\
 PPbve8C9Ol3Oa+puTulId6XyAwFS7y5YxnZdeVDPJ9buh9FfakMWWp+SW4uT\n\
 -----END CERTIFICATE-----\r";
-*/
+
 //ESP32_BKP_2 Cert
-static const char DEVICECERT[]	=	"-----BEGIN CERTIFICATE-----\n\
+/*static const char DEVICECERT[]	=	"-----BEGIN CERTIFICATE-----\n\
 MIIDWjCCAkKgAwIBAgIVAJxQmaRuW0bx3AL8RJQwIjG0Pe/PMA0GCSqGSIb3DQEB\n\
 CwUAME0xSzBJBgNVBAsMQkFtYXpvbiBXZWIgU2VydmljZXMgTz1BbWF6b24uY29t\n\
 IEluYy4gTD1TZWF0dGxlIFNUPVdhc2hpbmd0b24gQz1VUzAeFw0xOTA0MjQxMzA0\n\
@@ -101,7 +101,7 @@ R9LzS3Xkwl1MGzuU9sg0G20IZRVnCeyJ7wp0/r38k29cZCD7uCkajzjsr021fno4\n\
 T1ruOIamo/m3lzWiIZMFbgAuGjaUpUaLF1K7o9Dx3NQy+8R05iVJ7LoAe+H0AlwO\n\
 pVTdas8/ZHbGZd6mIv7Y+dWszWdsPAY/bgz855+/ouQkpxMHxW2qe0q5BjwV+Flb\n\
 4ojo8zd3lOPeGMgF07s0ECSybUhduD8GiAYk4sLjJ/o3tVcg+Yv76+cIhOMz4g==\n\
------END CERTIFICATE-----\r";
+-----END CERTIFICATE-----\r";*/
 //ESP32_BKP_1 Private Key
 /*static const char DEVICEKEY []	=	"-----BEGIN RSA PRIVATE KEY-----\n\
 MIIEowIBAAKCAQEA2x82TJYplMeWPxGaJEp4HePfdDTvbLXVBtve3jgaQYukVrTd\n\
