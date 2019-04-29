@@ -1,0 +1,41 @@
+---------------------------------------
+Resource Usage Report for Gowin_EMPU_template 
+
+Mapping to part: gw1ns_2clqfp144-5
+Cell usage:
+ADC             1 use
+ALU             5 uses
+CLKDIV          1 use
+DFFC            60 uses
+DFFCE           78 uses
+DFFNCE          3 uses
+DFFP            1 use
+DFFPE           1 use
+DLC             1 use
+DQCE            1 use
+FLASH128K       1 use
+GSR             2 uses
+INV             23 uses
+MCU             1 use
+MUX2_LUT5       2 uses
+SP              4 uses
+LUT2            45 uses
+LUT3            43 uses
+LUT4            104 uses
+
+I/O ports: 20
+I/O primitives: 20
+IBUF           3 uses
+IOBUF          16 uses
+OBUF           1 use
+
+I/O Register bits:                  0
+Register bits not including I/Os:   143 of 1296 (11%)
+
+RAM/ROM usage summary
+Block Rams : 4 of 4 (100%)
+
+
+@S |Mapping Summary:
+Total  LUTs: 192 (11%)
+

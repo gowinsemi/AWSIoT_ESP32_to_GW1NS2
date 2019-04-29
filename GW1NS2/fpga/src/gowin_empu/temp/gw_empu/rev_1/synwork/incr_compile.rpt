@@ -1,0 +1,77 @@
+
+Copyright (C) 1994-2018 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: O-2018.09G-Beta2
+Install: D:\Gowin\1.8\SynplifyPro
+OS: Windows 6.1
+
+Hostname: GW-SW-029
+
+Implementation : rev_1
+Synopsys HDL compiler and linker, Version comp2018q3p1, Build 039R, Built Sep 17 2018 09:15:09
+
+Modified Files: 9
+FID:  path (prevtimestamp, timestamp)
+0        D:\Gowin\1.8\IDE\ipcore\GOWIN_EMPU\data\gowin_empu.v (N/A, 2018-11-21 15:33:50)
+1        D:\Gowin\1.8\IDE\ipcore\GOWIN_EMPU\data\gowin_empu_name.v (N/A, 2018-11-19 11:22:54)
+2        D:\Gowin\1.8\IDE\ipcore\GOWIN_EMPU\data\gowin_empu_top.v (N/A, 2018-11-21 15:33:50)
+3        D:\Gowin\1.8\SynplifyPro\lib\generic\gw1ns.v (N/A, 2018-09-19 05:01:54)
+4        D:\Gowin\1.8\SynplifyPro\lib\vlog\hypermods.v (N/A, 2018-09-18 00:10:00)
+5        D:\Gowin\1.8\SynplifyPro\lib\vlog\scemi_objects.v (N/A, 2018-09-18 00:10:00)
+6        D:\Gowin\1.8\SynplifyPro\lib\vlog\scemi_pipes.svh (N/A, 2018-09-18 00:10:00)
+7        D:\Gowin\1.8\SynplifyPro\lib\vlog\umr_capim.v (N/A, 2018-09-18 00:10:00)
+8        D:\user-bak\Users\root\Desktop\gowin_empu\src\gowin_empu\temp\gw_empu\config.v (N/A, 2018-11-22 16:19:15)
+
+*******************************************************************
+Modules that may have changed as a result of file changes: 13
+MID:  lib.cell.view
+0        work.GW_CLKDIV.verilog may have changed because the following files changed:
+                        D:\Gowin\1.8\IDE\ipcore\GOWIN_EMPU\data\gowin_empu.v (N/A, 2018-11-21 15:33:50) <-- (module definition)
+                        D:\Gowin\1.8\IDE\ipcore\GOWIN_EMPU\data\gowin_empu_top.v (N/A, 2018-11-21 15:33:50) <-- (may instantiate this module)
+1        work.GW_FLASH.verilog may have changed because the following files changed:
+                        D:\Gowin\1.8\IDE\ipcore\GOWIN_EMPU\data\gowin_empu.v (N/A, 2018-11-21 15:33:50) <-- (module definition)
+                        D:\Gowin\1.8\IDE\ipcore\GOWIN_EMPU\data\gowin_empu_top.v (N/A, 2018-11-21 15:33:50) <-- (may instantiate this module)
+2        work.GW_GPIO.verilog may have changed because the following files changed:
+                        D:\Gowin\1.8\IDE\ipcore\GOWIN_EMPU\data\gowin_empu.v (N/A, 2018-11-21 15:33:50) <-- (module definition)
+                        D:\Gowin\1.8\IDE\ipcore\GOWIN_EMPU\data\gowin_empu_top.v (N/A, 2018-11-21 15:33:50) <-- (may instantiate this module)
+3        work.GW_SRAM.verilog may have changed because the following files changed:
+                        D:\Gowin\1.8\IDE\ipcore\GOWIN_EMPU\data\gowin_empu.v (N/A, 2018-11-21 15:33:50) <-- (module definition)
+                        D:\Gowin\1.8\IDE\ipcore\GOWIN_EMPU\data\gowin_empu_top.v (N/A, 2018-11-21 15:33:50) <-- (may instantiate this module)
+4        work.Gowin_EMPU.verilog may have changed because the following files changed:
+                        D:\Gowin\1.8\IDE\ipcore\GOWIN_EMPU\data\gowin_empu_top.v (N/A, 2018-11-21 15:33:50) <-- (module definition)
+5        work.SPI.verilog may have changed because the following files changed:
+                        D:\Gowin\1.8\IDE\ipcore\GOWIN_EMPU\data\gowin_empu.v (N/A, 2018-11-21 15:33:50) <-- (module definition)
+                        D:\Gowin\1.8\IDE\ipcore\GOWIN_EMPU\data\gowin_empu_top.v (N/A, 2018-11-21 15:33:50) <-- (may instantiate this module)
+6        work.\~Gowin_EMPU.Gowin_EMPU.verilog may have changed because the following files changed:
+                        D:\Gowin\1.8\IDE\ipcore\GOWIN_EMPU\data\gowin_empu.v (N/A, 2018-11-21 15:33:50) <-- (module definition)
+                        D:\Gowin\1.8\IDE\ipcore\GOWIN_EMPU\data\gowin_empu_top.v (N/A, 2018-11-21 15:33:50) <-- (may instantiate this module)
+7        work.gw_cmsdk_apb2_adc.verilog may have changed because the following files changed:
+                        D:\Gowin\1.8\IDE\ipcore\GOWIN_EMPU\data\gowin_empu.v (N/A, 2018-11-21 15:33:50) <-- (module definition)
+                        D:\Gowin\1.8\IDE\ipcore\GOWIN_EMPU\data\gowin_empu_top.v (N/A, 2018-11-21 15:33:50) <-- (may instantiate this module)
+8        work.gw_cmsdk_apb2_slave_mux.verilog may have changed because the following files changed:
+                        D:\Gowin\1.8\IDE\ipcore\GOWIN_EMPU\data\gowin_empu.v (N/A, 2018-11-21 15:33:50) <-- (module definition)
+                        D:\Gowin\1.8\IDE\ipcore\GOWIN_EMPU\data\gowin_empu_top.v (N/A, 2018-11-21 15:33:50) <-- (may instantiate this module)
+9        work.gw_cmsdk_apb2_spi.verilog may have changed because the following files changed:
+                        D:\Gowin\1.8\IDE\ipcore\GOWIN_EMPU\data\gowin_empu.v (N/A, 2018-11-21 15:33:50) <-- (module definition)
+                        D:\Gowin\1.8\IDE\ipcore\GOWIN_EMPU\data\gowin_empu_top.v (N/A, 2018-11-21 15:33:50) <-- (may instantiate this module)
+10       work.gw_int_apb2_decoder.verilog may have changed because the following files changed:
+                        D:\Gowin\1.8\IDE\ipcore\GOWIN_EMPU\data\gowin_empu.v (N/A, 2018-11-21 15:33:50) <-- (module definition)
+                        D:\Gowin\1.8\IDE\ipcore\GOWIN_EMPU\data\gowin_empu_top.v (N/A, 2018-11-21 15:33:50) <-- (may instantiate this module)
+11       work.gw_peripherals_interconnect.verilog may have changed because the following files changed:
+                        D:\Gowin\1.8\IDE\ipcore\GOWIN_EMPU\data\gowin_empu.v (N/A, 2018-11-21 15:33:50) <-- (module definition)
+                        D:\Gowin\1.8\IDE\ipcore\GOWIN_EMPU\data\gowin_empu_top.v (N/A, 2018-11-21 15:33:50) <-- (may instantiate this module)
+12       work.gw_rom_flash.verilog may have changed because the following files changed:
+                        D:\Gowin\1.8\IDE\ipcore\GOWIN_EMPU\data\gowin_empu.v (N/A, 2018-11-21 15:33:50) <-- (module definition)
+                        D:\Gowin\1.8\IDE\ipcore\GOWIN_EMPU\data\gowin_empu_top.v (N/A, 2018-11-21 15:33:50) <-- (may instantiate this module)
+
+*******************************************************************
+Unmodified files: 0
+FID:  path (timestamp)
+
+*******************************************************************
+Unchanged modules: 0
+MID:  lib.cell.view

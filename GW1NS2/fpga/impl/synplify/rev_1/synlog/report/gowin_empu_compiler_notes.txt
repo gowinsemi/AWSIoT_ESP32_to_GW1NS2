@@ -1,0 +1,13 @@
+@N|Running in 64-bit mode
+@N|Running in 64-bit mode
+@N: CG1349 :	| Running Verilog Compiler in System Verilog mode
+@N: CG1350 :	| Running Verilog Compiler in Multiple File Compilation Unit mode
+@N: CG364 :"C:\Gowin\Gowin_YunYuan_V1.9.0Beta\SynplifyPro\lib\generic\gw1ns.v":1547:7:1547:9|Synthesizing module GSR in library work.
+@N: CG364 :"C:\Gowin\Gowin_YunYuan_V1.9.0Beta\SynplifyPro\lib\generic\gw1ns.v":365:7:365:10|Synthesizing module IBUF in library work.
+@N: CG364 :"C:\Gowin\Gowin_YunYuan_V1.9.0Beta\SynplifyPro\lib\generic\gw1ns.v":370:7:370:10|Synthesizing module OBUF in library work.
+@N: CG364 :"C:\Users\Grant\Documents\Gowin\IID_BroadKey\IID_BroadKey.git\trunk\fpga\src\gowin_empu\gowin_empu.v":3978:7:3978:16|Synthesizing module Gowin_EMPU in library work.
+@N: CG364 :"C:\Users\Grant\Documents\Gowin\IID_BroadKey\IID_BroadKey.git\trunk\fpga\src\template.v":13:7:13:25|Synthesizing module Gowin_EMPU_template in library work.
+@N|Running in 64-bit mode
+@N: NF107 :"c:\users\grant\documents\gowin\iid_broadkey\iid_broadkey.git\trunk\fpga\src\template.v":13:7:13:25|Selected library: work cell: Gowin_EMPU_template view verilog as top level
+@N: NF107 :"c:\users\grant\documents\gowin\iid_broadkey\iid_broadkey.git\trunk\fpga\src\template.v":13:7:13:25|Selected library: work cell: Gowin_EMPU_template view verilog as top level
+

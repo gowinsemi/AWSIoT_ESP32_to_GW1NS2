@@ -1,0 +1,2 @@
+@W: CL168 :"C:\Users\Grant\Documents\Gowin\IID_BroadKey\IID_BroadKey.git\trunk\fpga\src\gowin_empu\gowin_empu.v":4032:6:4032:11|Removing instance GND_cZ because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
+

@@ -1,0 +1,7 @@
+Info    (PA0001) : "D:\user-bak\Users\root\Desktop\gowin_empu\src\gowin_empu\temp\gw_empu\rev_1\gowin_empu.vm" | Reading netlist file.
+Info    (PA0004) : Parsing netlist file 'D:\user-bak\Users\root\Desktop\gowin_empu\src\gowin_empu\temp\gw_empu\rev_1\gowin_empu.vm' completed.
+Error   (PA2025) : No CLKDIV resource in current device. Please change device.
+Info    (PA0005) : Processing netlist completed with errors.
+Info    (CM0008) : Generate 'D:\user-bak\Users\root\Desktop\gowin_empu\src\gowin_empu\gowin_empu.vo' file completed.
+Info    (CM0001) : Thu Nov 22 16:19:52 2018
+

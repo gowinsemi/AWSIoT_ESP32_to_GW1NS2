@@ -1,0 +1,9 @@
+@N|Running in 64-bit mode
+@N|Running in 64-bit mode
+@N: CG1349 :	| Running Verilog Compiler in System Verilog mode
+@N: CG1350 :	| Running Verilog Compiler in Multiple File Compilation Unit mode
+@N: CG364 :"D:\Gowin\1.8\IDE\ipcore\GOWIN_EMPU\data\gowin_empu_top.v":5:24:5:24|Synthesizing module Gowin_EMPU in library work.
+@N|Running in 64-bit mode
+@N: NF107 :"D:\Gowin\1.8\IDE\ipcore\GOWIN_EMPU\data\gowin_empu_top.v":5:24:5:24|Selected library: work cell: Gowin_EMPU view verilog as top level
+@N: NF107 :"D:\Gowin\1.8\IDE\ipcore\GOWIN_EMPU\data\gowin_empu_top.v":5:24:5:24|Selected library: work cell: Gowin_EMPU view verilog as top level
+

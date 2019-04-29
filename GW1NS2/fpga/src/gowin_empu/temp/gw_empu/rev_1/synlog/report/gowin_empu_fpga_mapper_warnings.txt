@@ -1,0 +1,6 @@
+@W: MT246 :"d:\gowin\1.8\ide\ipcore\gowin_empu\data\gowin_empu.v":389:6:389:14|Blackbox MCU is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
+@W: MT246 :"d:\gowin\1.8\ide\ipcore\gowin_empu\data\gowin_empu.v":2071:4:2071:15|Blackbox ADC is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
+@W: MT246 :"d:\gowin\1.8\ide\ipcore\gowin_empu\data\gowin_empu.v":732:5:732:10|Blackbox DQCE is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
+@W: MT246 :"d:\gowin\1.8\ide\ipcore\gowin_empu\data\gowin_empu.v":812:10:812:12|Blackbox FLASH128K is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
+@W: MT246 :"d:\gowin\1.8\ide\ipcore\gowin_empu\data\gowin_empu.v":1011:7:1011:17|Blackbox CLKDIV is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
+@W: MT420 |Found inferred clock GW_CLKDIV|clkout_inferred_clock with period 10.64ns. Please declare a user-defined clock on net Gowin_EMPU_inst.sysclk.fclk.

@@ -1,0 +1,79 @@
+One matching license found for this product: synplifypro_gowin
+NOTE:  This version of the software is not a production release. No warranty is made as to the general availability of features and functionality included in this version or described in the accompanying documentation. The final contents of a production release and its timing remain at the sole discretion of Synopsys.
+
+Starting:    D:\Gowin\1.8\SynplifyPro\bin64\mbin\synbatch.exe
+Install:     D:\Gowin\1.8\SynplifyPro
+Hostname:    GW-SW-029
+Date:        Thu Nov 22 16:19:32 2018
+Version:     O-2018.09G-Beta2
+
+Arguments:   -product synplify_pro -batch D:/user-bak/Users/root/Desktop/gowin_empu/src/gowin_empu/temp/gw_empu/gw_empu.prj
+ProductType: synplify_pro
+
+License checkout: synplifypro_gowin
+License: synplifypro_gowin from server 192.168.31.246 
+Licensed Vendor: gowin
+
+Running in Vendor Mode
+
+auto_infer_blackbox is not supported in current product.
+log file: "D:\user-bak\Users\root\Desktop\gowin_empu\src\gowin_empu\temp\gw_empu\rev_1\gowin_empu.srr"
+Running: rev_1 in foreground
+
+Running gw_empu|rev_1
+
+Running Flow: compile (Compile) on gw_empu|rev_1
+# Thu Nov 22 16:19:32 2018
+
+Running Flow: compile_flow (Compile Process) on gw_empu|rev_1
+# Thu Nov 22 16:19:32 2018
+
+Running: compiler (Compile Input) on gw_empu|rev_1
+# Thu Nov 22 16:19:32 2018
+Copied D:\user-bak\Users\root\Desktop\gowin_empu\src\gowin_empu\temp\gw_empu\rev_1\synwork\gowin_empu_comp.srs to D:\user-bak\Users\root\Desktop\gowin_empu\src\gowin_empu\temp\gw_empu\rev_1\gowin_empu.srs
+
+compiler completed
+# Thu Nov 22 16:19:36 2018
+
+Return Code: 0
+Run Time:00h:00m:04s
+
+Running: multi_srs_gen (Multi-srs Generator) on gw_empu|rev_1
+# Thu Nov 22 16:19:36 2018
+
+multi_srs_gen completed
+# Thu Nov 22 16:19:36 2018
+
+Return Code: 0
+Run Time:00h:00m:00s
+Copied D:\user-bak\Users\root\Desktop\gowin_empu\src\gowin_empu\temp\gw_empu\rev_1\synwork\gowin_empu_mult.srs to D:\user-bak\Users\root\Desktop\gowin_empu\src\gowin_empu\temp\gw_empu\rev_1\gowin_empu.srs
+Complete: Compile Process on gw_empu|rev_1
+
+Running: premap (Premap) on gw_empu|rev_1
+# Thu Nov 22 16:19:36 2018
+
+premap completed
+# Thu Nov 22 16:19:41 2018
+
+Return Code: 0
+Run Time:00h:00m:05s
+Complete: Compile on gw_empu|rev_1
+
+Running Flow: map (Map) on gw_empu|rev_1
+# Thu Nov 22 16:19:41 2018
+License granted for 4 parallel jobs
+
+Running: fpga_mapper (Map & Optimize) on gw_empu|rev_1
+# Thu Nov 22 16:19:41 2018
+Copied D:\user-bak\Users\root\Desktop\gowin_empu\src\gowin_empu\temp\gw_empu\rev_1\synwork\gowin_empu_m.srm to D:\user-bak\Users\root\Desktop\gowin_empu\src\gowin_empu\temp\gw_empu\rev_1\gowin_empu.srm
+
+fpga_mapper completed with warnings
+# Thu Nov 22 16:19:49 2018
+
+Return Code: 1
+Run Time:00h:00m:08s
+Complete: Map on gw_empu|rev_1
+Complete: Logic Synthesis on gw_empu|rev_1
+exit status=0
+exit status=0
+License checkin: synplifypro_gowin

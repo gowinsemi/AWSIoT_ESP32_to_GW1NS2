@@ -1,0 +1,31 @@
+/***********************************************************************
+ Physical Constraint file 
+ Version:1.8.1.01Beta
+ Created Time:   Fri Oct 26 14:18:11 2018
+ Device:         GW1NS-2C
+ Package:        LQFP144
+************************************************************************/
+IO_LOC "gpio[0]" 69;
+IO_LOC "gpio[1]" 70;
+IO_LOC "gpio[10]" 96;
+IO_LOC "gpio[11]" 95;
+IO_LOC "gpio[12]" 90;
+IO_LOC "gpio[13]" 88;
+IO_LOC "gpio[14]" 87;
+IO_LOC "gpio[15]" 86;
+IO_LOC "gpio[2]" 71;
+IO_LOC "gpio[3]" 72;
+IO_LOC "gpio[4]" 61;//KEYs & switches
+IO_LOC "gpio[5]" 132;
+IO_LOC "gpio[6]" 131;
+IO_LOC "gpio[7]" 99;
+IO_LOC "gpio[8]" 98;
+IO_LOC "gpio[9]" 97;
+IO_LOC "sys_clk" 11;
+IO_LOC "reset_n" 24;
+IO_LOC "uart0_txd" 58;//100; //uart now on GPIO_B header
+IO_LOC "uart0_rxd" 45;//101;
+
+IO_PORT "sys_clk"  IO_TYPE=LVTTL33;
+//IO_PORT "uart0_rxd"  IO_TYPE=LVTTL33;
+//IO_PORT "uart0_txd"  IO_TYPE=LVTTL33;

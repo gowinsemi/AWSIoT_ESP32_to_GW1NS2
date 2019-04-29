@@ -1,0 +1,55 @@
+
+Copyright (C) 1994-2019 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: O-2018.09G-SP1
+Install: C:\Gowin\Gowin_YunYuan_V1.9.0Beta\SynplifyPro
+OS: Windows 6.2
+
+Hostname: LAPTOP-7P3FEATO
+
+Implementation : rev_1
+Synopsys HDL compiler and linker, Version comp2018q4p1, Build 115R, Built Feb 12 2019 09:25:38
+
+Modified Files: 10
+FID:  path (prevtimestamp, timestamp)
+11       C:\Gowin\Gowin_V1.9.0.01Beta\SynplifyPro\lib\generic\gw1ns.v (2019-03-21 00:46:02, N/A)
+12       C:\Gowin\Gowin_V1.9.0.01Beta\SynplifyPro\lib\vlog\hypermods.v (2019-03-12 11:06:40, N/A)
+13       C:\Gowin\Gowin_V1.9.0.01Beta\SynplifyPro\lib\vlog\scemi_objects.v (2019-03-12 11:06:40, N/A)
+14       C:\Gowin\Gowin_V1.9.0.01Beta\SynplifyPro\lib\vlog\scemi_pipes.svh (2019-03-12 11:06:40, N/A)
+15       C:\Gowin\Gowin_V1.9.0.01Beta\SynplifyPro\lib\vlog\umr_capim.v (2019-03-12 11:06:40, N/A)
+2        C:\Gowin\Gowin_YunYuan_V1.9.0Beta\SynplifyPro\lib\generic\gw1ns.v (N/A, 2019-02-12 13:01:50)
+3        C:\Gowin\Gowin_YunYuan_V1.9.0Beta\SynplifyPro\lib\vlog\hypermods.v (N/A, 2019-02-12 11:21:14)
+4        C:\Gowin\Gowin_YunYuan_V1.9.0Beta\SynplifyPro\lib\vlog\scemi_objects.v (N/A, 2019-02-12 11:21:14)
+5        C:\Gowin\Gowin_YunYuan_V1.9.0Beta\SynplifyPro\lib\vlog\scemi_pipes.svh (N/A, 2019-02-12 11:21:14)
+6        C:\Gowin\Gowin_YunYuan_V1.9.0Beta\SynplifyPro\lib\vlog\umr_capim.v (N/A, 2019-02-12 11:21:14)
+
+*******************************************************************
+Modules that may have changed as a result of file changes: 0
+MID:  lib.cell.view
+
+*******************************************************************
+Unmodified files: 2
+FID:  path (timestamp)
+16       C:\Users\Grant\Documents\Gowin\IID_BroadKey\IID_BroadKey.git\trunk\fpga\src\gowin_empu\gowin_empu.v (2019-03-07 13:54:17)
+17       C:\Users\Grant\Documents\Gowin\IID_BroadKey\IID_BroadKey.git\trunk\fpga\src\template.v (2019-03-07 13:54:17)
+
+*******************************************************************
+Unchanged modules: 13
+MID:  lib.cell.view
+0        work.GW_CLKDIV.verilog
+1        work.GW_FLASH.verilog
+2        work.GW_GPIO.verilog
+3        work.GW_SRAM.verilog
+4        work.Gowin_EMPU.verilog
+5        work.Gowin_EMPU_template.verilog
+6        work.SPI_Z2.verilog
+7        work.\~Gowin_EMPU.Gowin_EMPU_.verilog
+8        work.gw_cmsdk_apb2_adc.verilog
+9        work.gw_cmsdk_apb2_slave_mux_Z1.verilog
+10       work.gw_cmsdk_apb2_spi.verilog
+11       work.gw_peripherals_interconnect_12s.verilog
+12       work.gw_rom_flash_15s_32s.verilog

@@ -1,0 +1,2 @@
+CKID0001:@|S:empu_tmp.Gowin_EMPU_inst.sysclk.clkdiv_inst@|E:empu_tmp.Gowin_EMPU_inst.u_flash_wrap.\\rom_haddr_test_Z\[11\]@|F:@syn_sample_clock_path==CKID0001@|M:ClockId0001 
+CKID0002:@|S:empu_tmp.Gowin_EMPU_inst.u_gw_peripherals_interconnect.u_gw_cmsdk_apb2_spi.u_spi.clock_polarity_RNI68JB@|E:empu_tmp.Gowin_EMPU_inst.u_gw_peripherals_interconnect.u_gw_cmsdk_apb2_spi.u_spi.\\genblk1\.SCLK_MASTER_2@|F:@syn_sample_clock_path==CKID0002@|M:ClockId0002 

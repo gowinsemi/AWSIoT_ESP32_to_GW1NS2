@@ -1,0 +1,23 @@
+@P:  Worst Slack : -4.681
+@P:  GW_CLKDIV|fclk_inferred_clock - Estimated Frequency : 50.0 MHz
+@P:  GW_CLKDIV|fclk_inferred_clock - Requested Frequency : 94.0 MHz
+@P:  GW_CLKDIV|fclk_inferred_clock - Estimated Period : 20.005
+@P:  GW_CLKDIV|fclk_inferred_clock - Requested Period : 10.642
+@P:  GW_CLKDIV|fclk_inferred_clock - Slack : -4.681
+@P:  SPI_Z2|N_88_i_inferred_clock - Estimated Frequency : NA
+@P:  SPI_Z2|N_88_i_inferred_clock - Requested Frequency : 100.0 MHz
+@P:  SPI_Z2|N_88_i_inferred_clock - Estimated Period : NA
+@P:  SPI_Z2|N_88_i_inferred_clock - Requested Period : 10.000
+@P:  SPI_Z2|N_88_i_inferred_clock - Slack : NA
+@P:  System - Estimated Frequency : 117.1 MHz
+@P:  System - Requested Frequency : 137.8 MHz
+@P:  System - Estimated Period : 8.537
+@P:  System - Requested Period : 7.256
+@P:  System - Slack : -1.280
+@P: Gowin_EMPU_template Part : gw1ns_2clqfp144-5
+@P: Gowin_EMPU_template I/O primitives : 20
+@P: Gowin_EMPU_template I/O Register bits : 0
+@P: Gowin_EMPU_template Register bits (Non I/O) : 143 (11%)
+@P: Gowin_EMPU_template Block Rams : 4 of 4 (100%)
+@P: Gowin_EMPU_template Total Luts : 192 of 800 (11%)
+@P:  CPU Time : 0h:00m:03s

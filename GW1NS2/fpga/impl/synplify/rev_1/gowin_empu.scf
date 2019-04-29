@@ -1,0 +1,54 @@
+# Written by Synplify Pro version mapgw, Build 1290R. Synopsys Run ID: sid1556569256 
+# Top Level Design Parameters 
+
+# Clocks 
+create_clock -period 10.642 -waveform {0.000 5.321} -name {GW_CLKDIV|fclk_inferred_clock} [get_pins {empu_tmp/Gowin_EMPU_inst/sysclk/clkdiv_inst/CLKOUT}] 
+create_clock -period 10.000 -waveform {0.000 5.000} -name {SPI_Z2|N_88_i_inferred_clock} [get_pins {empu_tmp/Gowin_EMPU_inst/u_gw_peripherals_interconnect/u_gw_cmsdk_apb2_spi/u_spi/clock_polarity_RNI68JB/F}] 
+
+# Virtual Clocks 
+
+# Generated Clocks 
+
+# Paths Between Clocks 
+
+# Multicycle Constraints 
+
+# Point-to-point Delay Constraints 
+
+# False Path Constraints 
+
+# Output Load Constraints 
+
+# Driving Cell Constraints 
+
+# Input Delay Constraints 
+
+# Output Delay Constraints 
+
+# Wire Loads 
+
+# Other Constraints 
+
+# syn_hier Attributes 
+
+# set_case Attributes 
+
+# Clock Delay Constraints 
+set Autoconstr_clkgroup_0 [list GW_CLKDIV|fclk_inferred_clock]
+set Autoconstr_clkgroup_1 [list SPI_Z2|N_88_i_inferred_clock]
+set_clock_groups -asynchronous -group $Autoconstr_clkgroup_0 -group $Autoconstr_clkgroup_1
+
+# syn_mode Attributes 
+
+# Cells 
+
+# Port DRC Rules 
+
+# Input Transition Constraints 
+
+# Unused constraints (intentionally commented out) 
+
+# Non-forward-annotatable constraints (intentionally commented out) 
+
+# Block Path constraints 
+

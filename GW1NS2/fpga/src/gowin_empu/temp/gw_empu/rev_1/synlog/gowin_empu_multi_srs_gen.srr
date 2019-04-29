@@ -1,0 +1,29 @@
+###########################################################[
+
+Copyright (C) 1994-2018 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: O-2018.09G-Beta2
+Install: D:\Gowin\1.8\SynplifyPro
+OS: Windows 6.1
+
+Hostname: GW-SW-029
+
+Database state : D:\user-bak\Users\root\Desktop\gowin_empu\src\gowin_empu\temp\gw_empu\rev_1\synwork\|rev_1
+Synopsys Synopsys Netlist Linker, Version comp2018q3p1, Build 039R, Built Sep 17 2018 09:15:09
+
+@N|Running in 64-bit mode
+@N: NF107 :"D:\Gowin\1.8\IDE\ipcore\GOWIN_EMPU\data\gowin_empu_top.v":5:24:5:24|Selected library: work cell: Gowin_EMPU view verilog as top level
+@N: NF107 :"D:\Gowin\1.8\IDE\ipcore\GOWIN_EMPU\data\gowin_empu_top.v":5:24:5:24|Selected library: work cell: Gowin_EMPU view verilog as top level
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 71MB peak: 72MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Thu Nov 22 16:19:36 2018
+
+###########################################################]

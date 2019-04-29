@@ -1,0 +1,7 @@
+C:\Gowin\Gowin_YunYuan_V1.9.0Beta\SynplifyPro\bin64\syn_nfilter.exe  -link  -multisrs  C:\Users\Grant\Documents\Gowin\IID_BroadKey\IID_BroadKey.git\trunk\fpga\impl\synplify\rev_1\synwork\gowin_empu_comp.srs  -osyn  C:\Users\Grant\Documents\Gowin\IID_BroadKey\IID_BroadKey.git\trunk\fpga\impl\synplify\rev_1\synwork\gowin_empu_mult.srs  -log  C:\Users\Grant\Documents\Gowin\IID_BroadKey\IID_BroadKey.git\trunk\fpga\impl\synplify\rev_1\synlog\gowin_empu_multi_srs_gen.srr 
+relcom:..\..\..\..\..\..\..\..\..\..\..\..\Gowin\Gowin_YunYuan_V1.9.0Beta\SynplifyPro\bin64\syn_nfilter.exe -link -multisrs ..\synwork\gowin_empu_comp.srs -osyn ..\synwork\gowin_empu_mult.srs -log ..\synlog\gowin_empu_multi_srs_gen.srr
+rc:0 success:1 runtime:0
+file:..\synwork\gowin_empu_comp.srs|io:i|time:1556569253|size:179890|exec:0|csum:1B31D8428B1C47B13909012DA3938708
+file:..\synwork\gowin_empu_mult.srs|io:o|time:1556569254|size:2247|exec:0|csum:
+file:..\synlog\gowin_empu_multi_srs_gen.srr|io:o|time:1556569254|size:1664|exec:0|csum:
+file:..\..\..\..\..\..\..\..\..\..\..\..\Gowin\Gowin_YunYuan_V1.9.0Beta\SynplifyPro\bin64\syn_nfilter.exe|io:i|time:1549992628|size:8810496|exec:1|csum:22121A31AF880FFDC186FAF30EAA8FB0

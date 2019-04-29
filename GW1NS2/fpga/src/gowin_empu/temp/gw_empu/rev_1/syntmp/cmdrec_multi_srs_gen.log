@@ -1,0 +1,7 @@
+D:\Gowin\1.8\SynplifyPro\bin64\syn_nfilter.exe  -link  -multisrs  D:\user-bak\Users\root\Desktop\gowin_empu\src\gowin_empu\temp\gw_empu\rev_1\synwork\gowin_empu_comp.srs  -osyn  D:\user-bak\Users\root\Desktop\gowin_empu\src\gowin_empu\temp\gw_empu\rev_1\synwork\gowin_empu_mult.srs  -log  D:\user-bak\Users\root\Desktop\gowin_empu\src\gowin_empu\temp\gw_empu\rev_1\synlog\gowin_empu_multi_srs_gen.srr 
+relcom:..\..\..\..\..\..\..\..\..\..\..\Gowin\1.8\SynplifyPro\bin64\syn_nfilter.exe -link -multisrs ..\synwork\gowin_empu_comp.srs -osyn ..\synwork\gowin_empu_mult.srs -log ..\synlog\gowin_empu_multi_srs_gen.srr
+rc:0 success:1 runtime:0
+file:..\synwork\gowin_empu_comp.srs|io:i|time:1542874775|size:217230|exec:0|csum:461584FAC4A1A89B770C74E8151D77DF
+file:..\synwork\gowin_empu_mult.srs|io:o|time:1542874776|size:2320|exec:0|csum:
+file:..\synlog\gowin_empu_multi_srs_gen.srr|io:o|time:1542874776|size:1405|exec:0|csum:
+file:..\..\..\..\..\..\..\..\..\..\..\Gowin\1.8\SynplifyPro\bin64\syn_nfilter.exe|io:i|time:1537201154|size:8791040|exec:1|csum:FDA9CE3068B3473AD3F7DDB573109F00

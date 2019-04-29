@@ -1,0 +1,239 @@
+//Copyright (C)2014-2019 Gowin Semiconductor Corporation.
+//All rights reserved.
+
+
+1. PnR Messages
+
+  <Report Title>: Gowin PnR Report
+  <Design File>: C:/Users/Grant/Documents/Gowin/IID_BroadKey/IID_BroadKey.git/trunk/fpga/impl/synplify/rev_1/gowin_empu.vm
+  <Physical Constraints File>: C:\Users\Grant\Documents\Gowin\IID_BroadKey\IID_BroadKey.git\trunk\fpga\src\gowin_empu.cst
+  <Timing Constraints File>: ---
+  <GOWIN Version>: v1.9.0Beta
+  <Part Number>: GW1NS-UX2CLQ144C5/I4
+  <Created Time>:Mon Apr 29 15:30:35 2019
+
+
+2. Placer
+
+  Starting Placer:
+    Placement Phase 0 ...   REAL time: 0.031 secs
+    Placement Phase 1 ...   REAL time: 0.049 secs
+    Placement Phase 2 ...   REAL time: 0.052 secs
+    Placement Phase 3 ...   REAL time: 1.722 secs
+  Total REAL time to Placement completion: 1.854 secs.
+
+
+3. Resource Usage Summary
+
+  ----------------------------------------------------------
+  Resources            | Usage
+  ----------------------------------------------------------
+  CFU Logics           | 202(202 LUTs, 0 ALUs)/1512  13%
+  Registers            | 144/1164  12%
+    --Logic Registers  | 144/1080  13%
+    --I/O Registers    | 0/84  0%
+  CLSs(ideal)          | 104/864  12%
+  CLSs(used)           | 331/864  38%
+  I/O Ports            | 20
+  I/O Bufs             | 20/92  21%
+    --Input Bufs       | 3
+    --Output Bufs      | 1
+    --Inout Bufs       | 16
+  Iologics             | 0/276  0%
+  BSRAMs               | 4/4  100%
+  PLLs                 | 0/1  0%
+  DLLs                 | 0/2  0%
+  DCSs                 | 0/4  0%
+  DQCEs                | 1/12  8%
+  OSC                  | 0/1  0%
+  ==========================================================
+
+
+
+4. I/O Bank Usage Summary
+
+  -----------------------
+  I/O Bank  | Usage       
+  -----------------------
+  bank 0   | 2/32(6%)    
+  bank 1   | 9/16(56%)   
+  bank 2   | 7/26(26%)   
+  bank 3   | 2/22(9%)    
+  =======================
+
+
+5. Router
+
+  Starting Router:
+    Route Phase 0: 984 unrouted; REAL time: 0 secs
+    Route Phase 1: 476 unrouted; REAL time: 0.058 secs
+    Route Phase 2: 0  unrouted; REAL time: 0.126 secs
+  Total REAL time to Router completion: 0.184 secs.
+
+
+6. Global Clock Usage Summary
+
+  -------------------------------
+  Global Clock  | Usage       
+  -------------------------------
+  PRIMARY       | 2/8(25%)
+  SECONDARY     | 0/8(0%)
+  GCLK_PIN      | 1/7(14%)
+  PLL           | 0/1(0%)
+  DLL           | 0/2(0%)
+  CLKDIV        | 1/8(12%)
+  DLLDLY        | 0/8(0%)
+  ===============================
+
+
+7. Global Clock Signals
+
+  -------------------------------------------
+  Signal         | Global Clock   | Location
+  -------------------------------------------
+  fclk           | PRIMARY        | LEFT
+  AE_test        | PRIMARY        | LEFT
+  ===========================================
+
+
+8. Pinout by Port Name
+
+-------------------------------------------------------------------------------------------------------------------------------------------------
+Port Name  | Loc./Bank  | Dir.  | Site     | IO Type    | Drive      | Pull Mode  | Slew Rate  | Clamp      | OpenDrain  | VREF       | BankVccio 
+-------------------------------------------------------------------------------------------------------------------------------------------------
+sys_clk    | 11/3       | in    | IOL5[A]  | LVTTL33    | NA         | UP         | NA         | NA         | NA         | NA         | 3.3       
+uart0_rxd  | 45/2       | in    | IOB10[B] | LVCMOS18   | NA         | UP         | NA         | NA         | NA         | NA         | 1.8       
+reset_n    | -/3        | in    | IOL6[J]  | LVCMOS18   | NA         | UP         | NA         | NA         | NA         | NA         | 3.3       
+uart0_txd  | 58/2       | out   | IOB12[B] | LVCMOS18   | 8          | UP         | FAST       | NA         | OFF        | NA         | 1.8       
+gpio[0]    | 69/2       | io    | IOB18[A] | LVCMOS18   | 8          | UP         | FAST       | NA         | OFF        | NA         | 1.8       
+gpio[1]    | 70/2       | io    | IOB18[B] | LVCMOS18   | 8          | UP         | FAST       | NA         | OFF        | NA         | 1.8       
+gpio[2]    | 71/2       | io    | IOB19[A] | LVCMOS18   | 8          | UP         | FAST       | NA         | OFF        | NA         | 1.8       
+gpio[3]    | 72/2       | io    | IOB19[B] | LVCMOS18   | 8          | UP         | FAST       | NA         | OFF        | NA         | 1.8       
+gpio[4]    | 61/2       | io    | IOB14[A] | LVCMOS18   | 8          | UP         | FAST       | NA         | OFF        | NA         | 1.8       
+gpio[5]    | 132/0      | io    | IOT9[A]  | LVCMOS18   | 8          | UP         | FAST       | NA         | OFF        | NA         | 1.8       
+gpio[6]    | 131/0      | io    | IOT9[B]  | LVCMOS18   | 8          | UP         | FAST       | NA         | OFF        | NA         | 1.8       
+gpio[7]    | 99/1       | io    | IOR4[A]  | LVCMOS18   | 8          | UP         | FAST       | NA         | OFF        | NA         | 1.8       
+gpio[8]    | 98/1       | io    | IOR5[B]  | LVCMOS18   | 8          | UP         | FAST       | NA         | OFF        | NA         | 1.8       
+gpio[9]    | 97/1       | io    | IOR5[A]  | LVCMOS18   | 8          | UP         | FAST       | NA         | OFF        | NA         | 1.8       
+gpio[10]   | -/1        | io    | IOR6[A]  | LVCMOS18   | 8          | UP         | FAST       | NA         | OFF        | NA         | 1.8       
+gpio[11]   | -/1        | io    | IOR6[B]  | LVCMOS18   | 8          | UP         | FAST       | NA         | OFF        | NA         | 1.8       
+gpio[12]   | 90/1       | io    | IOR7[A]  | LVCMOS18   | 8          | UP         | FAST       | NA         | OFF        | NA         | 1.8       
+gpio[13]   | 88/1       | io    | IOR7[B]  | LVCMOS18   | 8          | UP         | FAST       | NA         | OFF        | NA         | 1.8       
+gpio[14]   | 87/1       | io    | IOR8[B]  | LVCMOS18   | 8          | UP         | FAST       | NA         | OFF        | NA         | 1.8       
+gpio[15]   | 86/1       | io    | IOR8[A]  | LVCMOS18   | 8          | UP         | FAST       | NA         | OFF        | NA         | 1.8       
+=================================================================================================================================================
+
+
+
+
+9. All Package Pins
+
+----------------------------------------------------------------------------------------------------------------
+Loc./Bank| Signal     | Dir.  | Site     | IO Type  | Pull Mode | Hysteresis | DiffResistor | SingleResistor
+----------------------------------------------------------------------------------------------------------------
+143/0    | UNUSED     | -     | IOT2[B]  | -        | -         | -          | -            | -             
+142/0    | UNUSED     | -     | IOT3[A]  | -        | -         | -          | -            | -             
+141/0    | UNUSED     | -     | IOT3[B]  | -        | -         | -          | -            | -             
+140/0    | UNUSED     | -     | IOT4[A]  | -        | -         | -          | -            | -             
+139/0    | UNUSED     | -     | IOT4[B]  | -        | -         | -          | -            | -             
+138/0    | UNUSED     | -     | IOT5[A]  | -        | -         | -          | -            | -             
+137/0    | UNUSED     | -     | IOT5[B]  | -        | -         | -          | -            | -             
+136/0    | UNUSED     | -     | IOT6[A]  | -        | -         | -          | -            | -             
+135/0    | UNUSED     | -     | IOT6[B]  | -        | -         | -          | -            | -             
+134/0    | UNUSED     | -     | IOT7[A]  | -        | -         | -          | -            | -             
+133/0    | UNUSED     | -     | IOT7[B]  | -        | -         | -          | -            | -             
+132/0    | gpio[5]    | io    | IOT9[A]  | LVCMOS18 | UP        | NONE       | NA           | NA            
+131/0    | gpio[6]    | io    | IOT9[B]  | LVCMOS18 | UP        | NONE       | NA           | NA            
+130/0    | UNUSED     | -     | IOT10[A] | -        | -         | -          | -            | -             
+129/0    | UNUSED     | -     | IOT10[B] | -        | -         | -          | -            | -             
+128/0    | UNUSED     | -     | IOT11[A] | -        | -         | -          | -            | -             
+126/0    | UNUSED     | -     | IOT11[B] | -        | -         | -          | -            | -             
+124/0    | UNUSED     | -     | IOT12[A] | -        | -         | -          | -            | -             
+123/0    | UNUSED     | -     | IOT12[B] | -        | -         | -          | -            | -             
+122/0    | UNUSED     | -     | IOT13[A] | -        | -         | -          | -            | -             
+121/0    | UNUSED     | -     | IOT13[B] | -        | -         | -          | -            | -             
+120/0    | UNUSED     | -     | IOT14[A] | -        | -         | -          | -            | -             
+119/0    | UNUSED     | -     | IOT14[B] | -        | -         | -          | -            | -             
+118/0    | UNUSED     | -     | IOT15[A] | -        | -         | -          | -            | -             
+117/0    | UNUSED     | -     | IOT15[B] | -        | -         | -          | -            | -             
+116/0    | UNUSED     | -     | IOT16[A] | -        | -         | -          | -            | -             
+115/0    | UNUSED     | -     | IOT16[B] | -        | -         | -          | -            | -             
+114/0    | UNUSED     | -     | IOT17[A] | -        | -         | -          | -            | -             
+113/0    | UNUSED     | -     | IOT17[B] | -        | -         | -          | -            | -             
+112/0    | UNUSED     | -     | IOT18[A] | -        | -         | -          | -            | -             
+111/0    | UNUSED     | -     | IOT18[B] | -        | -         | -          | -            | -             
+110/0    | UNUSED     | -     | IOT19[A] | -        | -         | -          | -            | -             
+----------------------------------------------------------------------------------------------------------------
+38/2     | UNUSED     | -     | IOB7[A]  | -        | -         | -          | -            | -             
+39/2     | UNUSED     | -     | IOB7[B]  | -        | -         | -          | -            | -             
+40/2     | UNUSED     | -     | IOB8[A]  | -        | -         | -          | -            | -             
+41/2     | UNUSED     | -     | IOB8[B]  | -        | -         | -          | -            | -             
+42/2     | UNUSED     | -     | IOB9[A]  | -        | -         | -          | -            | -             
+43/2     | UNUSED     | -     | IOB9[B]  | -        | -         | -          | -            | -             
+44/2     | UNUSED     | -     | IOB10[A] | -        | -         | -          | -            | -             
+45/2     | uart0_rxd  | in    | IOB10[B] | LVCMOS18 | UP        | NONE       | NA           | NA            
+46/2     | UNUSED     | -     | IOB11[A] | -        | -         | -          | -            | -             
+47/2     | UNUSED     | -     | IOB11[B] | -        | -         | -          | -            | -             
+54/2     | UNUSED     | -     | IOB12[A] | -        | -         | -          | -            | -             
+58/2     | uart0_txd  | out   | IOB12[B] | LVCMOS18 | UP        | NA         | NA           | NA            
+59/2     | UNUSED     | -     | IOB13[A] | -        | -         | -          | -            | -             
+60/2     | UNUSED     | -     | IOB13[B] | -        | -         | -          | -            | -             
+61/2     | gpio[4]    | io    | IOB14[A] | LVCMOS18 | UP        | NONE       | NA           | NA            
+62/2     | UNUSED     | -     | IOB14[B] | -        | -         | -          | -            | -             
+63/2     | UNUSED     | -     | IOB15[A] | -        | -         | -          | -            | -             
+64/2     | UNUSED     | -     | IOB15[B] | -        | -         | -          | -            | -             
+65/2     | UNUSED     | -     | IOB16[A] | -        | -         | -          | -            | -             
+66/2     | UNUSED     | -     | IOB16[B] | -        | -         | -          | -            | -             
+67/2     | UNUSED     | -     | IOB17[A] | -        | -         | -          | -            | -             
+68/2     | UNUSED     | -     | IOB17[B] | -        | -         | -          | -            | -             
+69/2     | gpio[0]    | io    | IOB18[A] | LVCMOS18 | UP        | NONE       | NA           | NA            
+70/2     | gpio[1]    | io    | IOB18[B] | LVCMOS18 | UP        | NONE       | NA           | NA            
+71/2     | gpio[2]    | io    | IOB19[A] | LVCMOS18 | UP        | NONE       | NA           | NA            
+72/2     | gpio[3]    | io    | IOB19[B] | LVCMOS18 | UP        | NONE       | NA           | NA            
+----------------------------------------------------------------------------------------------------------------
+3/3      | UNUSED     | -     | IOL2[A]  | -        | -         | -          | -            | -             
+4/3      | UNUSED     | -     | IOL2[B]  | -        | -         | -          | -            | -             
+7/3      | UNUSED     | -     | IOL3[B]  | -        | -         | -          | -            | -             
+8/3      | UNUSED     | -     | IOL4[A]  | -        | -         | -          | -            | -             
+9/3      | UNUSED     | -     | IOL4[B]  | -        | -         | -          | -            | -             
+11/3     | sys_clk    | in    | IOL5[A]  | LVTTL33  | UP        | NONE       | NA           | OFF           
+12/3     | UNUSED     | -     | IOL5[B]  | -        | -         | -          | -            | -             
+13/3     | UNUSED     | -     | IOL6[A]  | -        | -         | -          | -            | -             
+14/3     | UNUSED     | -     | IOL6[B]  | -        | -         | -          | -            | -             
+15/3     | UNUSED     | -     | IOL6[C]  | -        | -         | -          | -            | -             
+16/3     | UNUSED     | -     | IOL6[D]  | -        | -         | -          | -            | -             
+18/3     | UNUSED     | -     | IOL6[E]  | -        | -         | -          | -            | -             
+20/3     | UNUSED     | -     | IOL6[F]  | -        | -         | -          | -            | -             
+21/3     | UNUSED     | -     | IOL6[G]  | -        | -         | -          | -            | -             
+22/3     | UNUSED     | -     | IOL6[H]  | -        | -         | -          | -            | -             
+23/3     | UNUSED     | -     | IOL6[I]  | -        | -         | -          | -            | -             
+24/3     | reset_n    | in    | IOL6[J]  | LVCMOS18 | UP        | NONE       | NA           | OFF           
+25/3     | UNUSED     | -     | IOL7[A]  | -        | -         | -          | -            | -             
+27/3     | UNUSED     | -     | IOL7[B]  | -        | -         | -          | -            | -             
+28/3     | UNUSED     | -     | IOL8[B]  | -        | -         | -          | -            | -             
+29/3     | UNUSED     | -     | IOL9[A]  | -        | -         | -          | -            | -             
+30/3     | UNUSED     | -     | IOL9[B]  | -        | -         | -          | -            | -             
+----------------------------------------------------------------------------------------------------------------
+106/1    | UNUSED     | -     | IOR2[A]  | -        | -         | -          | -            | -             
+104/1    | UNUSED     | -     | IOR2[B]  | -        | -         | -          | -            | -             
+101/1    | UNUSED     | -     | IOR3[A]  | -        | -         | -          | -            | -             
+102/1    | UNUSED     | -     | IOR3[B]  | -        | -         | -          | -            | -             
+99/1     | gpio[7]    | io    | IOR4[A]  | LVCMOS18 | UP        | NONE       | NA           | OFF           
+100/1    | UNUSED     | -     | IOR4[B]  | -        | -         | -          | -            | -             
+97/1     | gpio[9]    | io    | IOR5[A]  | LVCMOS18 | UP        | NONE       | NA           | OFF           
+98/1     | gpio[8]    | io    | IOR5[B]  | LVCMOS18 | UP        | NONE       | NA           | OFF           
+90/1     | gpio[12]   | io    | IOR7[A]  | LVCMOS18 | UP        | NONE       | NA           | OFF           
+88/1     | gpio[13]   | io    | IOR7[B]  | LVCMOS18 | UP        | NONE       | NA           | OFF           
+86/1     | gpio[15]   | io    | IOR8[A]  | LVCMOS18 | UP        | NONE       | NA           | OFF           
+87/1     | gpio[14]   | io    | IOR8[B]  | LVCMOS18 | UP        | NONE       | NA           | OFF           
+84/1     | UNUSED     | -     | IOR9[A]  | -        | -         | -          | -            | -             
+83/1     | UNUSED     | -     | IOR9[B]  | -        | -         | -          | -            | -             
+----------------------------------------------------------------------------------------------------------------
+================================================================================================================
+
+
+
+  Placement and routing completed.
+
+
+10. Memory usage: 93MB.

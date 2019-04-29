@@ -1,0 +1,216 @@
+
+Copyright (C) 1994-2018 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: O-2018.09G-Beta2
+Install: D:\Gowin\1.8\SynplifyPro
+OS: Windows 6.1
+
+Hostname: GW-SW-029
+
+Implementation : rev_1
+
+#### START OF AREA REPORT #####[
+
+Part:			GW1NS_2CLQFP144-5 (GoWin)
+
+--------------------------------------------------------------------------
+########   Utilization report for  Top level view:   Gowin_EMPU   ########
+==========================================================================
+
+SEQUENTIAL ELEMENTS
+Name          Total elements     Utilization     Notes
+------------------------------------------------------
+REGISTERS     143                100 %                
+======================================================
+Total SEQUENTIAL ELEMENTS in the block Gowin_EMPU:	143 (34.62 % Utilization)
+
+
+COMBINATIONAL LOGIC
+Name          Total elements     Utilization     Notes
+------------------------------------------------------
+LUTS          192                100 %                
+MUX2_LUT5     2                  100 %                
+ALU           5                  100 %                
+======================================================
+Total COMBINATIONAL LOGIC in the block Gowin_EMPU:	199 (48.18 % Utilization)
+
+
+MEMORY ELEMENTS
+Name                Total elements     Utilization     Notes
+------------------------------------------------------------
+BLOCK RAMS/ROMS     4                  100 %                
+============================================================
+Total MEMORY ELEMENTS in the block Gowin_EMPU:	4 (0.97 % Utilization)
+
+----------------------------------------------------------------------------------
+########   Utilization report for  cell:   \\\~Gowin_EMPU\.Gowin_EMPU\    ########
+Instance path:   Gowin_EMPU.\\\~Gowin_EMPU\.Gowin_EMPU\                           
+==================================================================================
+
+SEQUENTIAL ELEMENTS
+Name          Total elements     Utilization     Notes
+------------------------------------------------------
+REGISTERS     143                100 %                
+======================================================
+Total SEQUENTIAL ELEMENTS in the block Gowin_EMPU.\\\~Gowin_EMPU\.Gowin_EMPU\ :	143 (34.62 % Utilization)
+
+
+COMBINATIONAL LOGIC
+Name          Total elements     Utilization     Notes
+------------------------------------------------------
+LUTS          192                100 %                
+MUX2_LUT5     2                  100 %                
+ALU           5                  100 %                
+======================================================
+Total COMBINATIONAL LOGIC in the block Gowin_EMPU.\\\~Gowin_EMPU\.Gowin_EMPU\ :	199 (48.18 % Utilization)
+
+
+MEMORY ELEMENTS
+Name                Total elements     Utilization     Notes
+------------------------------------------------------------
+BLOCK RAMS/ROMS     4                  100 %                
+============================================================
+Total MEMORY ELEMENTS in the block Gowin_EMPU.\\\~Gowin_EMPU\.Gowin_EMPU\ :	4 (0.97 % Utilization)
+
+---------------------------------------------------------------
+########   Utilization report for  cell:   GW_CLKDIV   ########
+Instance path:   \\\~Gowin_EMPU\.Gowin_EMPU\ .GW_CLKDIV        
+===============================================================
+--------------------------------------------------------------
+########   Utilization report for  cell:   GW_FLASH   ########
+Instance path:   \\\~Gowin_EMPU\.Gowin_EMPU\ .GW_FLASH        
+==============================================================
+
+SEQUENTIAL ELEMENTS
+Name          Total elements     Utilization     Notes
+------------------------------------------------------
+REGISTERS     15                 10.5 %               
+======================================================
+Total SEQUENTIAL ELEMENTS in the block \\\~Gowin_EMPU\.Gowin_EMPU\ .GW_FLASH:	15 (3.63 % Utilization)
+
+--------------------------------------------------------------------------
+########   Utilization report for  cell:   gw_rom_flash_15s_32s   ########
+Instance path:   GW_FLASH.gw_rom_flash_15s_32s                            
+==========================================================================
+-------------------------------------------------------------
+########   Utilization report for  cell:   GW_GPIO   ########
+Instance path:   \\\~Gowin_EMPU\.Gowin_EMPU\ .GW_GPIO        
+=============================================================
+-------------------------------------------------------------
+########   Utilization report for  cell:   GW_SRAM   ########
+Instance path:   \\\~Gowin_EMPU\.Gowin_EMPU\ .GW_SRAM        
+=============================================================
+
+MEMORY ELEMENTS
+Name                Total elements     Utilization     Notes
+------------------------------------------------------------
+BLOCK RAMS/ROMS     4                  100 %                
+============================================================
+Total MEMORY ELEMENTS in the block \\\~Gowin_EMPU\.Gowin_EMPU\ .GW_SRAM:	4 (0.97 % Utilization)
+
+-------------------------------------------------------------------------------------
+########   Utilization report for  cell:   gw_peripherals_interconnect_12s   ########
+Instance path:   \\\~Gowin_EMPU\.Gowin_EMPU\ .gw_peripherals_interconnect_12s        
+=====================================================================================
+
+SEQUENTIAL ELEMENTS
+Name          Total elements     Utilization     Notes
+------------------------------------------------------
+REGISTERS     128                89.5 %               
+======================================================
+Total SEQUENTIAL ELEMENTS in the block \\\~Gowin_EMPU\.Gowin_EMPU\ .gw_peripherals_interconnect_12s:	128 (30.99 % Utilization)
+
+
+COMBINATIONAL LOGIC
+Name          Total elements     Utilization     Notes
+------------------------------------------------------
+LUTS          190                99 %                 
+MUX2_LUT5     2                  100 %                
+ALU           5                  100 %                
+======================================================
+Total COMBINATIONAL LOGIC in the block \\\~Gowin_EMPU\.Gowin_EMPU\ .gw_peripherals_interconnect_12s:	197 (47.70 % Utilization)
+
+-----------------------------------------------------------------------
+########   Utilization report for  cell:   gw_cmsdk_apb2_adc   ########
+Instance path:   gw_peripherals_interconnect_12s.gw_cmsdk_apb2_adc     
+=======================================================================
+
+SEQUENTIAL ELEMENTS
+Name          Total elements     Utilization     Notes
+------------------------------------------------------
+REGISTERS     35                 24.5 %               
+======================================================
+Total SEQUENTIAL ELEMENTS in the block gw_peripherals_interconnect_12s.gw_cmsdk_apb2_adc:	35 (8.47 % Utilization)
+
+
+COMBINATIONAL LOGIC
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+LUTS     39                 20.3 %               
+=================================================
+Total COMBINATIONAL LOGIC in the block gw_peripherals_interconnect_12s.gw_cmsdk_apb2_adc:	39 (9.44 % Utilization)
+
+--------------------------------------------------------------------------------
+########   Utilization report for  cell:   gw_cmsdk_apb2_slave_mux_Z1   ########
+Instance path:   gw_peripherals_interconnect_12s.gw_cmsdk_apb2_slave_mux_Z1     
+================================================================================
+
+COMBINATIONAL LOGIC
+Name          Total elements     Utilization     Notes
+------------------------------------------------------
+LUTS          19                 9.9 %                
+MUX2_LUT5     1                  50 %                 
+======================================================
+Total COMBINATIONAL LOGIC in the block gw_peripherals_interconnect_12s.gw_cmsdk_apb2_slave_mux_Z1:	20 (4.84 % Utilization)
+
+-----------------------------------------------------------------------
+########   Utilization report for  cell:   gw_cmsdk_apb2_spi   ########
+Instance path:   gw_peripherals_interconnect_12s.gw_cmsdk_apb2_spi     
+=======================================================================
+
+SEQUENTIAL ELEMENTS
+Name          Total elements     Utilization     Notes
+------------------------------------------------------
+REGISTERS     93                 65 %                 
+======================================================
+Total SEQUENTIAL ELEMENTS in the block gw_peripherals_interconnect_12s.gw_cmsdk_apb2_spi:	93 (22.52 % Utilization)
+
+
+COMBINATIONAL LOGIC
+Name          Total elements     Utilization     Notes
+------------------------------------------------------
+LUTS          132                68.8 %               
+MUX2_LUT5     1                  50 %                 
+ALU           5                  100 %                
+======================================================
+Total COMBINATIONAL LOGIC in the block gw_peripherals_interconnect_12s.gw_cmsdk_apb2_spi:	138 (33.41 % Utilization)
+
+------------------------------------------------------------
+########   Utilization report for  cell:   SPI_Z2   ########
+Instance path:   gw_cmsdk_apb2_spi.SPI_Z2                   
+============================================================
+
+SEQUENTIAL ELEMENTS
+Name          Total elements     Utilization     Notes
+------------------------------------------------------
+REGISTERS     93                 65 %                 
+======================================================
+Total SEQUENTIAL ELEMENTS in the block gw_cmsdk_apb2_spi.SPI_Z2:	93 (22.52 % Utilization)
+
+
+COMBINATIONAL LOGIC
+Name          Total elements     Utilization     Notes
+------------------------------------------------------
+LUTS          132                68.8 %               
+MUX2_LUT5     1                  50 %                 
+ALU           5                  100 %                
+======================================================
+Total COMBINATIONAL LOGIC in the block gw_cmsdk_apb2_spi.SPI_Z2:	138 (33.41 % Utilization)
+
+
+##### END OF AREA REPORT #####]
+

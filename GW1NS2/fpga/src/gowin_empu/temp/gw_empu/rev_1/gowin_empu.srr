@@ -1,0 +1,1068 @@
+#Build: Synplify Pro (R) O-2018.09G-Beta2, Build 039R, Sep 17 2018
+#install: D:\Gowin\1.8\SynplifyPro
+#OS: Windows 7 6.1
+#Hostname: GW-SW-029
+
+# Thu Nov 22 16:19:32 2018
+
+#Implementation: rev_1
+
+
+Copyright (C) 1994-2018 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: O-2018.09G-Beta2
+Install: D:\Gowin\1.8\SynplifyPro
+OS: Windows 6.1
+
+Hostname: GW-SW-029
+
+Implementation : rev_1
+Synopsys HDL Compiler, Version comp2018q3p1, Build 039R, Built Sep 17 2018 09:15:09
+
+@N|Running in 64-bit mode
+###########################################################[
+
+Copyright (C) 1994-2018 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: O-2018.09G-Beta2
+Install: D:\Gowin\1.8\SynplifyPro
+OS: Windows 6.1
+
+Hostname: GW-SW-029
+
+Implementation : rev_1
+Synopsys Verilog Compiler, Version comp2018q3p1, Build 039R, Built Sep 17 2018 09:15:09
+
+@N|Running in 64-bit mode
+@N: CG1349 :	| Running Verilog Compiler in System Verilog mode
+
+@N: CG1350 :	| Running Verilog Compiler in Multiple File Compilation Unit mode
+
+@I::"D:\Gowin\1.8\SynplifyPro\lib\generic\gw1ns.v" (library work)
+@I::"D:\Gowin\1.8\SynplifyPro\lib\vlog\hypermods.v" (library __hyper__lib__)
+@I::"D:\Gowin\1.8\SynplifyPro\lib\vlog\umr_capim.v" (library snps_haps)
+@I::"D:\Gowin\1.8\SynplifyPro\lib\vlog\scemi_objects.v" (library snps_haps)
+@I::"D:\Gowin\1.8\SynplifyPro\lib\vlog\scemi_pipes.svh" (library snps_haps)
+@I::"D:\Gowin\1.8\IDE\ipcore\GOWIN_EMPU\data\gowin_empu.v" (library work)
+@I:"D:\Gowin\1.8\IDE\ipcore\GOWIN_EMPU\data\gowin_empu.v":"D:\user-bak\Users\root\Desktop\gowin_empu\src\gowin_empu\temp\gw_empu\config.v" (library work)
+@I:"D:\Gowin\1.8\IDE\ipcore\GOWIN_EMPU\data\gowin_empu.v":"D:\Gowin\1.8\IDE\ipcore\GOWIN_EMPU\data\gowin_empu_name.v" (library work)
+@W: CG1337 :"D:\Gowin\1.8\IDE\ipcore\GOWIN_EMPU\data\gowin_empu.v":1329:9:1329:20|Net master_pse11 is not declared.
+@I::"D:\Gowin\1.8\IDE\ipcore\GOWIN_EMPU\data\gowin_empu_top.v" (library work)
+Verilog syntax check successful!
+Selecting top level module Gowin_EMPU
+Running optimization stage 1 on GSR .......
+Running optimization stage 1 on CLKDIV .......
+Running optimization stage 1 on GW_CLKDIV .......
+Running optimization stage 1 on MCU .......
+Running optimization stage 1 on IOBUF .......
+Running optimization stage 1 on GW_GPIO .......
+Running optimization stage 1 on DQCE .......
+Running optimization stage 1 on FLASH128K .......
+Running optimization stage 1 on gw_rom_flash_15s_32s .......
+Running optimization stage 1 on GW_FLASH .......
+Running optimization stage 1 on SP .......
+Running optimization stage 1 on GW_SRAM .......
+Running optimization stage 1 on gw_cmsdk_apb2_slave_mux_Z1 .......
+Running optimization stage 1 on gw_int_apb2_decoder_8s .......
+Running optimization stage 1 on ADC .......
+Running optimization stage 1 on gw_cmsdk_apb2_adc .......
+Running optimization stage 1 on SPI_Z2 .......
+Running optimization stage 1 on gw_cmsdk_apb2_spi .......
+Running optimization stage 1 on gw_peripherals_interconnect_12s .......
+Running optimization stage 1 on \~Gowin_EMPU.Gowin_EMPU  .......
+@N: CG364 :"D:\Gowin\1.8\IDE\ipcore\GOWIN_EMPU\data\gowin_empu_top.v":5:24:5:24|Synthesizing module Gowin_EMPU in library work.
+Running optimization stage 1 on Gowin_EMPU .......
+Running optimization stage 2 on Gowin_EMPU .......
+Running optimization stage 2 on \~Gowin_EMPU.Gowin_EMPU  .......
+Running optimization stage 2 on gw_peripherals_interconnect_12s .......
+Running optimization stage 2 on gw_cmsdk_apb2_spi .......
+Running optimization stage 2 on SPI_Z2 .......
+Running optimization stage 2 on gw_cmsdk_apb2_adc .......
+Running optimization stage 2 on ADC .......
+Running optimization stage 2 on gw_int_apb2_decoder_8s .......
+Running optimization stage 2 on gw_cmsdk_apb2_slave_mux_Z1 .......
+Running optimization stage 2 on GW_SRAM .......
+Running optimization stage 2 on SP .......
+Running optimization stage 2 on GW_FLASH .......
+Running optimization stage 2 on gw_rom_flash_15s_32s .......
+Running optimization stage 2 on FLASH128K .......
+Running optimization stage 2 on DQCE .......
+Running optimization stage 2 on GW_GPIO .......
+Running optimization stage 2 on IOBUF .......
+Running optimization stage 2 on MCU .......
+Running optimization stage 2 on GW_CLKDIV .......
+Running optimization stage 2 on CLKDIV .......
+Running optimization stage 2 on GSR .......
+
+For a summary of runtime and memory usage per design unit, please see file:
+==========================================================
+@L: D:\user-bak\Users\root\Desktop\gowin_empu\src\gowin_empu\temp\gw_empu\rev_1\synwork\layer0.rt.csv
+
+
+At c_ver Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 74MB peak: 78MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Thu Nov 22 16:19:34 2018
+
+###########################################################]
+###########################################################[
+
+Copyright (C) 1994-2018 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: O-2018.09G-Beta2
+Install: D:\Gowin\1.8\SynplifyPro
+OS: Windows 6.1
+
+Hostname: GW-SW-029
+
+Implementation : rev_1
+Synopsys Synopsys Netlist Linker, Version comp2018q3p1, Build 039R, Built Sep 17 2018 09:15:09
+
+@N|Running in 64-bit mode
+@N: NF107 :"D:\Gowin\1.8\IDE\ipcore\GOWIN_EMPU\data\gowin_empu_top.v":5:24:5:24|Selected library: work cell: Gowin_EMPU view verilog as top level
+@N: NF107 :"D:\Gowin\1.8\IDE\ipcore\GOWIN_EMPU\data\gowin_empu_top.v":5:24:5:24|Selected library: work cell: Gowin_EMPU view verilog as top level
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 70MB peak: 71MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Thu Nov 22 16:19:35 2018
+
+###########################################################]
+@END
+
+At c_hdl Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:00s; Memory used current: 3MB peak: 4MB)
+
+Process took 0h:00m:02s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Thu Nov 22 16:19:35 2018
+
+###########################################################]
+###########################################################[
+
+Copyright (C) 1994-2018 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: O-2018.09G-Beta2
+Install: D:\Gowin\1.8\SynplifyPro
+OS: Windows 6.1
+
+Hostname: GW-SW-029
+
+Database state : D:\user-bak\Users\root\Desktop\gowin_empu\src\gowin_empu\temp\gw_empu\rev_1\synwork\|rev_1
+Synopsys Synopsys Netlist Linker, Version comp2018q3p1, Build 039R, Built Sep 17 2018 09:15:09
+
+@N|Running in 64-bit mode
+@N: NF107 :"D:\Gowin\1.8\IDE\ipcore\GOWIN_EMPU\data\gowin_empu_top.v":5:24:5:24|Selected library: work cell: Gowin_EMPU view verilog as top level
+@N: NF107 :"D:\Gowin\1.8\IDE\ipcore\GOWIN_EMPU\data\gowin_empu_top.v":5:24:5:24|Selected library: work cell: Gowin_EMPU view verilog as top level
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 71MB peak: 72MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Thu Nov 22 16:19:36 2018
+
+###########################################################]
+Premap Report
+
+# Thu Nov 22 16:19:37 2018
+
+
+Copyright (C) 1994-2018 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: O-2018.09G-Beta2
+Install: D:\Gowin\1.8\SynplifyPro
+OS: Windows 6.1
+
+Hostname: GW-SW-029
+
+Implementation : rev_1
+Synopsys Generic Technology Pre-mapping, Version mapgw, Build 1176R, Built Sep 17 2018 09:44:14
+
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 100MB)
+
+@A: MF827 |No constraint file specified.
+@N: MF284 |Setting synthesis effort to medium for the design
+@L: D:\user-bak\Users\root\Desktop\gowin_empu\src\gowin_empu\temp\gw_empu\rev_1\gowin_empu_scck.rpt 
+Printing clock  summary report in "D:\user-bak\Users\root\Desktop\gowin_empu\src\gowin_empu\temp\gw_empu\rev_1\gowin_empu_scck.rpt" file 
+@N: MF916 |Option synthesis_strategy=base is enabled. 
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 103MB peak: 105MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 103MB peak: 105MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 104MB peak: 105MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 116MB peak: 118MB)
+
+@N: MF284 |Setting synthesis effort to medium for the design
+@N: MH105 |UMR3 is only supported for HAPS-80.
+@N: MH105 |UMR3 is only supported for HAPS-80.
+ICG Latch Removal Summary:
+Number of ICG latches removed:	0
+Number of ICG latches not removed:	0
+syn_allowed_resources : blockrams=4  set on top level netlist Gowin_EMPU
+
+Finished netlist restructuring (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 193MB peak: 195MB)
+
+
+
+Clock Summary
+******************
+
+          Start                               Requested     Requested     Clock        Clock                     Clock
+Level     Clock                               Frequency     Period        Type         Group                     Load 
+----------------------------------------------------------------------------------------------------------------------
+0 -       System                              234.5 MHz     4.264         system       system_clkgroup           0    
+                                                                                                                      
+0 -       GW_CLKDIV|clkout_inferred_clock     116.7 MHz     8.569         inferred     Autoconstr_clkgroup_0     148  
+======================================================================================================================
+
+
+
+Clock Load Summary
+***********************
+
+                                    Clock     Source                                                Clock Pin                                                                                       Non-clock Pin     Non-clock Pin                                                                              
+Clock                               Load      Pin                                                   Seq Example                                                                                     Seq Example       Comb Example                                                                               
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+System                              0         -                                                     -                                                                                               -                 -                                                                                          
+                                                                                                                                                                                                                                                                                                                 
+GW_CLKDIV|clkout_inferred_clock     148       Gowin_EMPU_inst.sysclk.clkdiv_inst.CLKOUT(CLKDIV)     Gowin_EMPU_inst.u_gw_peripherals_interconnect.u_gw_cmsdk_apb2_spi.u_spi.latch_s_data[7:0].C     -                 Gowin_EMPU_inst.u_gw_peripherals_interconnect.u_gw_cmsdk_apb2_spi.u_spi.un1_CLK_I.I[0](inv)
+=================================================================================================================================================================================================================================================================================================================
+
+
+@N: FX1143 |Skipping assigning INTERNAL_VREF to iobanks, because the table of mapping from pin to iobank is not initialized.
+Finished Pre Mapping Phase.
+@N: BN225 |Writing default property annotation file D:\user-bak\Users\root\Desktop\gowin_empu\src\gowin_empu\temp\gw_empu\rev_1\gowin_empu.sap.
+
+Starting constraint checker (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:02s; Memory used current: 192MB peak: 195MB)
+
+
+Finished constraint checker preprocessing (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:02s; Memory used current: 192MB peak: 195MB)
+
+None
+None
+
+Finished constraint checker (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:02s; Memory used current: 193MB peak: 195MB)
+
+Pre-mapping successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:02s; Memory used current: 107MB peak: 195MB)
+
+Process took 0h:00m:04s realtime, 0h:00m:02s cputime
+# Thu Nov 22 16:19:41 2018
+
+###########################################################]
+Map & Optimize Report
+
+# Thu Nov 22 16:19:42 2018
+
+
+Copyright (C) 1994-2018 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: O-2018.09G-Beta2
+Install: D:\Gowin\1.8\SynplifyPro
+OS: Windows 6.1
+
+Hostname: GW-SW-029
+
+Implementation : rev_1
+Synopsys Generic Technology Mapper, Version mapgw, Build 1176R, Built Sep 17 2018 09:44:14
+
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 100MB)
+
+@N: MF284 |Setting synthesis effort to medium for the design
+@N: MF916 |Option synthesis_strategy=base is enabled. 
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 100MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 100MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 101MB peak: 101MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 112MB peak: 115MB)
+
+@N: MF284 |Setting synthesis effort to medium for the design
+
+
+Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 191MB peak: 193MB)
+
+
+Available hyper_sources - for debug and ip models
+	None Found
+
+@N: MT206 |Auto Constrain mode is enabled
+
+Finished RTL optimizations (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 191MB peak: 193MB)
+
+
+Starting factoring (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 191MB peak: 193MB)
+
+
+Finished factoring (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 196MB peak: 196MB)
+
+
+Starting gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 194MB peak: 196MB)
+
+
+Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 194MB peak: 196MB)
+
+
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 195MB peak: 196MB)
+
+
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 195MB peak: 196MB)
+
+
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 196MB peak: 196MB)
+
+
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 195MB peak: 196MB)
+
+
+Finished preparing to map (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 195MB peak: 196MB)
+
+
+Finished technology mapping (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 197MB peak: 199MB)
+
+Pass		 CPU time		Worst Slack		Luts / Registers
+------------------------------------------------------------
+   1		0h:00m:01s		    -4.52ns		 200 /       131
+   2		0h:00m:01s		    -4.52ns		 196 /       131
+   3		0h:00m:01s		    -3.51ns		 196 /       131
+Timing driven replication report
+Added 10 Registers via timing driven replication
+Added 6 LUTs via timing driven replication
+
+   4		0h:00m:02s		    -2.80ns		 219 /       141
+   5		0h:00m:02s		    -3.11ns		 220 /       141
+   6		0h:00m:02s		    -2.80ns		 222 /       141
+   7		0h:00m:02s		    -2.87ns		 223 /       141
+   8		0h:00m:02s		    -3.18ns		 222 /       141
+Timing driven replication report
+Added 2 Registers via timing driven replication
+Added 0 LUTs via timing driven replication
+
+
+   9		0h:00m:02s		    -2.80ns		 219 /       143
+  10		0h:00m:02s		    -2.80ns		 219 /       143
+  11		0h:00m:02s		    -2.80ns		 219 /       143
+  12		0h:00m:02s		    -2.80ns		 219 /       143
+  13		0h:00m:02s		    -2.80ns		 219 /       143
+
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:02s; Memory used current: 199MB peak: 199MB)
+
+@N: FX164 |The option to pack registers in the IOB has not been specified. Please set syn_useioff attribute.  
+
+Finished restoring hierarchy (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:02s; Memory used current: 198MB peak: 199MB)
+
+
+
+@S |Clock Optimization Summary
+
+
+#### START OF CLOCK OPTIMIZATION REPORT #####[
+
+0 non-gated/non-generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
+1 gated/generated clock tree(s) driving 147 clock pin(s) of sequential element(s)
+0 instances converted, 147 sequential instances remain driven by gated/generated clocks
+
+================================================================================================================== Gated/Generated Clocks ===================================================================================================================
+Clock Tree ID     Driving Element                        Drive Element Type     Fanout     Sample Instance                                     Explanation                                                                                                   
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+@K:CKID0001       Gowin_EMPU_inst.sysclk.clkdiv_inst     CLKDIV                 147        Gowin_EMPU_inst.u_flash_wrap.rom_haddr_test[12]     Illegal instance on clock path. See the Gated Clocks description in the user guide for conversion requirements
+=============================================================================================================================================================================================================================================================
+
+
+##### END OF CLOCK OPTIMIZATION REPORT ######]
+
+
+Start Writing Netlists (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 126MB peak: 199MB)
+
+Writing Analyst data base D:\user-bak\Users\root\Desktop\gowin_empu\src\gowin_empu\temp\gw_empu\rev_1\synwork\gowin_empu_m.srm
+
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:03s; Memory used current: 197MB peak: 199MB)
+
+Writing Verilog Simulation files
+
+Writing scf file... (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:05s; Memory used current: 198MB peak: 199MB)
+
+@N: BW103 |The default time unit for the Synopsys Constraint File (SDC or FDC) is 1ns.
+@N: BW107 |Synopsys Constraint File capacitance units using default value of 1pF 
+
+Finished Writing Verilog Simulation files (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:05s; Memory used current: 196MB peak: 199MB)
+
+
+Start final timing analysis (Real Time elapsed 0h:00m:06s; CPU Time elapsed 0h:00m:06s; Memory used current: 197MB peak: 199MB)
+
+@W: MT246 :"d:\gowin\1.8\ide\ipcore\gowin_empu\data\gowin_empu.v":389:6:389:14|Blackbox MCU is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
+@W: MT246 :"d:\gowin\1.8\ide\ipcore\gowin_empu\data\gowin_empu.v":2071:4:2071:15|Blackbox ADC is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
+@W: MT246 :"d:\gowin\1.8\ide\ipcore\gowin_empu\data\gowin_empu.v":732:5:732:10|Blackbox DQCE is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
+@W: MT246 :"d:\gowin\1.8\ide\ipcore\gowin_empu\data\gowin_empu.v":812:10:812:12|Blackbox FLASH128K is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
+@W: MT246 :"d:\gowin\1.8\ide\ipcore\gowin_empu\data\gowin_empu.v":1011:7:1011:17|Blackbox CLKDIV is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
+@W: MT420 |Found inferred clock GW_CLKDIV|clkout_inferred_clock with period 10.64ns. Please declare a user-defined clock on net Gowin_EMPU_inst.sysclk.fclk.
+
+
+##### START OF TIMING REPORT #####[
+# Timing Report written on Thu Nov 22 16:19:49 2018
+#
+
+
+Top view:               Gowin_EMPU
+Requested Frequency:    94.0 MHz
+Wire load mode:         top
+Paths requested:        5
+Constraint File(s):    
+@N: MT320 |This timing report is an estimate of place and route data. For final timing results, use the FPGA vendor place and route report.
+
+@N: MT322 |Clock constraints include only register-to-register paths associated with each individual clock.
+
+
+
+Performance Summary
+*******************
+
+
+Worst slack in design: -4.987
+
+                                    Requested     Estimated     Requested     Estimated                Clock        Clock                
+Starting Clock                      Frequency     Frequency     Period        Period        Slack      Type         Group                
+-----------------------------------------------------------------------------------------------------------------------------------------
+GW_CLKDIV|clkout_inferred_clock     94.0 MHz      48.5 MHz      10.642        20.616        -4.987     inferred     Autoconstr_clkgroup_0
+System                              137.8 MHz     117.1 MHz     7.256         8.537         -1.280     system       system_clkgroup      
+=========================================================================================================================================
+
+
+
+
+
+Clock Relationships
+*******************
+
+Clocks                                                            |    rise  to  rise    |    fall  to  fall   |    rise  to  fall    |    fall  to  rise  
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+Starting                         Ending                           |  constraint  slack   |  constraint  slack  |  constraint  slack   |  constraint  slack 
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+System                           System                           |  7.256       -1.280  |  No paths    -      |  No paths    -       |  No paths    -     
+System                           GW_CLKDIV|clkout_inferred_clock  |  10.642      0.854   |  No paths    -      |  No paths    -       |  No paths    -     
+GW_CLKDIV|clkout_inferred_clock  System                           |  10.642      2.370   |  No paths    -      |  No paths    -       |  No paths    -     
+GW_CLKDIV|clkout_inferred_clock  GW_CLKDIV|clkout_inferred_clock  |  10.642      -1.878  |  No paths    -      |  5.321       -4.987  |  5.321       -0.286
+===========================================================================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+
+Interface Information 
+*********************
+
+No IO constraint found
+
+
+
+====================================
+Detailed Report for Clock: GW_CLKDIV|clkout_inferred_clock
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                                                                                                      Starting                                                                    Arrival           
+Instance                                                                                              Reference                           Type      Pin     Net                   Time        Slack 
+                                                                                                      Clock                                                                                         
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Gowin_EMPU_inst.u_gw_peripherals_interconnect.u_gw_cmsdk_apb2_spi.u_spi.genblk1\.c_status_fast[1]     GW_CLKDIV|clkout_inferred_clock     DFFC      Q       c_status_fast[1]      0.440       -4.987
+Gowin_EMPU_inst.u_gw_peripherals_interconnect.u_gw_cmsdk_apb2_spi.u_spi.genblk1\.c_status_0_rep1      GW_CLKDIV|clkout_inferred_clock     DFFC      Q       c_status_0_rep1       0.440       -4.906
+Gowin_EMPU_inst.u_gw_peripherals_interconnect.u_gw_cmsdk_apb2_spi.u_spi.genblk1\.c_status_fast[0]     GW_CLKDIV|clkout_inferred_clock     DFFC      Q       c_status_fast[0]      0.440       -4.906
+Gowin_EMPU_inst.u_gw_peripherals_interconnect.u_gw_cmsdk_apb2_spi.u_spi.clock_sel_fast[1]             GW_CLKDIV|clkout_inferred_clock     DFFCE     Q       clock_sel_fast[1]     0.440       -4.826
+Gowin_EMPU_inst.u_gw_peripherals_interconnect.u_gw_cmsdk_apb2_spi.u_spi.genblk1\.clock_cnt[0]         GW_CLKDIV|clkout_inferred_clock     DFFC      Q       clock_cnt[0]          0.440       -4.681
+Gowin_EMPU_inst.u_gw_peripherals_interconnect.u_gw_cmsdk_apb2_spi.u_spi.genblk1\.c_status_fast[2]     GW_CLKDIV|clkout_inferred_clock     DFFC      Q       c_status_fast[2]      0.440       -4.654
+Gowin_EMPU_inst.u_gw_peripherals_interconnect.u_gw_cmsdk_apb2_spi.u_spi.clock_sel_fast[0]             GW_CLKDIV|clkout_inferred_clock     DFFCE     Q       clock_sel_fast[0]     0.440       -4.601
+Gowin_EMPU_inst.u_gw_peripherals_interconnect.u_gw_cmsdk_apb2_spi.u_spi.genblk1\.clock_cnt[1]         GW_CLKDIV|clkout_inferred_clock     DFFC      Q       clock_cnt[1]          0.440       -4.574
+Gowin_EMPU_inst.u_gw_peripherals_interconnect.u_gw_cmsdk_apb2_spi.u_spi.genblk1\.pending_data         GW_CLKDIV|clkout_inferred_clock     DFFCE     Q       pending_data          0.440       -4.419
+Gowin_EMPU_inst.u_gw_peripherals_interconnect.u_gw_cmsdk_apb2_spi.u_spi.genblk1\.clock_cnt[2]         GW_CLKDIV|clkout_inferred_clock     DFFC      Q       clock_cnt[2]          0.440       -4.349
+====================================================================================================================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                                                                                                      Starting                                                                      Required           
+Instance                                                                                              Reference                           Type       Pin     Net                    Time         Slack 
+                                                                                                      Clock                                                                                            
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Gowin_EMPU_inst.u_gw_peripherals_interconnect.u_gw_cmsdk_apb2_spi.u_spi.genblk1\.n_status[0]          GW_CLKDIV|clkout_inferred_clock     DFFNCE     D       n_status_7[0]          5.162        -4.987
+Gowin_EMPU_inst.u_gw_peripherals_interconnect.u_gw_cmsdk_apb2_spi.u_spi.genblk1\.n_status[2]          GW_CLKDIV|clkout_inferred_clock     DFFNCE     D       n_status_7[2]          5.162        -4.114
+Gowin_EMPU_inst.u_gw_peripherals_interconnect.u_gw_cmsdk_apb2_spi.u_spi.genblk1\.n_status[1]          GW_CLKDIV|clkout_inferred_clock     DFFNCE     D       N_106_i                5.162        -2.911
+Gowin_EMPU_inst.u_gw_peripherals_interconnect.u_gw_cmsdk_apb2_spi.u_spi.genblk1\.data_cnt[2]          GW_CLKDIV|clkout_inferred_clock     DFFC       D       data_cnt_3[2]          10.483       -1.878
+Gowin_EMPU_inst.u_gw_peripherals_interconnect.u_gw_cmsdk_apb2_spi.u_spi.genblk1\.data_cnt_fast[2]     GW_CLKDIV|clkout_inferred_clock     DFFC       D       data_cnt_3_fast[2]     10.483       -1.878
+Gowin_EMPU_inst.u_gw_peripherals_interconnect.u_gw_cmsdk_apb2_spi.u_spi.genblk1\.data_cnt[3]          GW_CLKDIV|clkout_inferred_clock     DFFC       D       data_cnt_3[3]          10.483       -1.310
+Gowin_EMPU_inst.u_gw_peripherals_interconnect.u_gw_cmsdk_apb2_spi.u_spi.genblk1\.data_cnt[4]          GW_CLKDIV|clkout_inferred_clock     DFFC       D       data_cnt_1_axbxc4      10.483       -1.310
+Gowin_EMPU_inst.u_gw_peripherals_interconnect.u_gw_cmsdk_apb2_spi.u_spi.genblk1\.data_cnt_fast[3]     GW_CLKDIV|clkout_inferred_clock     DFFC       D       data_cnt_3_fast[3]     10.483       -1.310
+Gowin_EMPU_inst.u_gw_peripherals_interconnect.u_gw_cmsdk_apb2_spi.u_spi.genblk1\.n_status[0]          GW_CLKDIV|clkout_inferred_clock     DFFNCE     CE      N_101                  5.162        -1.286
+Gowin_EMPU_inst.u_gw_peripherals_interconnect.u_gw_cmsdk_apb2_spi.u_spi.genblk1\.n_status[1]          GW_CLKDIV|clkout_inferred_clock     DFFNCE     CE      N_101                  5.162        -1.286
+=======================================================================================================================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      5.321
+    - Setup time:                            0.160
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         5.162
+
+    - Propagation time:                      10.148
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (critical) :                     -4.987
+
+    Number of logic level(s):                5
+    Starting point:                          Gowin_EMPU_inst.u_gw_peripherals_interconnect.u_gw_cmsdk_apb2_spi.u_spi.genblk1\.c_status_fast[1] / Q
+    Ending point:                            Gowin_EMPU_inst.u_gw_peripherals_interconnect.u_gw_cmsdk_apb2_spi.u_spi.genblk1\.n_status[0] / D
+    The start point is clocked by            GW_CLKDIV|clkout_inferred_clock [rising] on pin CLK
+    The end   point is clocked by            GW_CLKDIV|clkout_inferred_clock [falling] on pin CLK
+
+Instance / Net                                                                                                                  Pin      Pin               Arrival     No. of    
+Name                                                                                                              Type          Name     Dir     Delay     Time        Fan Out(s)
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Gowin_EMPU_inst.u_gw_peripherals_interconnect.u_gw_cmsdk_apb2_spi.u_spi.genblk1\.c_status_fast[1]                 DFFC          Q        Out     0.440     0.440       -         
+c_status_fast[1]                                                                                                  Net           -        -       1.225     -           3         
+Gowin_EMPU_inst.u_gw_peripherals_interconnect.u_gw_cmsdk_apb2_spi.u_spi.genblk1\.c_status_fast_RNI70O61[1]        LUT4          I1       In      -         1.666       -         
+Gowin_EMPU_inst.u_gw_peripherals_interconnect.u_gw_cmsdk_apb2_spi.u_spi.genblk1\.c_status_fast_RNI70O61[1]        LUT4          F        Out     1.319     2.984       -         
+G_8_0_sn_sx                                                                                                       Net           -        -       1.225     -           2         
+Gowin_EMPU_inst.u_gw_peripherals_interconnect.u_gw_cmsdk_apb2_spi.u_spi.genblk1\.data_cnt_RNIKRA83[5]             LUT4          I1       In      -         4.210       -         
+Gowin_EMPU_inst.u_gw_peripherals_interconnect.u_gw_cmsdk_apb2_spi.u_spi.genblk1\.data_cnt_RNIKRA83[5]             LUT4          F        Out     1.319     5.528       -         
+G_8_0_mb_N_4L5_1_0                                                                                                Net           -        -       0.000     -           1         
+Gowin_EMPU_inst.u_gw_peripherals_interconnect.u_gw_cmsdk_apb2_spi.u_spi.genblk1\.SCLK_MASTER4_i_o2_2_RNIMB2J6     MUX2_LUT5     I0       In      -         5.528       -         
+Gowin_EMPU_inst.u_gw_peripherals_interconnect.u_gw_cmsdk_apb2_spi.u_spi.genblk1\.SCLK_MASTER4_i_o2_2_RNIMB2J6     MUX2_LUT5     O        Out     0.180     5.708       -         
+G_8_0_mb_1                                                                                                        Net           -        -       1.225     -           1         
+Gowin_EMPU_inst.u_gw_peripherals_interconnect.u_gw_cmsdk_apb2_spi.u_spi.genblk1\.SCLK_MASTER4_i_o2_2_RNINVP6E     LUT4          I0       In      -         6.934       -         
+Gowin_EMPU_inst.u_gw_peripherals_interconnect.u_gw_cmsdk_apb2_spi.u_spi.genblk1\.SCLK_MASTER4_i_o2_2_RNINVP6E     LUT4          F        Out     1.238     8.172       -         
+SCLK_MASTER4_i_o2_2_RNINVP6E                                                                                      Net           -        -       1.225     -           1         
+Gowin_EMPU_inst.u_gw_peripherals_interconnect.u_gw_cmsdk_apb2_spi.u_spi.genblk1\.n_status_7_2_0_.m12_0_0          LUT4          I3       In      -         9.397       -         
+Gowin_EMPU_inst.u_gw_peripherals_interconnect.u_gw_cmsdk_apb2_spi.u_spi.genblk1\.n_status_7_2_0_.m12_0_0          LUT4          F        Out     0.751     10.148      -         
+n_status_7[0]                                                                                                     Net           -        -       0.000     -           1         
+Gowin_EMPU_inst.u_gw_peripherals_interconnect.u_gw_cmsdk_apb2_spi.u_spi.genblk1\.n_status[0]                      DFFNCE        D        In      -         10.148      -         
+=================================================================================================================================================================================
+Total path delay (propagation time + setup) of 10.308 is 5.407(52.5%) logic and 4.901(47.5%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 2: 
+      Requested Period:                      5.321
+    - Setup time:                            0.160
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         5.162
+
+    - Propagation time:                      10.148
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (critical) :                     -4.987
+
+    Number of logic level(s):                5
+    Starting point:                          Gowin_EMPU_inst.u_gw_peripherals_interconnect.u_gw_cmsdk_apb2_spi.u_spi.genblk1\.c_status_fast[1] / Q
+    Ending point:                            Gowin_EMPU_inst.u_gw_peripherals_interconnect.u_gw_cmsdk_apb2_spi.u_spi.genblk1\.n_status[0] / D
+    The start point is clocked by            GW_CLKDIV|clkout_inferred_clock [rising] on pin CLK
+    The end   point is clocked by            GW_CLKDIV|clkout_inferred_clock [falling] on pin CLK
+
+Instance / Net                                                                                                                  Pin      Pin               Arrival     No. of    
+Name                                                                                                              Type          Name     Dir     Delay     Time        Fan Out(s)
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Gowin_EMPU_inst.u_gw_peripherals_interconnect.u_gw_cmsdk_apb2_spi.u_spi.genblk1\.c_status_fast[1]                 DFFC          Q        Out     0.440     0.440       -         
+c_status_fast[1]                                                                                                  Net           -        -       1.225     -           3         
+Gowin_EMPU_inst.u_gw_peripherals_interconnect.u_gw_cmsdk_apb2_spi.u_spi.genblk1\.c_status_fast_RNI70O61[1]        LUT4          I1       In      -         1.666       -         
+Gowin_EMPU_inst.u_gw_peripherals_interconnect.u_gw_cmsdk_apb2_spi.u_spi.genblk1\.c_status_fast_RNI70O61[1]        LUT4          F        Out     1.319     2.984       -         
+G_8_0_sn_sx                                                                                                       Net           -        -       1.225     -           2         
+Gowin_EMPU_inst.u_gw_peripherals_interconnect.u_gw_cmsdk_apb2_spi.u_spi.genblk1\.data_cnt_RNIKRA83_0[5]           LUT4          I1       In      -         4.210       -         
+Gowin_EMPU_inst.u_gw_peripherals_interconnect.u_gw_cmsdk_apb2_spi.u_spi.genblk1\.data_cnt_RNIKRA83_0[5]           LUT4          F        Out     1.319     5.528       -         
+G_8_0_mb_N_4L5_1_1                                                                                                Net           -        -       0.000     -           1         
+Gowin_EMPU_inst.u_gw_peripherals_interconnect.u_gw_cmsdk_apb2_spi.u_spi.genblk1\.SCLK_MASTER4_i_o2_2_RNIMB2J6     MUX2_LUT5     I1       In      -         5.528       -         
+Gowin_EMPU_inst.u_gw_peripherals_interconnect.u_gw_cmsdk_apb2_spi.u_spi.genblk1\.SCLK_MASTER4_i_o2_2_RNIMB2J6     MUX2_LUT5     O        Out     0.180     5.708       -         
+G_8_0_mb_1                                                                                                        Net           -        -       1.225     -           1         
+Gowin_EMPU_inst.u_gw_peripherals_interconnect.u_gw_cmsdk_apb2_spi.u_spi.genblk1\.SCLK_MASTER4_i_o2_2_RNINVP6E     LUT4          I0       In      -         6.934       -         
+Gowin_EMPU_inst.u_gw_peripherals_interconnect.u_gw_cmsdk_apb2_spi.u_spi.genblk1\.SCLK_MASTER4_i_o2_2_RNINVP6E     LUT4          F        Out     1.238     8.172       -         
+SCLK_MASTER4_i_o2_2_RNINVP6E                                                                                      Net           -        -       1.225     -           1         
+Gowin_EMPU_inst.u_gw_peripherals_interconnect.u_gw_cmsdk_apb2_spi.u_spi.genblk1\.n_status_7_2_0_.m12_0_0          LUT4          I3       In      -         9.397       -         
+Gowin_EMPU_inst.u_gw_peripherals_interconnect.u_gw_cmsdk_apb2_spi.u_spi.genblk1\.n_status_7_2_0_.m12_0_0          LUT4          F        Out     0.751     10.148      -         
+n_status_7[0]                                                                                                     Net           -        -       0.000     -           1         
+Gowin_EMPU_inst.u_gw_peripherals_interconnect.u_gw_cmsdk_apb2_spi.u_spi.genblk1\.n_status[0]                      DFFNCE        D        In      -         10.148      -         
+=================================================================================================================================================================================
+Total path delay (propagation time + setup) of 10.308 is 5.407(52.5%) logic and 4.901(47.5%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 3: 
+      Requested Period:                      5.321
+    - Setup time:                            0.160
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         5.162
+
+    - Propagation time:                      10.068
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 -4.906
+
+    Number of logic level(s):                5
+    Starting point:                          Gowin_EMPU_inst.u_gw_peripherals_interconnect.u_gw_cmsdk_apb2_spi.u_spi.genblk1\.c_status_0_rep1 / Q
+    Ending point:                            Gowin_EMPU_inst.u_gw_peripherals_interconnect.u_gw_cmsdk_apb2_spi.u_spi.genblk1\.n_status[0] / D
+    The start point is clocked by            GW_CLKDIV|clkout_inferred_clock [rising] on pin CLK
+    The end   point is clocked by            GW_CLKDIV|clkout_inferred_clock [falling] on pin CLK
+
+Instance / Net                                                                                                                  Pin      Pin               Arrival     No. of    
+Name                                                                                                              Type          Name     Dir     Delay     Time        Fan Out(s)
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Gowin_EMPU_inst.u_gw_peripherals_interconnect.u_gw_cmsdk_apb2_spi.u_spi.genblk1\.c_status_0_rep1                  DFFC          Q        Out     0.440     0.440       -         
+c_status_0_rep1                                                                                                   Net           -        -       1.225     -           4         
+Gowin_EMPU_inst.u_gw_peripherals_interconnect.u_gw_cmsdk_apb2_spi.u_spi.genblk1\.c_status_fast_RNI70O61[1]        LUT4          I0       In      -         1.666       -         
+Gowin_EMPU_inst.u_gw_peripherals_interconnect.u_gw_cmsdk_apb2_spi.u_spi.genblk1\.c_status_fast_RNI70O61[1]        LUT4          F        Out     1.238     2.904       -         
+G_8_0_sn_sx                                                                                                       Net           -        -       1.225     -           2         
+Gowin_EMPU_inst.u_gw_peripherals_interconnect.u_gw_cmsdk_apb2_spi.u_spi.genblk1\.data_cnt_RNIKRA83[5]             LUT4          I1       In      -         4.129       -         
+Gowin_EMPU_inst.u_gw_peripherals_interconnect.u_gw_cmsdk_apb2_spi.u_spi.genblk1\.data_cnt_RNIKRA83[5]             LUT4          F        Out     1.319     5.448       -         
+G_8_0_mb_N_4L5_1_0                                                                                                Net           -        -       0.000     -           1         
+Gowin_EMPU_inst.u_gw_peripherals_interconnect.u_gw_cmsdk_apb2_spi.u_spi.genblk1\.SCLK_MASTER4_i_o2_2_RNIMB2J6     MUX2_LUT5     I0       In      -         5.448       -         
+Gowin_EMPU_inst.u_gw_peripherals_interconnect.u_gw_cmsdk_apb2_spi.u_spi.genblk1\.SCLK_MASTER4_i_o2_2_RNIMB2J6     MUX2_LUT5     O        Out     0.180     5.628       -         
+G_8_0_mb_1                                                                                                        Net           -        -       1.225     -           1         
+Gowin_EMPU_inst.u_gw_peripherals_interconnect.u_gw_cmsdk_apb2_spi.u_spi.genblk1\.SCLK_MASTER4_i_o2_2_RNINVP6E     LUT4          I0       In      -         6.853       -         
+Gowin_EMPU_inst.u_gw_peripherals_interconnect.u_gw_cmsdk_apb2_spi.u_spi.genblk1\.SCLK_MASTER4_i_o2_2_RNINVP6E     LUT4          F        Out     1.238     8.092       -         
+SCLK_MASTER4_i_o2_2_RNINVP6E                                                                                      Net           -        -       1.225     -           1         
+Gowin_EMPU_inst.u_gw_peripherals_interconnect.u_gw_cmsdk_apb2_spi.u_spi.genblk1\.n_status_7_2_0_.m12_0_0          LUT4          I3       In      -         9.317       -         
+Gowin_EMPU_inst.u_gw_peripherals_interconnect.u_gw_cmsdk_apb2_spi.u_spi.genblk1\.n_status_7_2_0_.m12_0_0          LUT4          F        Out     0.751     10.068      -         
+n_status_7[0]                                                                                                     Net           -        -       0.000     -           1         
+Gowin_EMPU_inst.u_gw_peripherals_interconnect.u_gw_cmsdk_apb2_spi.u_spi.genblk1\.n_status[0]                      DFFNCE        D        In      -         10.068      -         
+=================================================================================================================================================================================
+Total path delay (propagation time + setup) of 10.228 is 5.327(52.1%) logic and 4.901(47.9%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 4: 
+      Requested Period:                      5.321
+    - Setup time:                            0.160
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         5.162
+
+    - Propagation time:                      10.068
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 -4.906
+
+    Number of logic level(s):                5
+    Starting point:                          Gowin_EMPU_inst.u_gw_peripherals_interconnect.u_gw_cmsdk_apb2_spi.u_spi.genblk1\.c_status_fast[0] / Q
+    Ending point:                            Gowin_EMPU_inst.u_gw_peripherals_interconnect.u_gw_cmsdk_apb2_spi.u_spi.genblk1\.n_status[0] / D
+    The start point is clocked by            GW_CLKDIV|clkout_inferred_clock [rising] on pin CLK
+    The end   point is clocked by            GW_CLKDIV|clkout_inferred_clock [falling] on pin CLK
+
+Instance / Net                                                                                                                  Pin      Pin               Arrival     No. of    
+Name                                                                                                              Type          Name     Dir     Delay     Time        Fan Out(s)
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Gowin_EMPU_inst.u_gw_peripherals_interconnect.u_gw_cmsdk_apb2_spi.u_spi.genblk1\.c_status_fast[0]                 DFFC          Q        Out     0.440     0.440       -         
+c_status_fast[0]                                                                                                  Net           -        -       1.225     -           1         
+Gowin_EMPU_inst.u_gw_peripherals_interconnect.u_gw_cmsdk_apb2_spi.u_spi.genblk1\.c_status_fast_RNI6J7O1[0]        LUT4          I1       In      -         1.666       -         
+Gowin_EMPU_inst.u_gw_peripherals_interconnect.u_gw_cmsdk_apb2_spi.u_spi.genblk1\.c_status_fast_RNI6J7O1[0]        LUT4          F        Out     1.319     2.984       -         
+c_status_fast_RNI6J7O1[0]                                                                                         Net           -        -       1.225     -           2         
+Gowin_EMPU_inst.u_gw_peripherals_interconnect.u_gw_cmsdk_apb2_spi.u_spi.genblk1\.data_cnt_RNIKRA83[5]             LUT4          I0       In      -         4.210       -         
+Gowin_EMPU_inst.u_gw_peripherals_interconnect.u_gw_cmsdk_apb2_spi.u_spi.genblk1\.data_cnt_RNIKRA83[5]             LUT4          F        Out     1.238     5.448       -         
+G_8_0_mb_N_4L5_1_0                                                                                                Net           -        -       0.000     -           1         
+Gowin_EMPU_inst.u_gw_peripherals_interconnect.u_gw_cmsdk_apb2_spi.u_spi.genblk1\.SCLK_MASTER4_i_o2_2_RNIMB2J6     MUX2_LUT5     I0       In      -         5.448       -         
+Gowin_EMPU_inst.u_gw_peripherals_interconnect.u_gw_cmsdk_apb2_spi.u_spi.genblk1\.SCLK_MASTER4_i_o2_2_RNIMB2J6     MUX2_LUT5     O        Out     0.180     5.628       -         
+G_8_0_mb_1                                                                                                        Net           -        -       1.225     -           1         
+Gowin_EMPU_inst.u_gw_peripherals_interconnect.u_gw_cmsdk_apb2_spi.u_spi.genblk1\.SCLK_MASTER4_i_o2_2_RNINVP6E     LUT4          I0       In      -         6.853       -         
+Gowin_EMPU_inst.u_gw_peripherals_interconnect.u_gw_cmsdk_apb2_spi.u_spi.genblk1\.SCLK_MASTER4_i_o2_2_RNINVP6E     LUT4          F        Out     1.238     8.092       -         
+SCLK_MASTER4_i_o2_2_RNINVP6E                                                                                      Net           -        -       1.225     -           1         
+Gowin_EMPU_inst.u_gw_peripherals_interconnect.u_gw_cmsdk_apb2_spi.u_spi.genblk1\.n_status_7_2_0_.m12_0_0          LUT4          I3       In      -         9.317       -         
+Gowin_EMPU_inst.u_gw_peripherals_interconnect.u_gw_cmsdk_apb2_spi.u_spi.genblk1\.n_status_7_2_0_.m12_0_0          LUT4          F        Out     0.751     10.068      -         
+n_status_7[0]                                                                                                     Net           -        -       0.000     -           1         
+Gowin_EMPU_inst.u_gw_peripherals_interconnect.u_gw_cmsdk_apb2_spi.u_spi.genblk1\.n_status[0]                      DFFNCE        D        In      -         10.068      -         
+=================================================================================================================================================================================
+Total path delay (propagation time + setup) of 10.228 is 5.327(52.1%) logic and 4.901(47.9%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 5: 
+      Requested Period:                      5.321
+    - Setup time:                            0.160
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         5.162
+
+    - Propagation time:                      10.068
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 -4.906
+
+    Number of logic level(s):                5
+    Starting point:                          Gowin_EMPU_inst.u_gw_peripherals_interconnect.u_gw_cmsdk_apb2_spi.u_spi.genblk1\.c_status_0_rep1 / Q
+    Ending point:                            Gowin_EMPU_inst.u_gw_peripherals_interconnect.u_gw_cmsdk_apb2_spi.u_spi.genblk1\.n_status[0] / D
+    The start point is clocked by            GW_CLKDIV|clkout_inferred_clock [rising] on pin CLK
+    The end   point is clocked by            GW_CLKDIV|clkout_inferred_clock [falling] on pin CLK
+
+Instance / Net                                                                                                                  Pin      Pin               Arrival     No. of    
+Name                                                                                                              Type          Name     Dir     Delay     Time        Fan Out(s)
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Gowin_EMPU_inst.u_gw_peripherals_interconnect.u_gw_cmsdk_apb2_spi.u_spi.genblk1\.c_status_0_rep1                  DFFC          Q        Out     0.440     0.440       -         
+c_status_0_rep1                                                                                                   Net           -        -       1.225     -           4         
+Gowin_EMPU_inst.u_gw_peripherals_interconnect.u_gw_cmsdk_apb2_spi.u_spi.genblk1\.c_status_fast_RNI70O61[1]        LUT4          I0       In      -         1.666       -         
+Gowin_EMPU_inst.u_gw_peripherals_interconnect.u_gw_cmsdk_apb2_spi.u_spi.genblk1\.c_status_fast_RNI70O61[1]        LUT4          F        Out     1.238     2.904       -         
+G_8_0_sn_sx                                                                                                       Net           -        -       1.225     -           2         
+Gowin_EMPU_inst.u_gw_peripherals_interconnect.u_gw_cmsdk_apb2_spi.u_spi.genblk1\.data_cnt_RNIKRA83_0[5]           LUT4          I1       In      -         4.129       -         
+Gowin_EMPU_inst.u_gw_peripherals_interconnect.u_gw_cmsdk_apb2_spi.u_spi.genblk1\.data_cnt_RNIKRA83_0[5]           LUT4          F        Out     1.319     5.448       -         
+G_8_0_mb_N_4L5_1_1                                                                                                Net           -        -       0.000     -           1         
+Gowin_EMPU_inst.u_gw_peripherals_interconnect.u_gw_cmsdk_apb2_spi.u_spi.genblk1\.SCLK_MASTER4_i_o2_2_RNIMB2J6     MUX2_LUT5     I1       In      -         5.448       -         
+Gowin_EMPU_inst.u_gw_peripherals_interconnect.u_gw_cmsdk_apb2_spi.u_spi.genblk1\.SCLK_MASTER4_i_o2_2_RNIMB2J6     MUX2_LUT5     O        Out     0.180     5.628       -         
+G_8_0_mb_1                                                                                                        Net           -        -       1.225     -           1         
+Gowin_EMPU_inst.u_gw_peripherals_interconnect.u_gw_cmsdk_apb2_spi.u_spi.genblk1\.SCLK_MASTER4_i_o2_2_RNINVP6E     LUT4          I0       In      -         6.853       -         
+Gowin_EMPU_inst.u_gw_peripherals_interconnect.u_gw_cmsdk_apb2_spi.u_spi.genblk1\.SCLK_MASTER4_i_o2_2_RNINVP6E     LUT4          F        Out     1.238     8.092       -         
+SCLK_MASTER4_i_o2_2_RNINVP6E                                                                                      Net           -        -       1.225     -           1         
+Gowin_EMPU_inst.u_gw_peripherals_interconnect.u_gw_cmsdk_apb2_spi.u_spi.genblk1\.n_status_7_2_0_.m12_0_0          LUT4          I3       In      -         9.317       -         
+Gowin_EMPU_inst.u_gw_peripherals_interconnect.u_gw_cmsdk_apb2_spi.u_spi.genblk1\.n_status_7_2_0_.m12_0_0          LUT4          F        Out     0.751     10.068      -         
+n_status_7[0]                                                                                                     Net           -        -       0.000     -           1         
+Gowin_EMPU_inst.u_gw_peripherals_interconnect.u_gw_cmsdk_apb2_spi.u_spi.genblk1\.n_status[0]                      DFFNCE        D        In      -         10.068      -         
+=================================================================================================================================================================================
+Total path delay (propagation time + setup) of 10.228 is 5.327(52.1%) logic and 4.901(47.9%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+
+
+====================================
+Detailed Report for Clock: System
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                              Starting                                                                  Arrival           
+Instance                      Reference     Type     Pin                      Net                       Time        Slack 
+                              Clock                                                                                       
+--------------------------------------------------------------------------------------------------------------------------
+Gowin_EMPU_inst.u_mcu_top     System        MCU      APBTARGEXP2PADDR[11]     apbtargexp2_paddr[11]     0.000       -1.280
+Gowin_EMPU_inst.u_mcu_top     System        MCU      APBTARGEXP2PADDR[8]      apbtargexp2_paddr[8]      0.000       -1.200
+Gowin_EMPU_inst.u_mcu_top     System        MCU      APBTARGEXP2PWRITE        apbtargexp2_pwrite        0.000       -1.134
+Gowin_EMPU_inst.u_mcu_top     System        MCU      APBTARGEXP2PENABLE       apbtargexp2_penable       0.000       -1.054
+Gowin_EMPU_inst.u_mcu_top     System        MCU      APBTARGEXP2PADDR[10]     apbtargexp2_paddr[10]     0.000       -0.953
+Gowin_EMPU_inst.u_mcu_top     System        MCU      APBTARGEXP2PSEL          apbtargexp2_psel          0.000       -0.948
+Gowin_EMPU_inst.u_mcu_top     System        MCU      APBTARGEXP2PADDR[2]      apbtargexp2_paddr[2]      0.000       -0.901
+Gowin_EMPU_inst.u_mcu_top     System        MCU      APBTARGEXP2PADDR[9]      apbtargexp2_paddr[9]      0.000       0.850 
+Gowin_EMPU_inst.u_mcu_top     System        MCU      APBTARGEXP2PADDR[5]      apbtargexp2_paddr[5]      0.000       0.870 
+Gowin_EMPU_inst.u_mcu_top     System        MCU      APBTARGEXP2PADDR[4]      apbtargexp2_paddr[4]      0.000       0.950 
+==========================================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                                                                                     Starting                                                                    Required           
+Instance                                                                             Reference     Type     Pin                       Net                        Time         Slack 
+                                                                                     Clock                                                                                          
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Gowin_EMPU_inst.u_mcu_top                                                            System        MCU      APBTARGEXP2PRDATA[8]      apbtargexp2_prdata[8]      7.256        -1.280
+Gowin_EMPU_inst.u_mcu_top                                                            System        MCU      APBTARGEXP2PRDATA[9]      apbtargexp2_prdata[9]      7.256        -1.280
+Gowin_EMPU_inst.u_mcu_top                                                            System        MCU      APBTARGEXP2PRDATA[10]     apbtargexp2_prdata[10]     7.256        -1.280
+Gowin_EMPU_inst.u_mcu_top                                                            System        MCU      APBTARGEXP2PRDATA[11]     apbtargexp2_prdata[11]     7.256        -1.280
+Gowin_EMPU_inst.u_mcu_top                                                            System        MCU      APBTARGEXP2PRDATA[12]     apbtargexp2_prdata[12]     7.256        -1.280
+Gowin_EMPU_inst.u_mcu_top                                                            System        MCU      APBTARGEXP2PRDATA[13]     apbtargexp2_prdata[13]     7.256        -1.280
+Gowin_EMPU_inst.u_mcu_top                                                            System        MCU      APBTARGEXP2PRDATA[14]     apbtargexp2_prdata[14]     7.256        -1.280
+Gowin_EMPU_inst.u_mcu_top                                                            System        MCU      APBTARGEXP2PRDATA[15]     apbtargexp2_prdata[15]     7.256        -1.280
+Gowin_EMPU_inst.u_gw_peripherals_interconnect.u_gw_cmsdk_apb2_adc.status_eoc_RNO     System        INV      I                         N_247                      7.256        -1.134
+Gowin_EMPU_inst.u_mcu_top                                                            System        MCU      APBTARGEXP2PRDATA[0]      apbtargexp2_prdata[0]      7.256        -1.034
+====================================================================================================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      7.256
+    - Setup time:                            0.000
+    + Clock delay at ending point:           0.000 (ideal)
+    + Estimated clock delay at ending point: 0.000
+    = Required time:                         7.256
+
+    - Propagation time:                      8.537
+    - Clock delay at starting point:         0.000 (ideal)
+    - Estimated clock delay at start point:  -0.000
+    = Slack (non-critical) :                 -1.280
+
+    Number of logic level(s):                3
+    Starting point:                          Gowin_EMPU_inst.u_mcu_top / APBTARGEXP2PADDR[11]
+    Ending point:                            Gowin_EMPU_inst.u_mcu_top / APBTARGEXP2PRDATA[8]
+    The start point is clocked by            System [rising]
+    The end   point is clocked by            System [rising]
+
+Instance / Net                                                                             Pin                      Pin               Arrival     No. of    
+Name                                                                              Type     Name                     Dir     Delay     Time        Fan Out(s)
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+Gowin_EMPU_inst.u_mcu_top                                                         MCU      APBTARGEXP2PADDR[11]     Out     0.000     0.000       -         
+apbtargexp2_paddr[11]                                                             Net      -                        -       1.225     -           4         
+Gowin_EMPU_inst.u_mcu_top_RNI1D0L                                                 LUT3     I1                       In      -         1.225       -         
+Gowin_EMPU_inst.u_mcu_top_RNI1D0L                                                 LUT3     F                        Out     1.319     2.544       -         
+G_11_1                                                                            Net      -                        -       0.919     -           1         
+Gowin_EMPU_inst.u_mcu_top_RNI2Q0A1                                                LUT4     I0                       In      -         3.463       -         
+Gowin_EMPU_inst.u_mcu_top_RNI2Q0A1                                                LUT4     F                        Out     1.238     4.701       -         
+u_gw_peripherals_interconnect.u_gw_cmsdk_apb2_adc.read_enable                     Net      -                        -       1.372     -           25        
+Gowin_EMPU_inst.u_gw_peripherals_interconnect.u_gw_cmsdk_apb2_adc.PRDATA_1[8]     LUT2     I0                       In      -         6.073       -         
+Gowin_EMPU_inst.u_gw_peripherals_interconnect.u_gw_cmsdk_apb2_adc.PRDATA_1[8]     LUT2     F                        Out     1.238     7.311       -         
+apbtargexp2_prdata[8]                                                             Net      -                        -       1.225     -           1         
+Gowin_EMPU_inst.u_mcu_top                                                         MCU      APBTARGEXP2PRDATA[8]     In      -         8.537       -         
+============================================================================================================================================================
+Total path delay (propagation time + setup) of 8.537 is 3.796(44.5%) logic and 4.741(55.5%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 2: 
+      Requested Period:                      7.256
+    - Setup time:                            0.000
+    + Clock delay at ending point:           0.000 (ideal)
+    + Estimated clock delay at ending point: 0.000
+    = Required time:                         7.256
+
+    - Propagation time:                      8.537
+    - Clock delay at starting point:         0.000 (ideal)
+    - Estimated clock delay at start point:  -0.000
+    = Slack (non-critical) :                 -1.280
+
+    Number of logic level(s):                3
+    Starting point:                          Gowin_EMPU_inst.u_mcu_top / APBTARGEXP2PADDR[11]
+    Ending point:                            Gowin_EMPU_inst.u_mcu_top / APBTARGEXP2PRDATA[9]
+    The start point is clocked by            System [rising]
+    The end   point is clocked by            System [rising]
+
+Instance / Net                                                                             Pin                      Pin               Arrival     No. of    
+Name                                                                              Type     Name                     Dir     Delay     Time        Fan Out(s)
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+Gowin_EMPU_inst.u_mcu_top                                                         MCU      APBTARGEXP2PADDR[11]     Out     0.000     0.000       -         
+apbtargexp2_paddr[11]                                                             Net      -                        -       1.225     -           4         
+Gowin_EMPU_inst.u_mcu_top_RNI1D0L                                                 LUT3     I1                       In      -         1.225       -         
+Gowin_EMPU_inst.u_mcu_top_RNI1D0L                                                 LUT3     F                        Out     1.319     2.544       -         
+G_11_1                                                                            Net      -                        -       0.919     -           1         
+Gowin_EMPU_inst.u_mcu_top_RNI2Q0A1                                                LUT4     I0                       In      -         3.463       -         
+Gowin_EMPU_inst.u_mcu_top_RNI2Q0A1                                                LUT4     F                        Out     1.238     4.701       -         
+u_gw_peripherals_interconnect.u_gw_cmsdk_apb2_adc.read_enable                     Net      -                        -       1.372     -           25        
+Gowin_EMPU_inst.u_gw_peripherals_interconnect.u_gw_cmsdk_apb2_adc.PRDATA_1[9]     LUT2     I0                       In      -         6.073       -         
+Gowin_EMPU_inst.u_gw_peripherals_interconnect.u_gw_cmsdk_apb2_adc.PRDATA_1[9]     LUT2     F                        Out     1.238     7.311       -         
+apbtargexp2_prdata[9]                                                             Net      -                        -       1.225     -           1         
+Gowin_EMPU_inst.u_mcu_top                                                         MCU      APBTARGEXP2PRDATA[9]     In      -         8.537       -         
+============================================================================================================================================================
+Total path delay (propagation time + setup) of 8.537 is 3.796(44.5%) logic and 4.741(55.5%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 3: 
+      Requested Period:                      7.256
+    - Setup time:                            0.000
+    + Clock delay at ending point:           0.000 (ideal)
+    + Estimated clock delay at ending point: 0.000
+    = Required time:                         7.256
+
+    - Propagation time:                      8.537
+    - Clock delay at starting point:         0.000 (ideal)
+    - Estimated clock delay at start point:  -0.000
+    = Slack (non-critical) :                 -1.280
+
+    Number of logic level(s):                3
+    Starting point:                          Gowin_EMPU_inst.u_mcu_top / APBTARGEXP2PADDR[11]
+    Ending point:                            Gowin_EMPU_inst.u_mcu_top / APBTARGEXP2PRDATA[10]
+    The start point is clocked by            System [rising]
+    The end   point is clocked by            System [rising]
+
+Instance / Net                                                                              Pin                       Pin               Arrival     No. of    
+Name                                                                               Type     Name                      Dir     Delay     Time        Fan Out(s)
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+Gowin_EMPU_inst.u_mcu_top                                                          MCU      APBTARGEXP2PADDR[11]      Out     0.000     0.000       -         
+apbtargexp2_paddr[11]                                                              Net      -                         -       1.225     -           4         
+Gowin_EMPU_inst.u_mcu_top_RNI1D0L                                                  LUT3     I1                        In      -         1.225       -         
+Gowin_EMPU_inst.u_mcu_top_RNI1D0L                                                  LUT3     F                         Out     1.319     2.544       -         
+G_11_1                                                                             Net      -                         -       0.919     -           1         
+Gowin_EMPU_inst.u_mcu_top_RNI2Q0A1                                                 LUT4     I0                        In      -         3.463       -         
+Gowin_EMPU_inst.u_mcu_top_RNI2Q0A1                                                 LUT4     F                         Out     1.238     4.701       -         
+u_gw_peripherals_interconnect.u_gw_cmsdk_apb2_adc.read_enable                      Net      -                         -       1.372     -           25        
+Gowin_EMPU_inst.u_gw_peripherals_interconnect.u_gw_cmsdk_apb2_adc.PRDATA_1[10]     LUT2     I0                        In      -         6.073       -         
+Gowin_EMPU_inst.u_gw_peripherals_interconnect.u_gw_cmsdk_apb2_adc.PRDATA_1[10]     LUT2     F                         Out     1.238     7.311       -         
+apbtargexp2_prdata[10]                                                             Net      -                         -       1.225     -           1         
+Gowin_EMPU_inst.u_mcu_top                                                          MCU      APBTARGEXP2PRDATA[10]     In      -         8.537       -         
+==============================================================================================================================================================
+Total path delay (propagation time + setup) of 8.537 is 3.796(44.5%) logic and 4.741(55.5%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 4: 
+      Requested Period:                      7.256
+    - Setup time:                            0.000
+    + Clock delay at ending point:           0.000 (ideal)
+    + Estimated clock delay at ending point: 0.000
+    = Required time:                         7.256
+
+    - Propagation time:                      8.537
+    - Clock delay at starting point:         0.000 (ideal)
+    - Estimated clock delay at start point:  -0.000
+    = Slack (non-critical) :                 -1.280
+
+    Number of logic level(s):                3
+    Starting point:                          Gowin_EMPU_inst.u_mcu_top / APBTARGEXP2PADDR[11]
+    Ending point:                            Gowin_EMPU_inst.u_mcu_top / APBTARGEXP2PRDATA[11]
+    The start point is clocked by            System [rising]
+    The end   point is clocked by            System [rising]
+
+Instance / Net                                                                              Pin                       Pin               Arrival     No. of    
+Name                                                                               Type     Name                      Dir     Delay     Time        Fan Out(s)
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+Gowin_EMPU_inst.u_mcu_top                                                          MCU      APBTARGEXP2PADDR[11]      Out     0.000     0.000       -         
+apbtargexp2_paddr[11]                                                              Net      -                         -       1.225     -           4         
+Gowin_EMPU_inst.u_mcu_top_RNI1D0L                                                  LUT3     I1                        In      -         1.225       -         
+Gowin_EMPU_inst.u_mcu_top_RNI1D0L                                                  LUT3     F                         Out     1.319     2.544       -         
+G_11_1                                                                             Net      -                         -       0.919     -           1         
+Gowin_EMPU_inst.u_mcu_top_RNI2Q0A1                                                 LUT4     I0                        In      -         3.463       -         
+Gowin_EMPU_inst.u_mcu_top_RNI2Q0A1                                                 LUT4     F                         Out     1.238     4.701       -         
+u_gw_peripherals_interconnect.u_gw_cmsdk_apb2_adc.read_enable                      Net      -                         -       1.372     -           25        
+Gowin_EMPU_inst.u_gw_peripherals_interconnect.u_gw_cmsdk_apb2_adc.PRDATA_1[11]     LUT2     I0                        In      -         6.073       -         
+Gowin_EMPU_inst.u_gw_peripherals_interconnect.u_gw_cmsdk_apb2_adc.PRDATA_1[11]     LUT2     F                         Out     1.238     7.311       -         
+apbtargexp2_prdata[11]                                                             Net      -                         -       1.225     -           1         
+Gowin_EMPU_inst.u_mcu_top                                                          MCU      APBTARGEXP2PRDATA[11]     In      -         8.537       -         
+==============================================================================================================================================================
+Total path delay (propagation time + setup) of 8.537 is 3.796(44.5%) logic and 4.741(55.5%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 5: 
+      Requested Period:                      7.256
+    - Setup time:                            0.000
+    + Clock delay at ending point:           0.000 (ideal)
+    + Estimated clock delay at ending point: 0.000
+    = Required time:                         7.256
+
+    - Propagation time:                      8.537
+    - Clock delay at starting point:         0.000 (ideal)
+    - Estimated clock delay at start point:  -0.000
+    = Slack (non-critical) :                 -1.280
+
+    Number of logic level(s):                3
+    Starting point:                          Gowin_EMPU_inst.u_mcu_top / APBTARGEXP2PADDR[11]
+    Ending point:                            Gowin_EMPU_inst.u_mcu_top / APBTARGEXP2PRDATA[12]
+    The start point is clocked by            System [rising]
+    The end   point is clocked by            System [rising]
+
+Instance / Net                                                                              Pin                       Pin               Arrival     No. of    
+Name                                                                               Type     Name                      Dir     Delay     Time        Fan Out(s)
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+Gowin_EMPU_inst.u_mcu_top                                                          MCU      APBTARGEXP2PADDR[11]      Out     0.000     0.000       -         
+apbtargexp2_paddr[11]                                                              Net      -                         -       1.225     -           4         
+Gowin_EMPU_inst.u_mcu_top_RNI1D0L                                                  LUT3     I1                        In      -         1.225       -         
+Gowin_EMPU_inst.u_mcu_top_RNI1D0L                                                  LUT3     F                         Out     1.319     2.544       -         
+G_11_1                                                                             Net      -                         -       0.919     -           1         
+Gowin_EMPU_inst.u_mcu_top_RNI2Q0A1                                                 LUT4     I0                        In      -         3.463       -         
+Gowin_EMPU_inst.u_mcu_top_RNI2Q0A1                                                 LUT4     F                         Out     1.238     4.701       -         
+u_gw_peripherals_interconnect.u_gw_cmsdk_apb2_adc.read_enable                      Net      -                         -       1.372     -           25        
+Gowin_EMPU_inst.u_gw_peripherals_interconnect.u_gw_cmsdk_apb2_adc.PRDATA_1[12]     LUT2     I0                        In      -         6.073       -         
+Gowin_EMPU_inst.u_gw_peripherals_interconnect.u_gw_cmsdk_apb2_adc.PRDATA_1[12]     LUT2     F                         Out     1.238     7.311       -         
+apbtargexp2_prdata[12]                                                             Net      -                         -       1.225     -           1         
+Gowin_EMPU_inst.u_mcu_top                                                          MCU      APBTARGEXP2PRDATA[12]     In      -         8.537       -         
+==============================================================================================================================================================
+Total path delay (propagation time + setup) of 8.537 is 3.796(44.5%) logic and 4.741(55.5%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+
+##### END OF TIMING REPORT #####]
+
+Timing exceptions that could not be applied
+None
+
+Finished final timing analysis (Real Time elapsed 0h:00m:06s; CPU Time elapsed 0h:00m:06s; Memory used current: 197MB peak: 199MB)
+
+
+Finished timing report (Real Time elapsed 0h:00m:06s; CPU Time elapsed 0h:00m:06s; Memory used current: 197MB peak: 199MB)
+
+---------------------------------------
+Resource Usage Report for Gowin_EMPU 
+
+Mapping to part: gw1ns_2clqfp144-5
+Cell usage:
+ADC             1 use
+ALU             5 uses
+CLKDIV          1 use
+DFFC            60 uses
+DFFCE           78 uses
+DFFNCE          3 uses
+DFFP            1 use
+DFFPE           1 use
+DLC             1 use
+DQCE            1 use
+FLASH128K       1 use
+GSR             2 uses
+INV             23 uses
+MCU             1 use
+MUX2_LUT5       2 uses
+SP              4 uses
+LUT2            45 uses
+LUT3            43 uses
+LUT4            104 uses
+
+I/O ports: 20
+I/O primitives: 20
+IBUF           3 uses
+IOBUF          16 uses
+OBUF           1 use
+
+I/O Register bits:                  0
+Register bits not including I/Os:   143 of 1296 (11%)
+
+RAM/ROM usage summary
+Block Rams : 4 of 4 (100%)
+
+Total load per clock:
+
+@S |Mapping Summary:
+Total  LUTs: 192 (11%)
+
+Mapper successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:06s; CPU Time elapsed 0h:00m:06s; Memory used current: 43MB peak: 199MB)
+
+Process took 0h:00m:06s realtime, 0h:00m:06s cputime
+# Thu Nov 22 16:19:49 2018
+
+###########################################################]

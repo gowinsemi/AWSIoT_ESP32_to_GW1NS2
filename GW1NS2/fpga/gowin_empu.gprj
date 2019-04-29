@@ -1,0 +1,12 @@
+<?xml version="1" encoding="UTF-8"?>
+<!DOCTYPE gowin-fpga-project>
+<Project>
+    <Template>FPGA</Template>
+    <Version>5</Version>
+    <Device>gw1ns2c-018</Device>
+    <FileList>
+        <File path="src/gowin_empu/gowin_empu.v" type="file.source" enable="1"/>
+        <File path="src/gowin_empu.cst" type="file.cst" enable="1"/>
+        <File path="src/template.v" type="file.source" enable="1"/>
+    </FileList>
+</Project>

@@ -1,0 +1,18 @@
+Info    (PA0001) : "C:/Users/Grant/Documents/Gowin/IID_BroadKey/IID_BroadKey.git/trunk/fpga/impl/synplify/rev_1/gowin_empu.vm" | Reading netlist file.
+Info    (PA0004) : Parsing netlist file 'C:/Users/Grant/Documents/Gowin/IID_BroadKey/IID_BroadKey.git/trunk/fpga/impl/synplify/rev_1/gowin_empu.vm' completed.
+Info    (PA0006) : Processing netlist completed.
+Info    (CT0002) : Physical Constraint parsed completed.
+Info    (PR0001) : Placement in progress......
+Info    (PR0005) : Routing in progress......
+Info    (PR0002) : Placement and routing completed.
+Info    (TA0001) : Timing analysis completed.
+Info    (FS0001) : Bitstream generation in progress......
+Info    (FS0002) : Bitstream generation completed.
+Info    (PW0001) : Power analysis completed.
+Info    (CM0008) : Generate 'C:/Users/Grant/Documents/Gowin/IID_BroadKey/IID_BroadKey.git/trunk/fpga/impl/pnr/gowin_empu.power.html' file completed.
+Info    (CM0008) : Generate 'C:/Users/Grant/Documents/Gowin/IID_BroadKey/IID_BroadKey.git/trunk/fpga/impl/pnr/gowin_empu.pin.html' file completed.
+Info    (CM0008) : Generate 'C:/Users/Grant/Documents/Gowin/IID_BroadKey/IID_BroadKey.git/trunk/fpga/impl/pnr/gowin_empu.rpt.html' file completed.
+Info    (CM0008) : Generate 'C:/Users/Grant/Documents/Gowin/IID_BroadKey/IID_BroadKey.git/trunk/fpga/impl/pnr/gowin_empu.rpt.txt' file completed.
+Info    (CM0008) : Generate 'C:/Users/Grant/Documents/Gowin/IID_BroadKey/IID_BroadKey.git/trunk/fpga/impl/pnr/gowin_empu.tr.html' file completed.
+Info    (CM0001) : Mon Apr 29 15:30:35 2019
+

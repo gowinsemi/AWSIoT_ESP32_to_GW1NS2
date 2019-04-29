@@ -1,0 +1,2 @@
+@E: CS168 :"C:\Gowin\Gowin GW1NS-2C MCU PACK\Gowin_GW1NS-2C_MCU_RefDesign\FPGA_RefDesign\gowin_empu\src\template.v":29:6:29:6|Port gpio does not exist
+

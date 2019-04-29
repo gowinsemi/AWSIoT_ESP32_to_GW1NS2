@@ -1,0 +1,2 @@
+@W: CG1337 :"D:\Gowin\1.8\IDE\ipcore\GOWIN_EMPU\data\gowin_empu.v":1329:9:1329:20|Net master_pse11 is not declared.
+

@@ -1,0 +1,12 @@
+[General]
+ipc_version=4
+type=gowin_empu
+version=1.0
+target_device=gw1ns2c-015
+file=gowin_empu
+module=Gowin_EMPU
+
+[Config]
+ENABLE_GPIO=true
+ENABLE_UART0=true
+ENABLE_UART1=false
